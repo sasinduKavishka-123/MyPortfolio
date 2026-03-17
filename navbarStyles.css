@@ -25,3 +25,23 @@ nav > p{
     background-clip: text;
     color: transparent;
 }
+
+nav > section{
+    border: #ffffff solid 2px;
+    width: 595px;
+    height: 50px;
+    position: absolute;
+    right: 20px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav > section > div{
+    margin: 0 16px;
+    color: #ffffff;
+    font-family: sans-serif , system-ui;
+    font-weight: bold;
+    font-size: 18px;
+}
