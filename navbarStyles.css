@@ -1,0 +1,23 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: black;
+}
+
+nav{
+    border: white solid 2px;
+    width: 100vw;
+    height: 84px;
+    display: flex;
+    align-items: center;
+}
+
+nav > p{
+    margin-left: calc(5vw);
+    color: white;
+    font-family: Ewert, sans-serif;
+    font-size: 55px;
+}
