@@ -28,3 +28,32 @@
     font-family: serif;
     font-style: italic;
 }
+
+#orbitBox{
+    width: 100vw;
+    height: 200px;
+    position: absolute;
+    top: 600px;
+}
+
+#orbitHolder{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+#orbit{
+    background-color: #AF05ED;
+    width: 3660px;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+
+    position: absolute;
+    left: calc(50vw - 1837px);
+}
