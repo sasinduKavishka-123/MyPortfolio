@@ -69,14 +69,36 @@
     width: 70%;
 }
 
-#aboutMeSocialIconContainer{position: absolute;
+#aboutMeSocialIconContainer{
+    position: absolute;
     top: 230px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 40%;
+    height: 50px;
+}
+
+.aboutMeSocialIcons{
+    position: absolute;
+    font-size: 28px;
+    transition-duration: 500ms;
+}
+
+.aboutMeSocialIcons:hover{
+    font-size: 32px;
+}
+
+#aboutMeSocialIconFB{
+    left: 25%;
+}
+
+#aboutMeSocialIconLN{
     left: 0;
     right: 0;
     margin: auto;
 }
 
-.aboutMeSocialIcons{
-    font-size: 28px;
-    margin: 0 20px;
+#aboutMeSocialIconGH{
+    right: 25%;
 }
