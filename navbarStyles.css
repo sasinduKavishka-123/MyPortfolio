@@ -59,7 +59,7 @@ nav > section{
 }
 
 .navTabs:hover{
-    background-color: #341942;
+    background-color: rgba(204, 97, 231, 0.35);
 }
 
 .navTabs:active{
