@@ -2,7 +2,7 @@
 
 #about{
     width: 100vw;
-    height: 600px;
+    height: 1100px;
     display: flex;
     justify-content: center;
 }
@@ -15,53 +15,65 @@
 }
 
 .gridSections{
-    margin: 10px;
+    margin: 0 10px;
     border-radius: 20px;
     background: linear-gradient(225deg, rgba(46, 5, 73, 0.8), rgba(16, 5, 24, 0.8));
     box-sizing: border-box;
     border: #2a252d solid 1px;
-
 }
 
 #gridSection1{
     grid-row: 1/3;
+    height: 610px;
 }
 #gridSection2{
+    position: relative;
     text-align: center;
     grid-column: 2/4;
+    height: 290px;
 }
 #gridSection3{
-
+    height: 290px;
 }
 #gridSection4{
     grid-column: 3/4;
     grid-row: 2/4;
+    height: 610px;
 }
 #gridSection5{
     grid-column: 1/3;
+    height: 290px;
 }
 
 #fullName{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    margin: auto;
     font-size: 64px;
     font-family: Russo One , serif;
-    display: inline-block;
-    background: linear-gradient(90deg, #00AEFF, #BB00FF);
+    background: linear-gradient(-90deg, #00AEFF, #BB00FF);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    margin-top: 30px;
 }
 
-#aboutMeText{
+#aboutMeText{position: absolute;
+    top: 135px;
+    left: 0;
+    right: 0;
+    margin: auto;
     font-size: 22px;
     font-family: Grandstander, system-ui;
-    display: inline-block;
     width: 70%;
-    margin-top: 30px;
 }
 
-#aboutMeSocialIconContainer{
-    margin-top: 40px;
+#aboutMeSocialIconContainer{position: absolute;
+    top: 230px;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 .aboutMeSocialIcons{
