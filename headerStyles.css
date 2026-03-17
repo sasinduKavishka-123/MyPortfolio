@@ -55,7 +55,6 @@
     position: absolute;
     top: 100px;
     left: calc(50vw - 1837px);
-    background: linear-gradient(#470882 1%, black 4%);
-
+    background: linear-gradient(#470882 1%, black 2.5%);
     box-shadow: 0 -40px 60px #7506E5;
 }
