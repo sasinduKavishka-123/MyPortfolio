@@ -45,15 +45,14 @@
     left: 0;
     right: 0;
     margin: auto;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 #orbit{
-    background-color: #AF05ED;
     width: 3660px;
     aspect-ratio: 1/1;
     border-radius: 100%;
-
     position: absolute;
     left: calc(50vw - 1837px);
+    background: linear-gradient(#470882 1%, black 3%);
 }
