@@ -4,21 +4,20 @@
 }
 
 body{
-    background: black;
+    background: #000000;
 }
 
 nav{
-    border: white solid 2px;
     width: 100vw;
     height: 84px;
     display: flex;
     align-items: center;
 }
 
-nav > p{
+#logo{
     margin-left: calc(5vw);
     font-family: Ewert, sans-serif;
-    font-size: 55px;
+    font-size: 45px;
 
     background: linear-gradient(60deg, #0EA2E7 20%, #433FE4, #AF05ED 80%);
     -webkit-background-clip: text;
@@ -29,19 +28,31 @@ nav > p{
 nav > section{
     border: #ffffff solid 2px;
     width: 595px;
-    height: 50px;
+    height: 45px;
     position: absolute;
-    right: 20px;
+    right: 25px;
     border-radius: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-nav > section > div{
-    margin: 0 16px;
+.navTabs{
+    margin: 0 5px;
     color: #ffffff;
     font-family: sans-serif , system-ui;
     font-weight: bold;
     font-size: 18px;
+    transition-duration: 400ms;
+    padding: 5px 12px;
+    border-radius: 20px;
+}
+
+.navTabs:hover{
+    background-color: #2F2F32;
+}
+
+.navTabs:active{
+    background-color: #ffffff;
+    color: #000000;
 }
