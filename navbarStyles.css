@@ -12,6 +12,9 @@ nav{
     height: 84px;
     display: flex;
     align-items: center;
+
+    position: fixed;
+    top: 0;
 }
 
 #logo{
@@ -55,4 +58,8 @@ nav > section{
 .navTabs:active{
     background-color: #ffffff;
     color: #000000;
+}
+
+#para{
+    margin-top: 90px;
 }
