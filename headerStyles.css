@@ -1,13 +1,14 @@
 
 #hero{
     margin-top: 80px;
+    text-align: center;
 }
 
 #introText{
     font-size: 40px;
     font-weight: bold;
     position: relative;
-    left: calc(50vw - 450px);
+    right: 340px;
     top: 80px;
     font-family: Inter, serif;
 }
@@ -16,6 +17,5 @@
     font-size: 150px;
     position: relative;
     top: 80px;
-    left: calc(50vw - 350px);
     font-family: Russo One , serif;
 }
