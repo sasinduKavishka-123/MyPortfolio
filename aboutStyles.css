@@ -144,6 +144,14 @@
     text-align: center;
     position: absolute;
     bottom: 30px;
+    transition-duration: 500ms;
+}
+
+#gridSection3ContactButton:hover{
+    color: #ffffff;
+    background-color: #3b0769;
+    bottom: 33px;
+    box-shadow: 0 0 10px 1px #AF05ED ;
 }
 
 #gridSection3ContactButton > div{
