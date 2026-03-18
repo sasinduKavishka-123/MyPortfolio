@@ -67,6 +67,7 @@
     font-size: 22px;
     font-family: Grandstander, system-ui;
     width: 70%;
+    color: #ffffff;
 }
 
 #aboutMeSocialIconContainer{
@@ -86,11 +87,12 @@
     top: 10px;
     font-size: 28px;
     transition-duration: 500ms;
+    color: #ffffff;
 }
 
 .aboutMeSocialIcons:hover{
     font-size: 32px;
-    color: #0824e5 !important;
+    color: #0824e5;
 }
 
 #aboutMeSocialIconContainer > div {
