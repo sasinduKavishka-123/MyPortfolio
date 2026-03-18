@@ -1,2 +1,23 @@
 
 
+#special{
+    width: 100vw;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cardHolder{
+    width: 80%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.specialCards{
+    width: 250px;
+    height: 95%;
+    background-color: #9304d8;
+}
