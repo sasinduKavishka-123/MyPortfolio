@@ -6,6 +6,17 @@
 
 body{
     background: #000000;
+
+}
+
+body::-webkit-scrollbar {
+    width: 6px; /* Very narrow */
+    height: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(76, 8, 134, 0.5); /* Semi-transparent */
+    border-radius: 10px;
 }
 
 nav{
