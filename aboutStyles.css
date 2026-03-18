@@ -204,8 +204,7 @@
 }
 
 #gridSection5Img1{
-    rotate: -15deg;
-    right: 310px;
+    right: 210px;
     bottom: -130px;
 }
 
@@ -216,14 +215,15 @@
 }
 
 #gridSection5Img3{
-    rotate: 15deg;
-    right: 90px;
+    right: 190px;
     bottom: -130px;
 }
 
 #gridSection5:hover > #gridSection5Img1{
+    right: 310px;
     rotate: -35deg;
 }
 #gridSection5:hover > #gridSection5Img3{
+    right: 90px;
     rotate: 35deg;
 }
