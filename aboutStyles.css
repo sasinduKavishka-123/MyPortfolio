@@ -143,10 +143,15 @@
     width: 80%;
     text-align: center;
     position: absolute;
-    top: 50px;
+    top: 55px;
     left: 0;
     right: 0;
     margin: auto;
+    transition-duration: 1000ms;
+}
+
+#gridSection3:hover > #gridSection3Text{
+    top: 45px;
 }
 
 #gridSection3ContactButton{
