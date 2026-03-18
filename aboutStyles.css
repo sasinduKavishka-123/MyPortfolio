@@ -77,28 +77,25 @@
     margin: auto;
     width: 40%;
     height: 50px;
+    display: flex;
+    justify-content: center;
 }
 
 .aboutMeSocialIcons{
-    position: absolute;
+    position: relative;
+    top: 10px;
     font-size: 28px;
     transition-duration: 500ms;
 }
 
 .aboutMeSocialIcons:hover{
     font-size: 32px;
+    color: #0824e5 !important;
 }
 
-#aboutMeSocialIconFB{
-    left: 25%;
+#aboutMeSocialIconContainer > div {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
 }
 
-#aboutMeSocialIconLN{
-    left: 0;
-    right: 0;
-    margin: auto;
-}
-
-#aboutMeSocialIconGH{
-    right: 25%;
-}
