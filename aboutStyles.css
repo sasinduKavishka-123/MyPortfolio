@@ -46,6 +46,8 @@
     grid-row: 2/4;
     height: 620px;
     margin-top: -20px;
+    color: #ffffff;
+    position: relative;
 }
 #gridSection5{
     grid-column: 1/3;
@@ -170,6 +172,28 @@
     top: 10px;
 }
 
+/************ grid section 4 implementation *********/
+
+#gridSection4ContactHolder{
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    position: relative;
+    top: 30px;
+    left: 30px;
+}
+
+.gridSection4ContactIcons{
+    font-size: 24px;
+    margin: 0 5px;
+}
+
+.gridSection4Contacts{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
 
 /************ grid section 5 implementation *********/
 
@@ -196,8 +220,8 @@
 #gridSection5Img1, #gridSection5Img2, #gridSection5Img3{
     width: 170px;
     height: 300px;
-    background-color: #AF05ED;
-    border: #433FE4 solid 1px;
+    background-color: #0824e5;
+    border: #553572 solid 2px;
     border-radius: 10px;
     position: absolute;
     transition-duration: 500ms;
