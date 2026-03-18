@@ -35,6 +35,10 @@
 }
 #gridSection3{
     height: 290px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 #gridSection4{
     grid-column: 3/4;
@@ -46,7 +50,7 @@
     height: 290px;
 }
 
-/********** grid section 1 implementation ************/
+/********** grid section 2 implementation ************/
 
 #fullName{
     position: absolute;
@@ -62,7 +66,8 @@
     color: transparent;
 }
 
-#aboutMeText{position: absolute;
+#aboutMeText{
+    position: absolute;
     top: 135px;
     left: 0;
     right: 0;
@@ -114,6 +119,23 @@
 }
 
 
-/************ grid section 2 implementation *********/
+/************ grid section 3 implementation *********/
 
+#gridSection3Text{
+    color: #ffffff;
+    font-family: Henny Penny, system-ui;
+    font-size: 24px;
+    width: 80%;
+    height: 100px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
 
+#gridSection3ContactButton{
+    color: #ffffff;
+}
