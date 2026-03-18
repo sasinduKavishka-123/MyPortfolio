@@ -1,6 +1,5 @@
 
-
-#special{
+#special {
     width: 100vw;
     height: 400px;
     display: flex;
@@ -8,7 +7,7 @@
     align-items: center;
 }
 
-#cardHolder{
+#cardHolder {
     width: 80%;
     height: 300px;
     display: flex;
@@ -16,8 +15,21 @@
     justify-content: space-evenly;
 }
 
-.specialCards{
-    width: 250px;
-    height: 95%;
-    background-color: #9304d8;
+.specialCards {
+    width: 270px;
+    height: 310px;
+    background: linear-gradient(200deg, rgba(85, 10, 135, 0.8), rgba(0, 0, 0, 0.8));
+    border: #27182E solid 1px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.specialCardIconHolder {
+    width: 90px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: #8902BA;
+    margin-top: 25px;
 }
