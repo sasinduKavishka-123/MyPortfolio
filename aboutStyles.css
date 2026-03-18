@@ -25,7 +25,7 @@
 
 #gridSection1{
     grid-row: 1/3;
-    height: 610px;
+    height: 620px;
 }
 #gridSection2{
     position: relative;
@@ -39,11 +39,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: -20px;
 }
 #gridSection4{
     grid-column: 3/4;
     grid-row: 2/4;
-    height: 610px;
+    height: 620px;
+    margin-top: -20px;
 }
 #gridSection5{
     grid-column: 1/3;
@@ -52,6 +54,7 @@
     font-family: Roboto, sans-serif;
     padding-left: 30px;
     overflow: hidden;
+    margin-top: -20px;
 }
 
 /********** grid section 2 implementation ************/
