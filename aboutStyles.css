@@ -21,6 +21,13 @@
     background: linear-gradient(225deg, rgba(46, 5, 73, 0.8), rgba(16, 5, 24, 0.8));
     box-sizing: border-box;
     border: #2a252d solid 1px;
+    position: relative;
+    bottom: 0;
+    transition-duration: 800ms;
+}
+
+.gridSections:hover{
+    bottom: 5px;
 }
 
 #gridSection1{
@@ -28,14 +35,12 @@
     height: 620px;
 }
 #gridSection2{
-    position: relative;
     text-align: center;
     grid-column: 2/4;
     height: 290px;
 }
 #gridSection3{
     height: 290px;
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,7 +52,6 @@
     height: 620px;
     margin-top: -20px;
     color: #ffffff;
-    position: relative;
     overflow: hidden;
 }
 #gridSection5{
@@ -58,7 +62,6 @@
     padding-left: 30px;
     overflow: hidden;
     margin-top: -20px;
-    position: relative;
 }
 
 /********** grid section 2 implementation ************/
@@ -180,7 +183,12 @@
     font-size: 18px;
     position: relative;
     top: 10px;
-    left: 30px;
+    left: 25px;
+    transition-duration: 800ms;
+}
+
+#gridSection4:hover > #gridSection4ContactHolder{
+    left: 35px;
 }
 
 .gridSection4ContactIcons{
