@@ -78,6 +78,11 @@
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    transition-duration: 1500ms;
+}
+
+#gridSection2:hover > #fullName{
+    font-size: 68px;
 }
 
 #aboutMeText{
@@ -131,6 +136,7 @@
     justify-content: center;
     align-items: center;
 }
+
 
 
 /************ grid section 3 implementation *********/
@@ -188,7 +194,7 @@
     font-size: 18px;
     position: relative;
     top: 10px;
-    left: 25px;
+    left: 30px;
     transition-duration: 800ms;
 }
 
@@ -246,7 +252,7 @@
     border: #553572 solid 2px;
     border-radius: 10px;
     position: absolute;
-    transition-duration: 500ms;
+    transition-duration: 1000ms;
 }
 
 #gridSection5Img1{
