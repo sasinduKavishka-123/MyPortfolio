@@ -172,9 +172,19 @@
 #gridSection5Text{
     font-size: 14px;
     margin-top: 260px;
+    transition-duration: 500ms;
 }
 
 #gridSection5HiddenText{
     font-size: 18px;
     margin-top: 20px;
+    transition-duration: 300ms;
+}
+
+#gridSection5:hover > #gridSection5Text{
+    margin-top: 235px;
+}
+
+#gridSection5:hover > #gridSection5HiddenText{
+    margin-top: 5px;
 }
