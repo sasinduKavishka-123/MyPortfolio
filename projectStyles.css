@@ -5,12 +5,14 @@
     height: 710px;
     display: flex;
     justify-content: center;
+    margin-top: 180px;
 }
 
-#sectionCardHolder{
+#projectCardHolder{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    width: 80%;
 }
 
 .projectCards{
@@ -33,7 +35,18 @@
     height: 160px;
     margin-top: 12px;
     border-radius: 15px;
+}
+
+#projectImg1{
     background: url("assets/itemManagement.webp") no-repeat center;
+    background-size: cover;
+}
+#projectImg2{
+    background: url("assets/zombieGame.png") no-repeat center;
+    background-size: cover;
+}
+#projectImg3{
+    background: url("assets/orderManagement.png") no-repeat center;
     background-size: cover;
 }
 
