@@ -75,7 +75,7 @@
     margin: auto;
     font-size: 64px;
     font-family: Russo One , serif;
-    background: linear-gradient(-90deg, #00AEFF, #BB00FF);
+    background: linear-gradient(-90deg, #00AEFF 20%, #BB00FF 80%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
