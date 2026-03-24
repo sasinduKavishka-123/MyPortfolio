@@ -30,10 +30,11 @@
 
 .projectImgs{
     width: 90%;
-    height: 150px;
-    margin-top: 15px;
+    height: 160px;
+    margin-top: 12px;
     border-radius: 15px;
-    background-color: blue;
+    background: url("assets/itemManagement.webp") no-repeat center;
+    background-size: cover;
 }
 
 .projectTopics{
@@ -54,11 +55,10 @@
     width: 90%;
     text-align: center;
     height: 100px;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .projectBtns{
-    margin-top: 3px;
     width: 120px;
     height: 40px;
     border-radius: 10px;
