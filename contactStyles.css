@@ -136,6 +136,10 @@
     font-family: "Inter", sans-serif;
 }
 
+.contactFormInfo > label{
+    margin-left: 3px;
+}
+
 #contactFormTopic{
     width: 80%;
     color: white;
@@ -145,4 +149,24 @@
     font-size: 36px;
     font-weight: bold;
     margin: 20px 0 20px 0;
+}
+
+.contactFormInfo > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 45px;
+    border-radius: 10px;
+    background-color: cyan;
+}
+
+.contactInfoIcons{
+    font-size: 20px;
+    color: #797979;
+}
+
+.contactInputs{
+    font-size: 14px;
+    width: 90%;
 }
