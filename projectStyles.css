@@ -1,0 +1,73 @@
+
+
+#project{
+    width: 100%;
+    height: 710px;
+    display: flex;
+    justify-content: center;
+    background-color: pink;
+}
+
+#sectionCardHolder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectCards{
+    width: 300px;
+    height: 420px;
+    background-color: red;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projectImgs{
+    width: 90%;
+    height: 150px;
+    margin-top: 15px;
+    border-radius: 15px;
+    background-color: blue;
+}
+
+.projectTopics{
+    color: #ffffff;
+    font-family: "Inter", sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    width: 80%;
+    text-align: center;
+    margin-top: 10px;
+    height: 70px;
+}
+
+.projectDescriptions{
+    color: #ffffff;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    width: 90%;
+    text-align: center;
+    height: 100px;
+    margin-top: 10px;
+}
+
+.projectBtns{
+    margin-top: 5px;
+    width: 120px;
+    height: 40px;
+    border-radius: 15px;
+    background: blue;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.projectIcons{
+    font-size: 20px;
+    color: #ffffff;
+}
