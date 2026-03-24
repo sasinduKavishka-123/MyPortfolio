@@ -109,7 +109,7 @@
     height: 60%;
     position: relative;
     top: 50px;
-    margin: auto;
+    margin-left: 40px;
 }
 
 
@@ -164,6 +164,7 @@
 .contactInfoIcons{
     font-size: 20px;
     color: #9a9a9a;
+    transition-duration: 400ms;
 }
 
 .contactInputs{
@@ -173,4 +174,26 @@
     background-color: transparent;
     border: none;
     outline: none;
+    color: #ffffff;
+    transition-duration: 1000ms;
+}
+
+.contactInputs::placeholder{
+    transition-duration: 400ms;
+}
+
+.contactInputs:focus::placeholder{
+    color: transparent;
+}
+
+#contactMessage{
+    width: 90%;
+    height: 180px;
+    resize: none;
+}
+
+#contactForm > div:nth-child(5) > div{
+    align-items: start;
+    padding-top: 13px;
+    height:200px;
 }
