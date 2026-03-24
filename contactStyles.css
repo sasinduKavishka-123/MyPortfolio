@@ -1,0 +1,148 @@
+
+
+#contact{
+    margin-top: 200px;
+    width: 100vw;
+    height: 1250px;
+}
+
+#contactDescription{
+    width: 80%;
+    height: 550px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contactDiscText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contactLogo{
+    font-family: Ewert, sans-serif;
+    font-size: 70px;
+    background: linear-gradient(60deg, #0EA2E7 20%, #433FE4, #AF05ED 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+#contactDiscText{
+    color: white;
+    margin-top: 50px;
+}
+
+#contactDiscText > div {
+    margin-bottom: 40px;
+}
+
+#contactText1{
+    font-size: 60px;
+    font-family: Playfair Display, serif;
+}
+
+#contactText2{
+    font-size: 100px;
+    font-family: Roboto, serif;
+    font-weight: bold;
+    position: relative;
+    top: 15px;
+}
+
+#contactText3{
+    font-size: 40px;
+    font-family: Playfair Display, serif;
+}
+
+#contactText4{
+    font-size: 40px;
+    font-family: Pacifico, serif;
+    position: relative;
+    top: 5px;
+    background: linear-gradient(60deg, #0EA2E7 20%, #433FE4, #AF05ED 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* *************************** */
+
+#contactGridContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 75%;
+    height: 700px;
+    margin: auto;
+}
+
+#contactTextContainer{
+    padding-left: 30px;
+    /*background-color: blue;*/
+}
+
+#contactFormContainer{
+    /*background-color: red;*/
+}
+
+#contactText5{
+    font-size: 45px;
+    font-weight: bold;
+    color: white;
+    font-family: "Source Serif 4", serif;
+}
+
+#contactText6{
+    font-size: 55px;
+    font-family: Playball, cursive;
+    background: linear-gradient(60deg, #0EA2E7 20%, #433FE4, #AF05ED 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+#contact3dContainer{
+    background-color: pink;     /* globe ***********************************/
+    width: 70%;
+    height: 60%;
+    position: relative;
+    top: 50px;
+    margin: auto;
+}
+
+
+/* *************************** */
+
+
+#contactForm{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border: #2B2B2B solid 1px;
+    border-radius: 30px;
+    background: linear-gradient(230deg, rgba(60, 0, 100, 0.7) 20%, rgba(21, 2, 33, 0.7) 80%);
+}
+
+.contactFormInfo{
+    width: 80%;
+    height: 90px;
+    margin-top: 10px;
+    color: white;
+    font-family: "Inter", sans-serif;
+}
+
+#contactFormTopic{
+    width: 80%;
+    color: white;
+    text-align: center;
+    height: 40px;
+    font-family: "Source Serif 4", serif;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 20px 0 20px 0;
+}
