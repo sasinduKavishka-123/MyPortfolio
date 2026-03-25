@@ -1,0 +1,12 @@
+
+
+#blackHole{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#blackHoleVid{
+    z-index: -20;
+}
