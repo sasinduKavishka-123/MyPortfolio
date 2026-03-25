@@ -26,7 +26,6 @@ nav{
     height: 84px;
     display: flex;
     align-items: center;
-
     position: fixed;
     top: 0;
     z-index: 999;
@@ -69,6 +68,18 @@ nav > section{
     transition-duration: 400ms;
     padding: 5px 12px;
     border-radius: 20px;
+}
+
+.navLinks{
+    text-decoration: none;
+}
+
+.navLinks:link{
+    color: #fff;
+}
+
+.navLinks:visited{
+    color: #fff;
 }
 
 .navTabs:hover{
