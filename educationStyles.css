@@ -25,22 +25,19 @@
     width: 80%;
     height: 870px;
     margin-top: 50px;
-    /*background-color: cyan;*/
+    background-color: cyan;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .eduLeftCards, .eduRightCards{
+    position: relative;
     width: 35%;
     height: 150px;
     border-radius: 20px;
     margin-bottom: 50px;
     padding: 1px;
-    background:
-            linear-gradient(60deg, #31064e, #000000FF) padding-box,
-            linear-gradient(60deg, #0EA2E7, #AF05ED) border-box;
-
     border: 1px solid transparent;
 }
 
@@ -48,4 +45,14 @@
     background:
             linear-gradient(220deg, #31064e, #000000FF) padding-box,
             linear-gradient(220deg, #0EA2E7, #AF05ED) border-box;
+
+    right: 25%;
+}
+
+.eduRightCards{
+    background:
+            linear-gradient(60deg, #31064e, #000000FF) padding-box,
+            linear-gradient(60deg, #0EA2E7, #AF05ED) border-box;
+
+    left: 25%;
 }
