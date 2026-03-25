@@ -3,10 +3,11 @@
 
 #about{
     width: 100vw;
-    height: 1100px;
+    height: 1200px;
+    padding-top: 200px;
     display: flex;
     justify-content: center;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
 }
 
 #gridContainer{
