@@ -27,3 +27,23 @@
     background-clip: text;
     color: transparent;
 }
+
+#skillContainer{
+    width: 80vw;
+    height: 300px;
+    margin: 40px 0;
+    background: blue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#skillContainer > div{
+    width: 100px;
+    aspect-ratio: 1/1;
+    background-color: pink;
+    border: black solid 1px;
+    box-sizing: border-box;
+    margin: 5px 10px;
+}
