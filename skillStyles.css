@@ -29,7 +29,7 @@
 }
 
 #skillContainer{
-    width: 80vw;
+    width: 70vw;
     height: 300px;
     margin: 40px 0;
     display: flex;
@@ -38,7 +38,7 @@
     align-items: center;
 }
 
-#skillContainer > div{
+.skillCards{
     width: 95px;
     aspect-ratio: 1/1;
     box-sizing: border-box;
