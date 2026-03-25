@@ -48,6 +48,7 @@
             linear-gradient(220deg, #0EA2E7, #AF05ED) border-box;
 
     right: 25%;
+    justify-content: end;
 }
 
 .eduRightCards{
@@ -56,13 +57,13 @@
             linear-gradient(60deg, #0EA2E7, #AF05ED) border-box;
 
     left: 25%;
+    justify-content: start;
 }
 
 .eduCardIcon{
-    margin-left: 15px;
-    background-color: cyan;
+    width: 64px;
+    aspect-ratio: 1/1;
 }
-
 
 .eduLeftCardDisc{
     display: flex;
