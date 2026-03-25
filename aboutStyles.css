@@ -248,13 +248,18 @@
 }
 
 #gridSection5Img1, #gridSection5Img2, #gridSection5Img3{
-    width: 170px;
+    width: 200px;
     height: 300px;
-    background-color: #0824e5;
-    border: #553572 solid 2px;
     border-radius: 10px;
     position: absolute;
     transition-duration: 1000ms;
+    overflow: hidden;
+
+    background:
+            linear-gradient(#11021b, #11021b) padding-box,
+            linear-gradient(to top, #0EA2E7 30%, #AF05ED) border-box;
+    padding: 1px;
+    border: 2px solid transparent;
 }
 
 #gridSection5Img1{
