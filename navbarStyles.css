@@ -7,6 +7,10 @@ body{
     background: #000000;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body::-webkit-scrollbar {
     width: 6px; /* Very narrow */
     height: 10px;
