@@ -20,13 +20,14 @@
     margin-bottom: 120px;
 }
 
-#educationTimeLine{
+#educationTimeLineContainer{
     width: 80%;
     height: 870px;
     margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
 .eduLeftCards, .eduRightCards{
@@ -99,4 +100,46 @@
 .eduCardIcon > img{
     position: relative;
     top: 5px;
+}
+
+
+/********************* time Line ************************/
+
+#eduTimeLine{
+    position: absolute;
+    top: 75px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 4px;
+    height: 600px;
+    background: linear-gradient(to bottom, #0EA2E7, #AF05ED);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+
+#eduTimeLineDot1{
+    background-color: #0EA2E7;
+}
+
+#eduTimeLineDot2{
+    background-color: #456CE9;
+}
+
+#eduTimeLineDot3{
+    background-color: #783BEB;
+}
+
+#eduTimeLineDot4{
+    background-color: #AF05ED;
+}
+
+.eduTimeLineDots{
+    width: 20px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    position: relative;
+    left: -8px;
 }
