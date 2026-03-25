@@ -4,9 +4,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
 }
 
 #blackHoleVid{
+    width: 100%;
     z-index: -20;
 }
