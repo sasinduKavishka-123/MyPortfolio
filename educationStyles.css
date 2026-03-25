@@ -59,9 +59,10 @@
 }
 
 .eduCardIcon{
-    font-size: 64px;
-    margin-left: 20px;
+    margin-left: 15px;
+    background-color: cyan;
 }
+
 
 .eduLeftCardDisc{
     display: flex;
@@ -91,4 +92,10 @@
 
 .eduLeftCardDisc > .eduDisc{
     text-align: end;
+}
+
+
+.eduCardIcon > img{
+    position: relative;
+    top: 5px;
 }
