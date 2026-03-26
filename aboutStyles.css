@@ -30,6 +30,7 @@
 
 .gridSections:hover{
     bottom: 10px;
+    box-shadow: 0 0 20px 1px rgb(191, 0, 255);
 }
 
 
