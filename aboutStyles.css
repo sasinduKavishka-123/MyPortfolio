@@ -3,8 +3,8 @@
 
 #about{
     width: 100vw;
-    height: 1200px;
-    padding-top: 200px;
+    height: 1100px;
+    padding-top: 100px;
     display: flex;
     justify-content: center;
     margin-bottom: 200px;
@@ -29,7 +29,7 @@
 }
 
 .gridSections:hover{
-    bottom: 5px;
+    bottom: 10px;
 }
 
 #gridSection1{
@@ -193,19 +193,15 @@
 
 #gridSection4ContactHolder{
     font-family: Inter, sans-serif;
-    font-size: 18px;
+    font-size: 14px;
     position: relative;
     top: 10px;
-    left: 30px;
+    left: 10px;
     transition-duration: 800ms;
 }
 
-#gridSection4:hover > #gridSection4ContactHolder{
-    left: 35px;
-}
-
 .gridSection4ContactIcons{
-    font-size: 24px;
+    font-size: 18px;
     margin: 0 5px;
 }
 
@@ -281,8 +277,14 @@
 #gridSection5:hover > #gridSection5Img1{
     right: 310px;
     rotate: -35deg;
+    bottom: -100px;
 }
 #gridSection5:hover > #gridSection5Img3{
     right: 90px;
     rotate: 35deg;
+    bottom: -100px;
+}
+
+#gridSection5:hover > #gridSection5Img2{
+    bottom: -60px;
 }

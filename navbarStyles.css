@@ -43,17 +43,19 @@ nav{
 }
 
 nav > section{
-    border: #ffffff solid 1px;
-    width: 595px;
-    height: 45px;
+    border: #453d4e solid 2px;
+    width: 440px;
+    height: 40px;
+    padding: 5px 0;
     position: absolute;
-    right: 25px;
-    border-radius: 30px;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 7px;
     display: flex;
     align-items: center;
     justify-content: center;
 
-    background: rgba(76, 8, 134, 0.2);
+    background: rgba(63, 59, 63, 0.2);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
 
@@ -64,10 +66,10 @@ nav > section{
     color: #ffffff;
     font-family: sans-serif , system-ui;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
     transition-duration: 400ms;
     padding: 5px 12px;
-    border-radius: 20px;
+    border-radius: 5px;
 }
 
 .navLinks{
@@ -83,10 +85,6 @@ nav > section{
 }
 
 .navTabs:hover{
-    background-color: rgba(204, 97, 231, 0.35);
+    background-color: #671c9566;
 }
 
-.navTabs:active{
-    background-color: #ffffff;
-    color: #000000;
-}
