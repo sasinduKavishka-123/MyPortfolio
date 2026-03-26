@@ -194,9 +194,9 @@
 #gridSection4ContactHolder{
     font-family: Inter, sans-serif;
     font-size: 14px;
-    position: relative;
+    position: absolute;
     top: 10px;
-    left: 10px;
+    right: 10px;
     transition-duration: 800ms;
 }
 
@@ -206,9 +206,8 @@
 }
 
 .gridSection4Contacts{
-    display: flex;
-    align-items: center;
     margin-top: 20px;
+    text-align: right;
 }
 
 #gridSection4GlobeHolder{
