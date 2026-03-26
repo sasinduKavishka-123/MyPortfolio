@@ -285,7 +285,7 @@
     height: 300px;
     border-radius: 10px;
     position: absolute;
-    transition-duration: 1000ms;
+    transition-duration: 800ms;
     overflow: hidden;
 
     background:
@@ -326,6 +326,10 @@
     bottom: -60px;
 }
 
-#gridSection5:hover > #gridSection5BigIconHolder1{
+#gridSection5Img2:hover, #gridSection5Img1:hover, #gridSection5Img3:hover{
     scale: 108%;
+}
+
+#gridSection5:hover > #gridSection5BigIconHolder1{
+    scale: 105%;
 }
