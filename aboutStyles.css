@@ -25,12 +25,12 @@
     border: #2a252d solid 1px;
     position: relative;
     bottom: 0;
-    transition-duration: 800ms;
+    transition-duration: 600ms;
 }
 
 .gridSections:hover{
     bottom: 10px;
-    box-shadow: 0 0 20px 1px rgb(191, 0, 255);
+    box-shadow: 0 0 17px 2px rgb(191, 0, 255);
 }
 
 
@@ -209,9 +209,8 @@
 
 #gridSection3ContactButton:hover{
     color: #ffffff;
-    background-color: #3b0769;
+    background-color: #3209c2;
     bottom: 33px;
-    box-shadow: 0 0 10px 1px #AF05ED ;
 }
 
 #gridSection3ContactButton > div{
@@ -273,10 +272,12 @@
 
 #gridSection5:hover > #gridSection5Text{
     margin-top: 235px;
+    text-shadow: 0 0 10px #fff;
 }
 
 #gridSection5:hover > #gridSection5HiddenText{
     margin-top: 5px;
+    text-shadow: 0 0 10px #fff;
 }
 
 #gridSection5Img1, #gridSection5Img2, #gridSection5Img3{
