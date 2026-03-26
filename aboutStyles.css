@@ -32,6 +32,33 @@
     bottom: 10px;
 }
 
+
+.gridSectionIconHolders{
+    background-color: #7D7E82;
+    width: 50px;
+    height: 49px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border-radius: 12px;
+    transition-duration: 500ms;
+}
+
+.gridSectionIcons{
+    background-color: #35383D;
+    width: 48px;
+    height: 45px;
+    position: absolute;
+    top: 3px;
+    left: 1px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/********** grid section 1 implementation ************/
+
 #gridSection1{
     grid-row: 1/3;
     height: 620px;
@@ -65,6 +92,11 @@
     overflow: hidden;
     margin-top: -20px;
 }
+
+#gridSection1:hover > #gridSection1BigIconHolder1{
+    scale: 108%;
+}
+
 
 /********** grid section 2 implementation ************/
 
@@ -189,6 +221,7 @@
     top: 10px;
 }
 
+
 /************ grid section 4 implementation *********/
 
 #gridSection4ContactHolder{
@@ -219,6 +252,9 @@
     right: -70px;
 }
 
+#gridSection4:hover > #gridSection4BigIconHolder1{
+    scale: 108%;
+}
 
 /************ grid section 5 implementation *********/
 
@@ -288,24 +324,6 @@
     bottom: -60px;
 }
 
-.gridSectionIconHolders{
-    background-color: #7D7E82;
-    width: 50px;
-    height: 49px;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    border-radius: 12px;
-}
-.gridSectionIcons{
-    background-color: #35383D;
-    width: 48px;
-    height: 45px;
-    position: absolute;
-    top: 3px;
-    left: 1px;
-    border-radius: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#gridSection5:hover > #gridSection5BigIconHolder1{
+    scale: 108%;
 }
