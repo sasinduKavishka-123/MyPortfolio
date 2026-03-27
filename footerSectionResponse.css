@@ -88,5 +88,53 @@
         width: 90%;
     }
 
+}
+
+@media all and (max-width: 480px){
+
+    #footer{
+        height: 800px;
+    }
+
+    #footerLogo{
+        font-size: 35px;
+    }
+
+    .footerContacts{
+        font-size: 10px;
+    }
+
+    .footerContactIcons{
+        font-size: 12px;
+    }
+
+    .footerTopics{
+        font-size: 14px;
+    }
+
+    .footerLists > li{
+        font-size: 12px;
+        margin: 0;
+    }
+
+    #footerSocialIconFB > a:hover{
+        color: #0865FE;
+        font-size: 12px;
+    }
+
+    #footerSocialIconGH > a:hover{
+        color: #aa00ff;
+        font-size: 12px;
+    }
+
+    #footerSocialIconLN > a:hover{
+        color: #009dff;
+        font-size: 12px;
+    }
+
+    .footerLinks > a:hover{
+        color: #AF05ED;
+        font-size: 12px;
+    }
 
 }
