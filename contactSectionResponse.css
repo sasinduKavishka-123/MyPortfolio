@@ -1,0 +1,65 @@
+
+
+@media all and (max-width: 1000px) {
+
+    #contactLogo{
+        font-size: 60px;
+    }
+
+    #contactText1{
+        font-size: 50px;
+    }
+
+    #contactText2{
+        font-size: 70px;
+    }
+
+    #contactText3{
+        font-size: 30px;
+    }
+
+    #contactText4{
+        font-size: 30px;
+    }
+
+}
+
+@media all and (max-width: 700px) {
+
+    #contactLogo{
+        font-size: 50px;
+    }
+
+    #contactText1{
+        font-size: 40px;
+    }
+
+    #contactText2{
+        font-size: 60px;
+    }
+
+    #contactText3{
+        font-size: 22px;
+    }
+
+    #contactText4{
+        font-size: 22px;
+    }
+
+}
+
+@media all and (max-width: 400px) {
+
+    #contactText1{
+        font-size: 35px;
+    }
+
+    #contactText2{
+        font-size: 45px;
+    }
+
+    #contactText4{
+        display: block;
+    }
+
+}
