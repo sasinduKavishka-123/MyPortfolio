@@ -19,6 +19,12 @@
     }
 }
 
+@media all and (max-width: 565px){
+    #skill{
+        height: 800px;
+    }
+}
+
 @media all and (max-width: 500px) {
     #skillTopic1, #skillTopic3{
         font-size: 32px;
