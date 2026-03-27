@@ -26,6 +26,10 @@
 
 @media all and (max-width: 700px) {
 
+    #contactDescription{
+        height: 400px;
+    }
+
     #contactLogo{
         font-size: 50px;
     }
