@@ -263,24 +263,26 @@
 
 #gridSection5Text{
     font-size: 14px;
-    margin-top: 260px;
     transition-duration: 500ms;
+    position: absolute;
+    bottom: 15px;
 }
 
 #gridSection5HiddenText{
     font-size: 18px;
-    margin-top: 20px;
-    transition-duration: 300ms;
+    transition-duration: 500ms;
+    position: absolute;
+    bottom: -25px;
 }
 
 #gridSection5:hover > #gridSection5Text{
-    margin-top: 235px;
     text-shadow: 0 0 10px #fff;
+    bottom: 35px;
 }
 
 #gridSection5:hover > #gridSection5HiddenText{
-    margin-top: 5px;
     text-shadow: 0 0 10px #fff;
+    bottom: 10px;
 }
 
 #gridSection5Img1, #gridSection5Img2, #gridSection5Img3{
@@ -335,4 +337,13 @@
 
 #gridSection5:hover > #gridSection5BigIconHolder1{
     scale: 105%;
+}
+
+
+
+/************************ media query ****************************************/
+
+
+@media all and (max-width: 1000px) {
+    
 }
