@@ -1,0 +1,53 @@
+
+@media all and (max-width: 1100px) {
+    #special{
+        height: 350px;
+    }
+
+    #cardHolder{
+        width: 95%;
+        height: 250px;
+        justify-content: space-evenly;
+    }
+
+    .specialCards{
+        width: 230px;
+        height: 260px;
+    }
+
+    .specialCardIconHolder{
+        margin-top: 20px;
+        width: 65px;
+    }
+
+    .specialCardIcon{
+        font-size: 44px;
+    }
+
+    .specialCardHeader{
+        font-size: 28px;
+        margin-top: 25px;
+    }
+
+    .specialCardDescription{
+        font-size: 18px;
+        margin: 5px 10px;
+    }
+}
+
+
+@media all and (max-width: 750px) {
+    #special{
+        background-color: blue;
+        height: 800px;
+    }
+
+    #cardHolder{
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .specialCards{
+        width: 90%;
+    }
+}
