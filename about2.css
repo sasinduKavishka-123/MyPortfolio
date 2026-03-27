@@ -111,10 +111,47 @@
         grid-row: 5/6;
     }
 
+    #fullName{
+        font-size: 50px;
+        top: 25px;
+    }
+    #gridSection2:hover > #fullName{
+        font-size: 44px;
+    }
+    #aboutMeText{
+        top: 130px;
+        font-size: 22px;
+    }
+
+    #aboutMeSocialIconContainer{
+        top: 240px;
+    }
+
+    .aboutMeSocialIcons{
+        font-size: 26px;
+    }
+
+    #aboutMeSocialIconLN:hover{
+        font-size: 22px;
+        color: #009dff;
+    }
+
+    #aboutMeSocialIconGH:hover{
+         font-size: 22px;
+         color: #9513ed;
+     }
+
+    #aboutMeSocialIconFB:hover{
+        font-size: 22px;
+        color: #0865FE;
+    }
+
     #gridSection4GlobeHolder{
         left: 50%;
         transform: translate(-50%);
-        top: 10px;
+        top: 60px;
+        width: 80%;
+        height: auto;
     }
 
     #gridSection5Img1, #gridSection5Img2, #gridSection5Img3{
@@ -123,32 +160,60 @@
         bottom: -45px;
     }
 
-    #gridSection5:hover #gridSection5Img1{
+    #gridSection5Img1{
+        right: 310px;
+        rotate: -35deg;
         bottom: -25px;
     }
-    #gridSection5:hover #gridSection5Img3{
+    #gridSection5Img3{
+        right: 90px;
+        rotate: 35deg;
         bottom: -25px;
     }
 
-    #gridSection5:hover #gridSection5Img2{
+    #gridSection5Img2{
         bottom: 5px;
     }
 
-    #gridSection5:hover > #gridSection5Text{
-        text-shadow: none;
+    #gridSection5Text{
         bottom: 35px;
         background-color: rgba(0, 0, 0, 0.8);
-        border-radius: 30%;
+        border-radius: 10px;
     }
 
-    #gridSection5:hover > #gridSection5HiddenText{
-        text-shadow: none;
+    #gridSection5HiddenText{
         bottom: 10px;
         background-color: rgba(0, 0, 0, 0.8);
-        border-radius: 30%;
+        border-radius: 10px;
+    }
+
+    #gridSection5ImgHolder{
+        left: 50%;
+        transform: translate(-12%);
     }
 
     #gridSection5ImgHolder img{
         width: 150px;
+    }
+}
+
+
+@media all and (max-width: 450px){
+    #aboutMeText{
+        font-size: 16px;
+    }
+
+    .aboutMeSocialIcons{
+        font-size: 22px;
+    }
+
+    #fullName{
+        font-size: 40px;
+    }
+
+    #gridSection3Text{
+        font-size: 24px;
+        top: 45px;
+        width: 95%;
     }
 }
