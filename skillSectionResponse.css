@@ -1,0 +1,45 @@
+
+
+@media all and (max-width: 990px) {
+
+    #skillContainer{
+        width: 90vw;
+    }
+
+    .skillCards{
+        scale: 90%;
+        margin: 3px 7px;
+    }
+}
+
+@media all and (max-width: 730px) {
+    .skillCards{
+        scale: 80%;
+        margin: 2px 3px;
+    }
+}
+
+@media all and (max-width: 450px) {
+
+    #skill{
+        height: 850px;
+    }
+
+    #skillContainer{
+        width: 100vw;
+        gap: 0;
+    }
+
+    .skillCards{
+        width: 75px;
+    }
+
+    .skillIconHolder{
+        width: 60px;
+    }
+
+
+    .skillName{
+        font-weight: normal;
+    }
+}

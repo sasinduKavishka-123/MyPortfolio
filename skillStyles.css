@@ -2,11 +2,12 @@
 
 #skill{
     width: 100vw;
-    height: 650px;
+    height: 700px;
     padding-top: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: purple;
 }
 
 #skillTopic{
@@ -34,6 +35,7 @@
     height: 300px;
     margin: 40px 0;
     display: flex;
+    gap: 0;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
