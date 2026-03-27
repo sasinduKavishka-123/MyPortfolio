@@ -1,0 +1,55 @@
+
+
+@media all and (max-width: 900px) {
+
+    #footer{
+        height: 840px;
+    }
+
+    #footerImgHolder{
+        height: 450px;
+        bottom: 100px;
+    }
+
+    #mountains{
+        width: 1000px;
+    }
+
+    #footerBlackGradient{
+        height: 100px;
+    }
+
+    #infoContainer{
+        background-color: pink;
+    }
+
+    #footerLogo{
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    #footerGeneralSocialContainer{
+        width: 280px;
+    }
+
+    .footerContacts{
+        font-size: 14px;
+    }
+
+    .footerContactIcons{
+        font-size: 16px;
+    }
+
+    .footerTopics{
+        font-size: 18px;
+    }
+
+    .footerLists > li{
+        font-size: 16px;
+    }
+
+    .footerSocialIcons{
+        font-size: 22px
+    }
+
+}

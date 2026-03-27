@@ -5,22 +5,24 @@
     height: 740px;
     margin-top: 200px;
     position: relative;
+    background: purple;
 }
 
 #footerImgHolder{
     width: 100%;
-    height: 470px;
-    position: relative;
-    top: 210px;
+    height: 550px;
+    position: absolute;
+    bottom: 0;
     display: flex;
     justify-content: center;
     overflow: hidden;
+    background-color: blue;
 }
 
 #mountains{
     position: absolute;
     width: 1540px;
-    margin: auto;
+    bottom: 0;
 }
 
 #footerBlackGradient{
@@ -62,7 +64,7 @@
 }
 
 #footerContactHolder{
-    font-family: Inter, sans-serif;;
+    font-family: Inter, sans-serif;
 }
 
 .footerContactIcons{
