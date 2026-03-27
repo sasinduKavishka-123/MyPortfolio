@@ -95,6 +95,8 @@
     margin-top: -20px;
 }
 
+/********** grid section 1 implementation ************/
+
 #gridSection1:hover > #gridSection1BigIconHolder1{
     scale: 108%;
 }
@@ -344,6 +346,3 @@
 /************************ media query ****************************************/
 
 
-@media all and (max-width: 1000px) {
-    
-}
