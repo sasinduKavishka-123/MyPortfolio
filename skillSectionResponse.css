@@ -19,6 +19,16 @@
     }
 }
 
+@media all and (max-width: 500px) {
+    #skillTopic1, #skillTopic3{
+        font-size: 32px;
+    }
+
+    #skillTopic2{
+        font-size: 38px;
+    }
+}
+
 @media all and (max-width: 450px) {
 
     #skill{
@@ -38,7 +48,6 @@
         width: 60px;
         height: 60px;
     }
-
 
     .skillName{
         font-weight: normal;
