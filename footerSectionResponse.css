@@ -54,11 +54,11 @@
 @media all and (max-width: 700px){
 
     #footer{
-        height: 940px;
+        height: 900px;
     }
 
     #footerImgHolder{
-        height: 450px;
+        height: 350px;
         bottom: 250px;
     }
 
@@ -72,11 +72,18 @@
     }
 
     #infoContainer{
-        height: 370px;
+        height: 290px;
+    }
+
+    #footerContactHolder{
+        position: absolute;
+        top: 0;
+        right: 10vw;
+        text-align: right;
     }
 
     #footerGeneralSocialContainer{
-        top: 190px;
+        top: 130px;
         left: 5vw;
         width: 90%;
     }

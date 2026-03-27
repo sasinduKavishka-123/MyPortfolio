@@ -51,6 +51,7 @@
 
 #footerContactSection{
     height: 150px;
+    width: 100%;
     color: #ffffff;
     position: absolute;
     left: 5vw;
@@ -64,6 +65,7 @@
 }
 
 #footerContactHolder{
+    width: 260px;
     font-family: Inter, sans-serif;
 }
 
