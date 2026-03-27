@@ -38,8 +38,8 @@
 
 @media all and (max-width: 750px) {
     #special{
-        background-color: blue;
         height: 800px;
+        margin-top: 200px;
     }
 
     #cardHolder{
@@ -50,4 +50,5 @@
     .specialCards{
         width: 90%;
     }
+
 }
