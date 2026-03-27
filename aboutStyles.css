@@ -157,7 +157,7 @@
 }
 #aboutMeSocialIconGH:hover{
     font-size: 35px;
-    color: #aa00ff;
+    color: #9513ed;
 }
 #aboutMeSocialIconFB:hover{
     font-size: 35px;
@@ -189,11 +189,13 @@
     left: 0;
     right: 0;
     margin: auto;
-    transition-duration: 1000ms;
+    transition-duration: 800ms;
+
 }
 
 #gridSection3:hover > #gridSection3Text{
     top: 45px;
+    text-shadow: 0 0 20px #e63adf;
 }
 
 #gridSection3ContactButton{
@@ -210,7 +212,7 @@
 
 #gridSection3ContactButton:hover{
     color: #ffffff;
-    background-color: #3209c2;
+    background-color: #052cc4;
     bottom: 33px;
 }
 
