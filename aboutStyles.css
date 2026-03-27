@@ -266,6 +266,7 @@
     transition-duration: 500ms;
     position: absolute;
     bottom: 15px;
+    z-index: 2;
 }
 
 #gridSection5HiddenText{
@@ -273,6 +274,7 @@
     transition-duration: 500ms;
     position: absolute;
     bottom: -25px;
+    z-index: 2;
 }
 
 #gridSection5:hover > #gridSection5Text{
@@ -283,6 +285,13 @@
 #gridSection5:hover > #gridSection5HiddenText{
     text-shadow: 0 0 10px #fff;
     bottom: 10px;
+}
+
+#gridSection5ImgHolder{
+    position: relative;
+    left: 55%;
+    width: 300px;
+    aspect-ratio: 1/1;
 }
 
 #gridSection5Img1, #gridSection5Img2, #gridSection5Img3{
@@ -316,18 +325,18 @@
     bottom: -130px;
 }
 
-#gridSection5:hover > #gridSection5Img1{
+#gridSection5:hover #gridSection5Img1{
     right: 310px;
     rotate: -35deg;
     bottom: -100px;
 }
-#gridSection5:hover > #gridSection5Img3{
+#gridSection5:hover #gridSection5Img3{
     right: 90px;
     rotate: 35deg;
     bottom: -100px;
 }
 
-#gridSection5:hover > #gridSection5Img2{
+#gridSection5:hover #gridSection5Img2{
     bottom: -60px;
 }
 
