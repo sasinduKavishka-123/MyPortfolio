@@ -16,11 +16,7 @@
     }
 
     #footerBlackGradient{
-        height: 100px;
-    }
-
-    #infoContainer{
-        background-color: pink;
+        height: 250px;
     }
 
     #footerLogo{
@@ -51,5 +47,39 @@
     .footerSocialIcons{
         font-size: 22px
     }
+
+}
+
+
+@media all and (max-width: 700px){
+
+    #footer{
+        height: 940px;
+    }
+
+    #footerImgHolder{
+        height: 450px;
+        bottom: 250px;
+    }
+
+    #mountains{
+        width: 700px;
+    }
+
+    #footerBlackGradient{
+        height: 400px;
+        background: linear-gradient(rgba(0, 0, 0, 0), black 30%);
+    }
+
+    #infoContainer{
+        height: 370px;
+    }
+
+    #footerGeneralSocialContainer{
+        top: 190px;
+        left: 5vw;
+        width: 90%;
+    }
+
 
 }
