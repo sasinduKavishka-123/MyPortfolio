@@ -1,6 +1,24 @@
 
+@media all and (max-width: 1200px){
+
+    #contactGridContainer{
+        width: 100%;
+    }
+
+}
+
 
 @media all and (max-width: 1000px) {
+
+    #contact{
+        height: 1750px;
+        background-color: darkcyan;
+    }
+
+    #contactDescription{
+        margin-bottom: 0;
+        height: 450px;
+    }
 
     #contactLogo {
         font-size: 60px;
@@ -22,6 +40,51 @@
         font-size: 30px;
     }
 
+    #contactGridContainer{
+        grid-template-columns: 1fr;
+        width: 80%;
+        height: 1150px;
+    }
+
+    #contactFormContainer{
+        grid-row: 1/2;
+    }
+
+    #contactTextContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+        padding-top: 50px;
+    }
+
+    #contactTextContainer > div{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contactText5{
+        text-align: center;
+    }
+
+    #contactText6{
+        text-align: center;
+    }
+
+    #contact3dContainer{
+        width: 60%;
+        margin-left: 0;
+    }
+
+}
+
+@media all and (max-width: 800px) {
+
+    #contactGridContainer{
+        width: 90%;
+    }
 }
 
 @media all and (max-width: 700px) {
@@ -50,6 +113,79 @@
         font-size: 22px;
     }
 
+    #contactText5{
+        font-size: 32px;
+    }
+
+    #contactText6{
+        font-size: 36px;
+    }
+
+    #contactSubmitBtn{
+        bottom: 20px;
+    }
+
+}
+
+@media all and (max-width: 550px){
+
+    #contactGridContainer{
+        height: 950px;
+    }
+
+    #contactFormContainer{
+        padding: 0;
+    }
+
+    #contactForm{
+        border-radius: 20px;
+    }
+
+    #contactFormTopic{
+        font-size: 24px;
+        margin-top: 20px;
+        height: 20px;
+    }
+
+    .contactFormInfo{
+        height: 65px;
+    }
+
+    .contactFormInfo > label{
+        font-size: 14px;
+    }
+
+    .contactFormInfo > div{
+        height: 35px;
+        border-radius: 5px;
+    }
+
+    .contactInfoIcons{
+        font-size: 15px;
+    }
+
+    .contactInputs{
+        font-size: 12px;
+    }
+
+    #contactForm > div:nth-child(5) > div{
+        height:120px;
+    }
+
+    #contactMessage{
+        height: 100px;
+    }
+
+    #contactSubmitBtn{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        bottom: 30px;
+        width: 65%;
+        font-size: 16px;
+        border-radius: 8px;
+    }
+
 }
 
 @media all and (max-width: 400px) {
@@ -66,4 +202,13 @@
         display: block;
     }
 
+}
+
+@media all and (max-width: 350px){
+
+    #contactSubmitBtn{
+        font-size: 14px;
+        height: 30px;
+        width: 50%;
+    }
 }
