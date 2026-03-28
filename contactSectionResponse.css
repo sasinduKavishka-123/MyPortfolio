@@ -128,6 +128,10 @@
 
 @media all and (max-width: 550px){
 
+    #contactForm{
+        height: 98%;
+    }
+
     #contactGridContainer{
         height: 950px;
     }
@@ -181,6 +185,7 @@
         transform: translate(-50%);
         bottom: 30px;
         width: 65%;
+        height: 40px;
         font-size: 16px;
         border-radius: 8px;
     }
@@ -202,6 +207,14 @@
 
     #contactText4{
         display: block;
+    }
+
+    #contactForm{
+        height: 95%;
+    }
+
+    #contactSubmitBtn{
+        bottom: 15px;
     }
 
 }
