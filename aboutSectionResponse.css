@@ -203,6 +203,22 @@
         font-size: 16px;
     }
 
+    .gridSectionIconHolders{
+        scale: 75%;
+    }
+
+    #gridSection1:hover > #gridSection1BigIconHolder1{
+        scale: 95%;
+    }
+
+    #gridSection4:hover > #gridSection4BigIconHolder1{
+        scale: 95%;
+    }
+
+    #gridSection5:hover > #gridSection5BigIconHolder1{
+        scale: 95%;
+    }
+
     .aboutMeSocialIcons{
         font-size: 22px;
     }

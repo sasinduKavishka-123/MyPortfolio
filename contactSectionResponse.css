@@ -192,6 +192,9 @@
     #contactText1{
         font-size: 35px;
     }
+    .contactInfoIcons{
+        font-size: 13px;
+    }
 
     #contactText2{
         font-size: 45px;
