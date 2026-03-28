@@ -83,12 +83,14 @@
 
 #contactTextContainer{
     padding-left: 30px;
-    background-color: blue;
+    transition-duration: 500ms;
+    /*background-color: blue;*/
 }
 
 #contactFormContainer{
     padding: 10px 40px;
-    background-color: red;
+    transition-duration: 500ms;
+    /*background-color: red;*/
 }
 
 #contactText5{
