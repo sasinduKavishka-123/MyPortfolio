@@ -62,6 +62,7 @@ nav > section{
 }
 
 .navTabs{
+    text-decoration: none;
     margin: 0 5px;
     color: #ffffff;
     font-family: sans-serif , system-ui;
@@ -70,18 +71,6 @@ nav > section{
     transition-duration: 400ms;
     padding: 5px 12px;
     border-radius: 5px;
-}
-
-.navLinks{
-    text-decoration: none;
-}
-
-.navLinks:link{
-    color: #fff;
-}
-
-.navLinks:visited{
-    color: #fff;
 }
 
 .navTabs:hover{
