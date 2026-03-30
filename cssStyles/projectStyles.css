@@ -14,11 +14,23 @@
     font-size: 64px;
     font-family: "Russo One", sans-serif;
     font-weight: bold;
-    background: linear-gradient(60deg, #0EA2E7 20%, #433FE4, #AF05ED 80%);
+    background: linear-gradient(-90deg, #0EA2E7 0% ,#0A71EF 12.5%, #433FE4 25% ,#7412DA 37.5%, #AF05ED 50% ,
+                                #7412DA 62.5%, #433FE4 75% ,#0A71EF 87.5% ,#0EA2E7 100%);
+    background-size: 70vw 70vw;
+    animation: ProjectTopicAnim 10s linear infinite forwards;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     margin-bottom: 150px;
+    text-shadow: 0 0 25px rgba(255, 255, 255, 0.25);
+}
+@keyframes ProjectTopicAnim {
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: 70vw;
+    }
 }
 
 #projectCardHolder{

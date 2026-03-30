@@ -65,10 +65,22 @@
     font-family: Pacifico, serif;
     position: relative;
     top: 5px;
-    background: linear-gradient(60deg, #0EA2E7 20%, #433FE4, #AF05ED 80%);
+    background: linear-gradient(-90deg, #0EA2E7 0% ,#0A71EF 12.5%, #433FE4 25% ,#7412DA 37.5%, #AF05ED 50% ,
+                                #7412DA 62.5%, #433FE4 75% ,#0A71EF 87.5% ,#0EA2E7 100%);
+    background-size: 70vw 70vw;
+    animation: contactTextAnim 8s linear infinite forwards;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    text-shadow: 0 0 25px rgba(255, 255, 255, 0.25);
+}
+@keyframes contactTextAnim {
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: 70vw;
+    }
 }
 
 /* *************************** */
@@ -98,15 +110,29 @@
     font-weight: bold;
     color: white;
     font-family: "Source Serif 4", serif;
+
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
 }
 
 #contactText6{
     font-size: 55px;
     font-family: Playball, cursive;
-    background: linear-gradient(60deg, #0EA2E7 20%, #433FE4, #AF05ED 80%);
+    background: linear-gradient(-90deg, #0EA2E7 0% ,#0A71EF 12.5%, #433FE4 25% ,#7412DA 37.5%, #AF05ED 50% ,
+                                #7412DA 62.5%, #433FE4 75% ,#0A71EF 87.5% ,#0EA2E7 100%);
+    background-size: 100vw 100vw;
+    animation: contactText2Anim 8s linear infinite forwards;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    text-shadow: 0 0 40px rgba(255, 255, 255, 0.4);
+}
+@keyframes contactText2Anim {
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: 100vw;
+    }
 }
 
 #contact3dContainer{

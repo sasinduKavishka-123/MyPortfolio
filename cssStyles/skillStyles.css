@@ -30,7 +30,16 @@
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    animation: textAnim 20s linear infinite forwards;
+    animation: magicTextAnim 20s linear infinite forwards;
+
+}
+@keyframes magicTextAnim {
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: 70vw;
+    }
 }
 
 #skillContainer{

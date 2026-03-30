@@ -118,10 +118,10 @@
     background-clip: text;
     color: transparent;
     transition-duration: 1500ms;
-    animation: textAnim 15s linear infinite forwards;
+    animation: FullNameAnim 15s linear infinite forwards;
 }
 
-@keyframes textAnim {
+@keyframes FullNameAnim {
     0%{
         background-position-x: 0;
     }
