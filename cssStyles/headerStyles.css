@@ -69,7 +69,7 @@
     border-radius: 100%;
     position: absolute;
     top: 100px;
-    background: linear-gradient(#470882 1%, black 5%);
+    background: linear-gradient(#380568 1%, black 5%);
     z-index: -1;
 }
 
@@ -81,4 +81,48 @@
     top: 100px;
     box-shadow: 0 -30px 40px #a62bdd;
     z-index: -1;
+}
+
+#orbitSpotLight{
+    width: 900px;
+    height: 120px;
+    position: absolute;
+    bottom: 190px;
+    left: 50%;
+    transform: translate(-50%);
+    filter: blur(50px);
+    background: radial-gradient(50% 50% at 50% 50%, #620a8c 0%, rgba(0, 191, 255, 0) 100%);
+    animation: orbitSpotLightAnim 5s infinite ease-in-out;
+}
+
+@keyframes orbitSpotLightAnim {
+    0%{
+        bottom: 200px;
+    }
+    50%{
+        bottom: 160px;
+    }
+    100%{
+         bottom: 200px;
+     }
+}
+
+#leftSpotLight{
+    width: 1000px;
+    height: 250px;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 50px;
+    left: -250px;
+    background-color: rgba(255, 255, 0, 0.38);
+}
+
+#rightSpotLight{
+    width: 1000px;
+    height: 250px;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 50px;
+    right: -250px;
+    background-color: rgba(255, 255, 0, 0.38);
 }
