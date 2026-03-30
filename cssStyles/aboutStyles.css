@@ -111,11 +111,22 @@
     margin: auto;
     font-size: 64px;
     font-family: Russo One , serif;
-    background: linear-gradient(-90deg, #00AEFF 20%, #BB00FF 80%);
+    background: linear-gradient(-90deg, #0EA2E7 0% ,#0A71EF 20%, #433FE4 40% ,#7412DA 60%, #AF05ED 80% ,#0EA2E7 100%);
+    background-size: 100vw 100vw;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     transition-duration: 1500ms;
+    animation: textAnim 15s linear infinite forwards;
+}
+
+@keyframes textAnim {
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: 100vw;
+    }
 }
 
 #gridSection2:hover > #fullName{
@@ -200,6 +211,7 @@
 }
 
 #gridSection3ContactButton{
+    text-decoration: none;
     color: #000000;
     width: 155px;
     height: 45px;
