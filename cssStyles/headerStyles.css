@@ -12,14 +12,14 @@
     width: 90%;
     height: 500px;
     text-align: center;
-    padding: 65px;
+    padding: 40px;
 }
 
 #introText{
     font-size: 40px;
     font-weight: bold;
     position: absolute;
-    top: 190px;
+    top: 180px;
     left: 20vw;
     font-family: Inter, serif;
     letter-spacing: 3px;
@@ -43,20 +43,24 @@
 #orbitBox{
     width: 100vw;
     height: 300px;
-    position: absolute;
-    top: 500px;
+    position: relative;
+    bottom: 90px;
 }
 
 #orbitHolder{
     width: 100%;
     height: 100%;
-    position: relative;
+    position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: inset 0 -40px 50px 60px #000;
 }
 
 #orbit1{
@@ -65,24 +69,16 @@
     border-radius: 100%;
     position: absolute;
     top: 100px;
-    left: calc(50vw - 1837px);
-    background: linear-gradient(#470882 1%, black 3%);
+    background: linear-gradient(#470882 1%, black 5%);
+    z-index: -1;
 }
 
 #orbit2{
-    width: 2760px;
+    width: 2900px;
     aspect-ratio: 1/1;
     border-radius: 100%;
     position: absolute;
     top: 100px;
-    left: calc(50vw - 1387px);
-    box-shadow: 0 -40px 60px #7506E5;
-}
-
-#darkBox{
-    height: 150px;
-    position: absolute;
-    top: 35px;
-    left: 50px;
-    right: 50px;
+    box-shadow: 0 -30px 40px #a62bdd;
+    z-index: -1;
 }
