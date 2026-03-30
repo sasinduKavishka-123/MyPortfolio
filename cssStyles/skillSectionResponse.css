@@ -2,6 +2,10 @@
 
 @media all and (max-width: 990px) {
 
+    #skill{
+        margin-top: -130px;
+    }
+
     #skillContainer{
         width: 90vw;
     }
@@ -13,6 +17,11 @@
 }
 
 @media all and (max-width: 730px) {
+
+    #skill{
+        margin-top: -100px;
+    }
+
     .skillCards{
         scale: 80%;
         margin: 2px 3px;
@@ -26,6 +35,11 @@
 }
 
 @media all and (max-width: 500px) {
+
+    #skill{
+        margin-top: -70px;
+    }
+
     #skillTopic1, #skillTopic3{
         font-size: 32px;
     }
@@ -44,6 +58,14 @@
     #skillContainer{
         width: 100vw;
         gap: 0;
+    }
+
+    #skillTopic1, #skillTopic3{
+        font-size: 26px;
+    }
+
+    #skillTopic2{
+        font-size: 32px;
     }
 
     .skillCards{

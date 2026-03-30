@@ -1,6 +1,9 @@
 
 
 #blackHole{
+    position: relative;
+    width: 100vw;
+    aspect-ratio: 2/1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,4 +14,9 @@
 #blackHoleVid{
     width: 100%;
     z-index: -10;
+}
+
+#blackHole > div{
+    position: absolute;
+    top: 25%;
 }
