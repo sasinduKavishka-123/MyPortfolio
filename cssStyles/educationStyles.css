@@ -22,7 +22,7 @@
     color: transparent;
     font-weight: bold;
     margin-bottom: 120px;
-    text-shadow: 0 0 25px rgba(255, 255, 255, 0.25);
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
 }
 @keyframes EduTopicAnim {
     0%{

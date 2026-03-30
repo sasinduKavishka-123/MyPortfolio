@@ -40,6 +40,8 @@
         text-align: center;
         top: 50px;
         font-size: 52px;
+        width: 80%;
+        height: 130px;
     }
     #gridSection2:hover > #fullName{
         font-size: 58px;
