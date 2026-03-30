@@ -132,6 +132,7 @@
 
 #gridSection2:hover > #fullName{
     font-size: 68px;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.15);
 }
 
 #aboutMeText{
@@ -144,6 +145,11 @@
     font-family: Grandstander, system-ui;
     width: 70%;
     color: #ffffff;
+    transition-duration: 500ms;
+}
+
+#gridSection2:hover > #aboutMeText{
+    text-shadow: 0 0 15px rgba(221, 98, 250, 0.6);
 }
 
 #aboutMeSocialIconContainer{
