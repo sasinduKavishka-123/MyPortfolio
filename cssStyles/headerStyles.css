@@ -79,54 +79,86 @@
     border-radius: 100%;
     position: absolute;
     top: 100px;
-    box-shadow: 0 -30px 40px #a62bdd;
+    box-shadow: 0 -25px 40px rgb(176 43 221 / 90%);
     z-index: -1;
 }
 
 #orbitSpotLight{
-    width: 900px;
+    width: 1100px;
     height: 120px;
     position: absolute;
-    bottom: 190px;
+    bottom: 160px;
     left: 50%;
     transform: translate(-50%);
     filter: blur(60px);
-    background: radial-gradient(50% 50% at 50% 50%, #620a8c 0%, rgba(0, 191, 255, 0) 100%);
+    background: radial-gradient(50% 50% at 50% 50%, #6c05c7 0%, rgba(0, 191, 255, 0) 100%);
     animation: orbitSpotLightAnim 5s infinite ease-in-out;
 }
 
 @keyframes orbitSpotLightAnim {
     0%{
-        bottom: 200px;
-    }
-    50%{
         bottom: 160px;
     }
+    50%{
+        bottom: 130px;
+    }
     100%{
-         bottom: 200px;
+         bottom: 160px;
      }
 }
 
 .heroSpotLights{
-    width: 700px;
+    width: 600px;
     height: 250px;
     position: absolute;
     top: 70px;
     background: radial-gradient(
             circle at center,
-            rgb(150 0 255 / 39%) 0%,
+            rgb(169 32 249 / 60%) 0%,
             rgba(65, 105, 225, 0) 70%
     );
-    filter: blur(95px);
+    filter: blur(140px);
     border-radius: 50%;
 }
 
 #leftSpotLight{
     transform: rotate(45deg);
-    left: -120px;
+    left: -150px;
+    animation: leftSpotLightAnim 6s infinite ease-in-out;
+}
+
+@keyframes leftSpotLightAnim {
+    0%{
+        top: 110px;
+        left: -150px;
+    }
+    50%{
+        top: 70px;
+        left: -60px;
+    }
+    100%{
+        top: 110px;
+        left: -150px;
+    }
 }
 
 #rightSpotLight{
     transform: rotate(-45deg);
-    right: -120px;
+    right: -150px;
+    animation: rightSpotLightAnim 6s infinite ease-in-out;
+}
+
+@keyframes rightSpotLightAnim {
+    0%{
+        top: 110px;
+        right: -150px;
+    }
+    50%{
+        top: 70px;
+        right: -60px;
+    }
+    100%{
+        top: 110px;
+        right: -150px;
+    }
 }
