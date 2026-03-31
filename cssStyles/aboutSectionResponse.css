@@ -159,22 +159,30 @@
     #gridSection5Img1, #gridSection5Img2, #gridSection5Img3{
         width: 150px;
         height: 200px;
-        bottom: -45px;
+        bottom: -60px;
+    }
+    #gridSection5Img2{
+        bottom: -10px;
     }
 
     #gridSection5Img1{
         right: 310px;
         rotate: -35deg;
-        bottom: -25px;
     }
     #gridSection5Img3{
         right: 90px;
         rotate: 35deg;
-        bottom: -25px;
     }
 
-    #gridSection5Img2{
-        bottom: 5px;
+    #gridSection5:hover #gridSection5Img1{
+        bottom: -50px;
+    }
+    #gridSection5:hover #gridSection5Img3{
+        bottom: -50px;
+    }
+
+    #gridSection5:hover #gridSection5Img2{
+        bottom: 0;
     }
 
     #gridSection5Text{
