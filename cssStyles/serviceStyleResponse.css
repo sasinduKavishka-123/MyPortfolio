@@ -1,0 +1,77 @@
+
+
+@media all and (max-width: 1200px) {
+    #serviceGrid{
+        width: 97%;
+    }
+}
+
+
+@media all and (max-width: 1000px){
+    #serviceGrid{
+        width: 99%;
+    }
+}
+
+
+@media all and (max-width: 900px){
+
+    #Service{
+        height: 700px;
+    }
+
+    #serviceGrid{
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .serviceCards{
+        height: 300px;
+    }
+
+}
+
+@media all and (max-width: 600px){
+
+    #serviceGrid{
+        width: 98%;
+    }
+
+    .serviceDesc{
+        font-size: 14px;
+    }
+
+    .serviceTopic{
+        font-size: 26px;
+    }
+
+    .serviceCards > img{
+        width: 50px;
+    }
+}
+
+@media all and (max-width: 450px){
+
+    #Service{
+        height: 1100px;
+    }
+
+    #serviceGrid{
+        width: 95%;
+        grid-template-columns: 1fr;
+    }
+
+    .serviceCards{
+        height: 250px;
+    }
+
+    .serviceCards:hover{
+        bottom: 5px;
+    }
+
+    .serviceTopic{
+        font-size: 20px;
+    }
+
+
+}
