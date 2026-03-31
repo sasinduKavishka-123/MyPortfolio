@@ -1,0 +1,90 @@
+
+
+@media all and (max-width: 1200px) {
+
+    #introText{
+        left: 10vw;
+    }
+    #name{
+        font-size: calc(100vw / 8 );
+    }
+}
+
+@media all and (max-width: 900px) {
+
+    #introText{
+        font-size: 32px;
+    }
+
+    #name{
+        font-size: calc(100vw / 7 );
+    }
+
+    #writer{
+        font-size: 24px;
+    }
+
+    #orbitHolder{
+        box-shadow: inset 0 -60px 40px 50px #000;
+    }
+
+    .heroSpotLights{
+        width: 400px;
+        background: radial-gradient(
+                circle at center,
+                rgb(169 32 249 / 70%) 0%,
+                rgba(65, 105, 225, 0) 70%
+        );
+    }
+}
+
+@media all and (max-width: 710px){
+    #introText{
+        font-size: 26px;
+    }
+
+    .heroSpotLights{
+        width: 300px;
+        background: radial-gradient(
+                circle at center,
+                rgb(169 32 249 / 90%) 0%,
+                rgba(65, 105, 225, 0) 70%
+        );
+    }
+
+    @keyframes leftSpotLightAnim {
+        0%{
+            top: 120px;
+            left: -100px;
+        }
+        50%{
+            top: 60px;
+            left: -10px;
+        }
+        100%{
+            top: 120px;
+            left: -100px;
+        }
+    }
+}
+
+@media all and (max-width: 570px){
+
+    #heroTextHolder{
+        width: 100%;
+    }
+
+    #introText{
+        font-size: 20px;
+        top: 220px;
+    }
+
+    #name{
+        top: 140px;
+    }
+
+    #writer{
+        font-size: 20px;
+        top: 210px;
+    }
+}

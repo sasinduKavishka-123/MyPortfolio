@@ -26,7 +26,7 @@
 }
 
 #name{
-    font-size: 150px;
+    font-size: calc(100vw / 9 );
     position: relative;
     top: 110px;
     font-family: Russo One , serif;
@@ -120,6 +120,7 @@
     );
     filter: blur(140px);
     border-radius: 50%;
+    z-index: 2;
 }
 
 #leftSpotLight{
