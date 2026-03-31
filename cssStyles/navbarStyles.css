@@ -36,10 +36,23 @@ nav{
     font-family: Ewert, sans-serif;
     font-size: 45px;
 
-    background: linear-gradient(60deg, #0EA2E7 20%, #433FE4, #AF05ED 80%);
+    background: linear-gradient(-90deg, #0EA2E7 0% ,#0A71EF 12.5%, #433FE4 25% , #af05ed 37.5%, #AF05ED 50% ,
+                                #7412DA 62.5%, #433FE4 75% ,#0A71EF 87.5% ,#0EA2E7 100%);
+    background-size: 320px 320px;
+    animation: navLogoAnim 8s linear infinite forwards;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+
+}
+
+@keyframes navLogoAnim {
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: 320px;
+    }
 }
 
 nav > section{
