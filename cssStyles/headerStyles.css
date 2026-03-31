@@ -115,7 +115,7 @@
     top: 70px;
     background: radial-gradient(
             circle at center,
-            rgb(169 32 249 / 60%) 0%,
+            rgb(169 32 249 / 50%) 0%,
             rgba(65, 105, 225, 0) 70%
     );
     filter: blur(140px);
@@ -124,42 +124,42 @@
 
 #leftSpotLight{
     transform: rotate(45deg);
-    left: -150px;
-    animation: leftSpotLightAnim 6s infinite ease-in-out;
+    left: -180px;
+    animation: leftSpotLightAnim 8s infinite ease-in-out;
 }
 
 @keyframes leftSpotLightAnim {
     0%{
-        top: 110px;
-        left: -150px;
+        top: 120px;
+        left: -180px;
     }
     50%{
-        top: 70px;
-        left: -60px;
+        top: 60px;
+        left: -10px;
     }
     100%{
-        top: 110px;
-        left: -150px;
+        top: 120px;
+        left: -180px;
     }
 }
 
 #rightSpotLight{
     transform: rotate(-45deg);
-    right: -150px;
-    animation: rightSpotLightAnim 6s infinite ease-in-out;
+    right: -180px;
+    animation: rightSpotLightAnim 8s infinite ease-in-out;
 }
 
 @keyframes rightSpotLightAnim {
     0%{
-        top: 110px;
-        right: -150px;
+        top: 120px;
+        right: -180px;
     }
     50%{
-        top: 70px;
-        right: -60px;
+        top: 60px;
+        right: -10px;
     }
     100%{
-        top: 110px;
-        right: -150px;
+        top: 120px;
+        right: -180px;
     }
 }
