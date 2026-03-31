@@ -51,7 +51,7 @@
     z-index: -1;
     padding: 1px;
     transition-duration: 500ms;
-    animation: borderRotate 4s linear infinite;
+    animation: borderRotate 2500ms linear infinite;
 }
 
 .specialCards:hover::after{
