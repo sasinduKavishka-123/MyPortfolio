@@ -1,7 +1,7 @@
 
 
 #Service{
-    height: 350px;
+    height: 400px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -16,13 +16,20 @@
     grid-template-columns: repeat(4, 1fr);
 }
 
+.serviceIcons{
+    margin-bottom: 10px;
+}
+
 .serviceCards{
     border-radius: 15px;
     width: 90%;
     height: 100%;
     margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    padding: 20px 10px;
+    padding: 15px 10px;
     position: relative;
     bottom: 0;
     background: linear-gradient(220deg, rgba(85, 9, 135, 0.5), rgba(0, 0, 0, 0.5));
@@ -41,14 +48,20 @@
     font-weight: bold;
     font-family: "Inter", sans-serif;
     color: #fff;
+    transition-duration: 600ms;
 }
+
 .serviceCards:hover > .serviceTopic{
-    text-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
+.serviceCards:hover > .serviceDesc{
+    text-shadow: 0 0 10px rgba(184, 44, 253, 0.6);
 }
 
 .serviceDesc{
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 0;
     right: 0;
     margin: auto;
@@ -56,4 +69,5 @@
     font-size: 18px;
     font-family: "Inter", sans-serif;
     color: #fff;
+    transition-duration: 600ms;
 }
