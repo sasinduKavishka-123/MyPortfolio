@@ -45,11 +45,16 @@
     #cardHolder{
         height: 100%;
         flex-direction: column;
+        gap: 20px;
     }
 
     .specialCards{
         width: 90%;
-        border-radius: 30px;
+        border-radius: 25px;
+    }
+
+    .specialCards:hover{
+        bottom: 5px;
     }
 
 }

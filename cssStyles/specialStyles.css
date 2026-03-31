@@ -1,4 +1,5 @@
 
+
 #special {
     width: 100vw;
     height: 400px;
@@ -18,13 +19,61 @@
 .specialCards {
     width: 270px;
     height: 310px;
-    background: linear-gradient(220deg, rgba(85, 10, 135, 0.8), rgba(0, 0, 0, 0.8));
-    border: #27182E solid 1px;
-    border-radius: 40px;
+    position: relative;
+    bottom: 0;
+    /*background: linear-gradient(220deg, rgba(85, 10, 135, 0.7), rgba(0, 0, 0, 0.6));*/
+    background: linear-gradient(220deg, #2c0a46, rgba(0, 0, 0));
+    border-radius: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    transition-duration: 500ms;
+}
+
+@property --angle {
+    inherits: false;
+    syntax: "<angle>";
+    initial-value: 100deg;
+}
+
+.specialCards::after, .specialCards::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    transform: translate(0 , -50%);
+
+    background: conic-gradient(from var(--angle), #0FA2E7 , #c702f5, #c702f5 , #0FA2E7 );
+    border-radius: 25px;
+    z-index: -1;
+    padding: 1px;
+    transition-duration: 500ms;
+    animation: borderRotate 5s linear infinite;
+}
+
+@keyframes borderRotate {
+    from{
+        --angle: 0deg;
+    }
+    to{
+        --angle: 360deg;
+    }
+}
+
+.specialCards:hover::after{
+    padding: 2px;
+}
+
+.specialCards:hover::before{
+    filter: blur(1rem);
+    opacity: 80%;
+}
+
+.specialCards:hover{
+    bottom: 15px;
+    background: linear-gradient(220deg, #3A075C, rgba(0, 0, 0));
 }
 
 .specialCardIconHolder {
