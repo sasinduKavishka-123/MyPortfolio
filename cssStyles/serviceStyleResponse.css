@@ -33,6 +33,14 @@
 
 @media all and (max-width: 600px){
 
+    #Service{
+        margin-top: 50px;
+    }
+
+    #serviceTopic{
+        font-size: 44px;
+    }
+
     #serviceGrid{
         width: 98%;
     }
@@ -54,6 +62,7 @@
 
     #Service{
         height: 1100px;
+        margin-top: -100px;
     }
 
     #serviceGrid{
@@ -72,6 +81,5 @@
     .serviceTopic{
         font-size: 20px;
     }
-
 
 }

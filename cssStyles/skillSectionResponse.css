@@ -62,7 +62,7 @@
 
     #skillContainer{
         width: 100vw;
-        gap: 0;
+        gap: 5px;
     }
 
     #skillTopic1, #skillTopic3{
@@ -74,15 +74,22 @@
     }
 
     .skillCards{
-        width: 75px;
+        scale: 100%;
+        width: 65px;
+        margin: 0;
     }
 
     .skillIconHolder{
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        aspect-ratio: 1/1;
+    }
+
+    .skillIconHolder > img{
+        width: 50px;
     }
 
     .skillName{
+        font-size: 10px;
         font-weight: normal;
     }
 }
