@@ -35,6 +35,10 @@
         display: none;
     }
 
+    .eduCardIcon{
+        margin-bottom: -10px;
+    }
+
     .eduLeftCards, .eduRightCards{
         left: 0;
         right: 0;
@@ -54,6 +58,10 @@
 
     #education{
         height: 900px;
+    }
+
+    .eduCardIcon{
+        margin-bottom: -20px;
     }
 
     .eduLeftCards, .eduRightCards{
