@@ -1,0 +1,57 @@
+
+
+@media all and (max-width: 900px){
+
+    #aboutME{
+        height: 1100px;
+        padding-top: 100px;
+    }
+
+    #aboutMeContentHolder{
+        grid-template-columns: 1fr;
+    }
+
+    #aboutMETextHolder{
+        text-align: center;
+        width: 500px;
+        padding-left: 0;
+    }
+
+    #aboutMETextHolderPos{
+        position: relative;
+        top: 10px;
+    }
+}
+
+@media all and (max-width: 550px){
+    #aboutMETextHolder{
+        width: 97%;
+        padding: 5px;
+        text-align: center;
+    }
+
+    #aboutMETextHolderName{
+        font-size: calc(100vw / 12);
+    }
+
+    #aboutMETextHolderPos{
+        font-size: calc(100vw / 10);
+    }
+    
+}
+
+@media all and (max-width: 400px) {
+
+    #aboutMETextHolderName{
+        font-size: calc(100vw / 10);
+    }
+
+    #aboutMETextHolderPos{
+        font-size: calc(100vw / 9);
+    }
+
+    #myPic{
+        width: 97%;
+        aspect-ratio: 2/3;
+    }
+}

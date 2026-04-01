@@ -3,11 +3,12 @@ nav > section{
     width: 390px;
 }
 
+/************************************************/
 
 #aboutME{
     width: 100%;
     height: 800px;
-    padding-top: 100px;
+    padding-top: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
