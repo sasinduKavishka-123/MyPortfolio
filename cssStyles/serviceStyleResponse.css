@@ -70,6 +70,10 @@
         grid-template-columns: 1fr;
     }
 
+    #serviceTopic{
+        font-size: 36px;
+    }
+
     .serviceCards{
         height: 250px;
     }

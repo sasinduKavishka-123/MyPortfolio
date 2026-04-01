@@ -37,13 +37,6 @@
     #skill{
         height: 800px;
     }
-}
-
-@media all and (max-width: 500px) {
-
-    #skill{
-        margin-top: -70px;
-    }
 
     #skillTopic1, #skillTopic3{
         font-size: 32px;
@@ -54,10 +47,18 @@
     }
 }
 
+@media all and (max-width: 500px) {
+
+    #skill{
+        margin-top: -70px;
+    }
+}
+
 @media all and (max-width: 450px) {
 
     #skill{
         height: 750px;
+        margin-top: -50px;
     }
 
     #skillContainer{
