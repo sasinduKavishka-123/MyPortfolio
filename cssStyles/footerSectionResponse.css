@@ -4,6 +4,7 @@
 
     #footer{
         height: 840px;
+        margin-top: -150px;
     }
 
     #footerImgHolder{
@@ -55,6 +56,7 @@
 
     #footer{
         height: 900px;
+        margin-top: -200px;
     }
 
     #footerImgHolder{
@@ -88,6 +90,12 @@
         width: 90%;
     }
 
+}
+
+@media all and (max-width: 550px){
+    #footer{
+        margin-top: -400px;
+    }
 }
 
 @media all and (max-width: 480px){

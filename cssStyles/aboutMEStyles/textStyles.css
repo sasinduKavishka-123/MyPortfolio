@@ -1,0 +1,86 @@
+
+#footer{
+    margin-top: 0;
+}
+
+/*@media all and (max-width: 450px) {*/
+/*    #footer{*/
+/*        margin-top: -150px;*/
+/*    }*/
+/*}*/
+
+#contactDescription{
+    width: 100%;
+    height: 550px;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contactDiscText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contactLogo{
+    font-family: Ewert, sans-serif;
+    font-size: 70px;
+    background: linear-gradient(60deg, #0EA2E7 20%, #433FE4, #AF05ED 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+#contactDiscText{
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+
+#contactDiscText > div {
+    margin-bottom: 40px;
+}
+
+#contactText1{
+    font-size: 60px;
+    font-family: Playfair Display, serif;
+}
+
+#contactText2{
+    font-size: 90px;
+    font-family: Roboto, serif;
+    font-weight: bold;
+    position: relative;
+    top: 8px;
+    display: inline-block;
+}
+
+#contactText3{
+    font-size: 40px;
+    font-family: Playfair Display, serif;
+}
+
+#contactText4{
+    font-size: 40px;
+    font-family: Pacifico, serif;
+    position: relative;
+    top: 5px;
+    background: linear-gradient(-90deg, #0EA2E7 0% ,#0A71EF 12.5%, #433FE4 25% ,#7412DA 37.5%, #AF05ED 50% ,
+    #7412DA 62.5%, #433FE4 75% ,#0A71EF 87.5% ,#0EA2E7 100%);
+    background-size: 70vw 70vw;
+    animation: contactTextAnim 8s linear infinite forwards;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 25px rgba(255, 255, 255, 0.25);
+}
+@keyframes contactTextAnim {
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: 70vw;
+    }
+}

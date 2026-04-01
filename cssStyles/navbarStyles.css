@@ -55,6 +55,7 @@ nav{
     }
 }
 
+/*    modified nav bar width at aboutMEStyles.css*/
 nav > section{
     border: #453d4e solid 2px;
     width: 440px;
