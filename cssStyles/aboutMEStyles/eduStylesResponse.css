@@ -1,0 +1,73 @@
+
+
+@media all and (max-width: 1080px) {
+    #educationTimeLineContainer{
+        width: 95%;
+    }
+}
+
+@media all and (max-width: 910px){
+
+    #educationTimeLineContainer{
+        width: 100%;
+    }
+
+    .eduYears{
+        font-size: 24px;
+    }
+
+    .eduDisc{
+        font-size: 18px;
+    }
+
+    .eduCardIcon{
+        margin: 5px;
+    }
+}
+
+@media all and (max-width: 700px){
+
+    #education{
+        height: 1100px;
+    }
+
+    #eduTimeLine{
+        display: none;
+    }
+
+    .eduLeftCards, .eduRightCards{
+        left: 0;
+        right: 0;
+        width: 70%;
+        height: 130px;
+        margin-bottom: 30px;
+    }
+
+}
+
+@media all and (max-width: 480px){
+
+    #educationTopic{
+        font-size: calc(100vw / 8);
+        margin-bottom: 40px;
+    }
+
+    #education{
+        height: 900px;
+    }
+
+    .eduLeftCards, .eduRightCards{
+        width: 90%;
+        height: 110px;
+        margin-bottom: 20px;
+    }
+
+    .eduYears{
+        font-size: 22px;
+    }
+
+    .eduDisc{
+        font-size: 16px;
+    }
+
+}
