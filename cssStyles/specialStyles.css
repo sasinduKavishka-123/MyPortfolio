@@ -55,13 +55,14 @@
 }
 
 .specialCards:hover::after{
-    padding: 2px;background: conic-gradient(from var(--angle), #0EA2E7, #AF05ED 30%, #AF05ED 60%, #0EA2E7);
+    padding: 1px;
+    background: conic-gradient(from var(--angle), #0EA2E7, #AF05ED ,#0EA2E7, #AF05ED, #0EA2E7);
 }
 
 .specialCards:hover::before{
-    filter: blur(1.5rem);
-    opacity: 70%;
-    padding: 2px;background: conic-gradient(from var(--angle), #0EA2E7, #AF05ED 30%, #AF05ED 60%, #0EA2E7);
+    filter: blur(15px);
+    opacity: 90%;
+    padding: 2px;background: conic-gradient(from var(--angle), #0EA2E7, #AF05ED ,#0EA2E7, #AF05ED ,#0EA2E7);
 }
 
 @keyframes borderRotate {
