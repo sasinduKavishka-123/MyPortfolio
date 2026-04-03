@@ -8,6 +8,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 100px;
 }
 
 #myProjectSectionHolder{
@@ -23,7 +24,8 @@
     display: flex;
     justify-content: space-around;
     align-items: start;
-    margin: 70px;
+    margin: 50px 0;
+    padding: 20px;
 }
 
 .myProjectPic{
@@ -55,6 +57,7 @@
 }
 
 .myProjectsPoints > li{
+    font-size: 13px;
     margin-bottom: 8px;
 }
 
@@ -65,7 +68,7 @@
 }
 
 .myProjectsPoints > li > span{
-    font-size: 17px;
+    font-size: 15px;
     font-weight: bold;
     color: #fff;
 }
@@ -79,15 +82,16 @@
 .myProjectTools{
     width: fit-content;
     margin: 0 5px;
-    padding: 2px 5px;
+    padding: 2px 10px;
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-family: "Inter", sans-serif;
-    background-color: rgba(255, 192, 203, 0.17);
-    border-radius: 5px;
-    border: #707070 solid 1px;
+    background-color: #232323;
+    border-radius: 8px;
+    border: #7a3fa3 solid 1px;
+    border-top: #7a3fa3 solid 3px;
 }
 
 .myProjectTools > span{
@@ -98,7 +102,7 @@
 .myProjectLink{
     display: inline-block;
     text-decoration: none;
-    margin-left: 30px;
+    margin-left: 35px;
     margin-top: 20px;
 }
 
