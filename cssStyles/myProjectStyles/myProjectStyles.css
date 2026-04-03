@@ -31,9 +31,12 @@
 .myProjectPic{
     width: 50%;
     aspect-ratio: 16/9;
-    background-color: blue;
     border-radius: 20px;
-    border: black solid 1px;
+    background:
+            linear-gradient(#11021b, #11021b) padding-box,
+            linear-gradient(45deg, #00a8ff, #ff01eb) border-box;
+    padding: 1px;
+    border: 3px solid transparent;
 }
 
 .myProjectDescHolder{
@@ -84,16 +87,17 @@
 .myProjectTools{
     width: fit-content;
     margin: 0 5px;
-    padding: 2px 10px;
+    padding: 3px 10px;
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-family: "Inter", sans-serif;
-    background-color: #232323;
     border-radius: 8px;
-    border: #7a3fa3 solid 1px;
-    border-top: #7a3fa3 solid 3px;
+    background:
+            linear-gradient(#200330, #200330) padding-box,
+            linear-gradient(210deg, #BD00FCFF, #09c7fc) border-box;
+    border: 1px solid transparent;
 }
 
 .myProjectTools > span{
@@ -118,7 +122,7 @@
     background: linear-gradient(90deg, rgba(14, 162, 231, 0.2), rgba(175, 5, 237, 0.2));
     border: rgba(46, 28, 238, 0.7) solid 1px;
     outline: none;
-    color: #ffffff;
+    color: #fff;
     font-family: "Inter", sans-serif;
     font-size: 18px;
     font-weight: bold;
