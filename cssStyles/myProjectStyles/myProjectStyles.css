@@ -3,7 +3,7 @@
 #myProjects{
     width: 100%;
     padding-top: 200px;
-    background-color: pink;
+    /*background-color: pink;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,7 +12,7 @@
 
 #myProjectSectionHolder{
     width: 90%;
-    background-color: red;
+    /*background-color: red;*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,7 +23,7 @@
     display: flex;
     justify-content: space-around;
     align-items: start;
-    margin: 100px;
+    margin: 70px;
 }
 
 .myProjectPic{
@@ -36,7 +36,6 @@
 
 .myProjectDescHolder{
     width: 45%;
-    background-color: black;
 }
 
 .myProjectName{
@@ -46,12 +45,12 @@
 }
 
 .myProjectDesc{
-    color: #9B9B9B;
+    color: #b9b9b9;
     font-family: "Grandstander", cursive;
 }
 
 .myProjectsPoints{
-    color: #9B9B9B;
+    color: #b9b9b9;
     font-family: "Grandstander", cursive;
 }
 
@@ -65,8 +64,42 @@
     font-size: 1.2rem;
 }
 
-.myProjectDescHolder > a{
+.myProjectsPoints > li > span{
+    font-size: 17px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.myProjectToolsHolder{
+    display: flex;
+    margin: 15px 0;
+    padding: 0 30px;
+}
+
+.myProjectTools{
+    width: fit-content;
+    margin: 0 5px;
+    padding: 2px 5px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Inter", sans-serif;
+    background-color: rgba(255, 192, 203, 0.17);
+    border-radius: 5px;
+    border: #707070 solid 1px;
+}
+
+.myProjectTools > span{
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+.myProjectLink{
+    display: inline-block;
     text-decoration: none;
+    margin-left: 30px;
+    margin-top: 20px;
 }
 
 .myProjectBtn{
