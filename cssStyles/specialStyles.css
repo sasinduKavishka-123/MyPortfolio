@@ -62,7 +62,8 @@
 .specialCards:hover::before{
     filter: blur(15px);
     opacity: 90%;
-    padding: 2px;background: conic-gradient(from var(--angle), #0EA2E7, #AF05ED ,#0EA2E7, #AF05ED ,#0EA2E7);
+    padding: 2px;
+    background: conic-gradient(from var(--angle), #0EA2E7, #AF05ED ,#0EA2E7, #AF05ED ,#0EA2E7);
 }
 
 @keyframes borderRotate {

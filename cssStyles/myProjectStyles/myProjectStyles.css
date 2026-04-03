@@ -28,15 +28,44 @@
     padding: 20px;
 }
 
+
 .myProjectPic{
     width: 50%;
     aspect-ratio: 16/9;
     border-radius: 20px;
-    background:
-            linear-gradient(#11021b, #11021b) padding-box,
-            linear-gradient(45deg, #00a8ff, #ff01eb) border-box;
-    padding: 1px;
-    border: 3px solid transparent;
+    background-color: #11021b;
+    position: relative;
+}
+
+.myProjectPic::before, .myProjectPic::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% ,-50%);
+    border-radius: 20px;
+    background: conic-gradient(from 35deg, #00a8ff, #ff01eb, #00a8ff);
+    z-index: -1;
+    padding: 2px;
+}
+
+.myProjectPic::after{
+    animation: myProjectBorderBlur 5s linear infinite;
+    opacity: 50%;
+}
+
+@keyframes myProjectBorderBlur {
+    0%{
+        filter: blur(20px);
+    }
+    50%{
+        filter: blur(10px);
+    }
+    100%{
+        filter: blur(20px);
+    }
 }
 
 .myProjectDescHolder{
@@ -99,6 +128,7 @@
             linear-gradient(210deg, #BD00FCFF, #09c7fc) border-box;
     border: 1px solid transparent;
 }
+
 
 .myProjectTools > span{
     margin-left: 5px;
