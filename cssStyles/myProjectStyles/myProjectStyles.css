@@ -22,7 +22,7 @@
     width: 100%;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: start;
 }
 
 .myProjectPic{
@@ -47,6 +47,21 @@
 .myProjectDesc{
     color: #9B9B9B;
     font-family: "Grandstander", cursive;
+}
+
+.myProjectsPoints{
+    color: #9B9B9B;
+    font-family: "Grandstander", cursive;
+}
+
+.myProjectsPoints > li{
+    margin-bottom: 8px;
+}
+
+.myProjectsPoints > li::marker{
+    content: "🚀 ";
+    color: red;
+    font-size: 1.2rem;
 }
 
 .myProjectDescHolder > a{
