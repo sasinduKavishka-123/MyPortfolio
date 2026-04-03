@@ -8,7 +8,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 }
 
 #myProjectSectionHolder{
@@ -75,7 +75,9 @@
 
 .myProjectToolsHolder{
     display: flex;
-    margin: 15px 0;
+    flex-wrap: wrap;
+    gap: 10px 0;
+    margin: 20px 0 10px 0;
     padding: 0 30px;
 }
 
