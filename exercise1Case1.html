@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Exercise1 | Case 01</title>
+    <link rel="icon" type="image/x-icon" href="assets/SKicon.ico">
+
+    <link rel="stylesheet" href="assets/lib/normalize.css">
+
+    <style>
+
+        body{
+            overflow: hidden;
+        }
+
+        .bigSquare{
+            height: 50vh;
+            width: 50vw;
+            position: absolute;
+        }
+
+        #div1{
+            background-color: red;
+        }
+        #div2{
+            background-color: green;
+            right: 0;
+        }
+        #div3{
+            background-color: orange;
+            bottom: 0;
+        }
+        #div4{
+            background-color: hotpink;
+            right: 0;
+            bottom: 0;
+        }
+
+        .middleCircleInBigSquare, .middleSquareInBigSquare, #middleSquare, #middleCircle{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        .middleCircleInBigSquare, .bigQuarterCircle{
+            border-radius: 50%;
+            background-color: white;
+            position: absolute;
+        }
+        .middleCircleInBigSquare{
+            width: 18vw;
+            aspect-ratio: 1/1;
+        }
+
+        .bigQuarterCircle{
+            width: 25vw;
+            aspect-ratio: 1/1;
+        }
+
+        #bigQuarterCircle1{
+            top: calc(-25vw / 2);
+            left: calc(-25vw / 2);
+        }
+        #bigQuarterCircle2{
+            top: calc(-25vw / 2);
+            right: calc(-25vw / 2);
+        }
+        #bigQuarterCircle3{
+            bottom: calc(-25vw / 2);
+            left: calc(-25vw / 2);
+        }
+        #bigQuarterCircle4{
+            bottom: calc(-25vw / 2);
+            right: calc(-25vw / 2);
+        }
+
+        .smallHalfCircle{
+            width: 15vw;
+            aspect-ratio: 1/1;
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        #smallHalf1{
+            top: calc(-15vw / 2);
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        #smallHalf2{
+            bottom: calc(-15vw / 2);
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        .middleSquareInBigSquare{
+            width: 9vw;
+            aspect-ratio: 1/1;
+            background-color: red;
+        }
+
+        #middleSquare{
+            width: 17vw;
+            aspect-ratio: 1/1;
+            background-color: white;
+        }
+        #middleCircle{
+            width: 10vw;
+            aspect-ratio: 1/1;
+            background-color: red;
+            border-radius: 50%;
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+
+<div class="bigSquare" id="div1">
+    <div class="middleCircleInBigSquare">
+        <div class="middleSquareInBigSquare"></div>
+    </div>
+
+</div>
+
+<div class="bigSquare" id="div2">
+    <div class="middleCircleInBigSquare">
+        <div class="middleSquareInBigSquare"></div>
+    </div>
+</div>
+
+<div class="bigSquare" id="div3">
+    <div class="middleCircleInBigSquare">
+        <div class="middleSquareInBigSquare"></div>
+    </div>
+</div>
+
+<div class="bigSquare" id="div4">
+    <div class="middleCircleInBigSquare">
+        <div class="middleSquareInBigSquare"></div>
+    </div>
+</div>
+
+<div id="middleSquare"></div>
+<div id="middleCircle"></div>
+
+<div class="smallHalfCircle" id="smallHalf1"></div>
+<div class="smallHalfCircle" id="smallHalf2"></div>
+
+<div class="bigQuarterCircle" id="bigQuarterCircle1"></div>
+<div class="bigQuarterCircle" id="bigQuarterCircle2"></div>
+<div class="bigQuarterCircle" id="bigQuarterCircle3"></div>
+<div class="bigQuarterCircle" id="bigQuarterCircle4"></div>
+
+</body>
+</html>

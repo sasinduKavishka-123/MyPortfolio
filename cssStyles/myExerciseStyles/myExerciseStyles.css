@@ -63,6 +63,43 @@
     margin-top: 5px;
 }
 
+#exImg1{
+    background-image: url("../../assets/exercises/exercise1Case1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#exImg2{
+    background-image: url("../../assets/exercises/exercise1Case2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#exImg3{
+    background-image: url("../../assets/exercises/exercise1Case3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#exImg4{
+    background-image: url("../../assets/exercises/exercise1Case4.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#exImg5{
+    background-image: url("../../assets/exercises/exercise1Case5.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#exImg6{
+    background-image: url("../../assets/exercises/exercise1Case6.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 .caseNumber{
     margin-top: 5px;
     font-size: 32px;

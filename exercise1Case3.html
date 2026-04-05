@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Exercise1 | Case 03</title>
+    <link rel="icon" type="image/x-icon" href="assets/SKicon.ico">
+
+    <link rel="stylesheet" href="assets/lib/normalize.css">
+
+    <style>
+
+        .fixedCircle{
+            position: fixed;
+            border-radius: 50%;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+        }
+
+        #circleGray{
+            border: gray solid 10px;
+            width: 200px;
+            height: 200px;
+        }
+
+        #circleRed{
+            border: red solid 12px;
+            width: 180px;
+            height: 180px;
+        }
+
+        .container {
+            height: 100vh;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .innerCircle{
+            height: 180px;
+            width: 180px;
+            border-radius: 50%;
+        }
+
+        p{
+            height: 180px;
+            width: 180px;
+            font-size: 25px;
+            font-family: cursive, system-ui;
+            color: white;
+
+            /*for the <p> block*/
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+
+            /*for words inside*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        #circle1{
+            background-color: purple;
+        }
+        #circle2{
+            background-color: deepskyblue;
+        }
+        #circle3{
+            background-color: orange;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="fixedCircle" id="circleGray"></div>
+<div class="fixedCircle" id="circleRed"></div>
+
+<div class="container">
+    <div class="innerCircle" id="circle1">
+        <p>Hello</p>
+    </div>
+
+</div>
+<div class="container">
+    <div class="innerCircle" id="circle2">
+        <p>Welcome To</p>
+    </div>
+
+</div>
+<div class="container">
+    <div class="innerCircle" id="circle3">
+        <p>Institute Of Software Engineering</p>
+    </div>
+
+</div>
+
+</body>
+</html>
