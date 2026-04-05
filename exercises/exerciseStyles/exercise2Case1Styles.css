@@ -1,0 +1,53 @@
+
+body{
+    background-color: #91eeee;
+}
+
+section{
+    width: 70vw;
+    height: 80vh;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 5%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    overflow: hidden;
+    border: #0824e5 solid 5px;
+    border-radius: 20px;
+}
+
+section > div{
+    height: 60px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    padding-left: 15px;
+    border-radius: 5px;
+
+    background-color: mediumpurple;
+    box-shadow: 6px 8px 6px #727272;
+
+    position: relative;
+    left: -200px;
+
+    color: white;
+    font-family: cursive;
+    font-weight: bold;
+    transition-duration: 1s;
+}
+
+section > div:hover{
+    left: 10px;
+}
+
+.menuIcons{
+    font-size: 25px;
+    position: absolute;
+    right: 15px;
+}
+

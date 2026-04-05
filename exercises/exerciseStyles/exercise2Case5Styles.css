@@ -1,0 +1,82 @@
+
+
+body{
+    overflow: hidden;
+}
+
+section{
+    position: relative;
+    display: flex;
+    width: 500vw;
+
+    animation-name: picAnim;
+    animation-duration: 20s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+div{
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+img{
+    width: 100vw;
+    height: 100vh;
+}
+
+#farCry1{
+
+}
+
+#farCry2{
+    background-color: red;
+}
+
+#farCry3{
+    background-color: pink;
+}
+
+#farCry4{
+    background-color: green;
+}
+
+#farCry5{
+    background-color: yellow;
+}
+
+@keyframes picAnim {
+    0%{
+        right: 400vw;
+    }
+    18%{
+        right: 400vw;
+    }
+    23%{
+        right: 300vw;
+    }
+    41%{
+        right: 300vw;
+    }
+    46%{
+        right: 200vw;
+    }
+    64%{
+        right: 200vw;
+    }
+    69%{
+        right: 100vw;
+    }
+    87%{
+        right: 100vw;
+    }
+    92%{
+        right: 0;
+    }
+    100%{
+        right: 0;
+    }
+}

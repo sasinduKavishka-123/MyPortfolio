@@ -1,0 +1,49 @@
+
+
+*{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+section{
+    background-color: #0080ff;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+
+    animation-name: waterdrop;
+    animation-duration: 2000ms;
+    animation-iteration-count: infinite;
+}
+
+div{
+    background-color: white;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+
+    animation-name: waterdropInside;
+    animation-duration: 2000ms;
+    animation-iteration-count: infinite;
+}
+
+@keyframes waterdrop {
+    from{
+        width: 20px;
+    }
+    to{
+        width: 550px;
+        opacity: 0;
+    }
+}
+
+@keyframes waterdropInside {
+    from{
+        width: 10px;
+    }
+    to{
+        width: 540px;
+    }
+}

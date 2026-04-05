@@ -1,6 +1,6 @@
 
 .cssSections{
-    margin-top: 200px;
+    margin: 200px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -55,49 +55,69 @@
     align-items: center;
 }
 
-.exerciseImg{
+.exerciseImgLink{
     width: 90%;
     height: 70%;
-    background-color: white;
     border-radius: 10px;
     margin-top: 5px;
+    overflow: hidden;
+}
+
+.exImages{
+    width: 100%;
+    height: 100%;
+    transition-duration: 500ms;
+    filter: grayscale(90%);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.exerciseCaseCard:hover .exImages{
+    filter: grayscale(0);
+}
+
+.exImages:hover{
+    scale: 104%;
 }
 
 #exImg1{
     background-image: url("../../assets/exercises/exercise1Case1.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 #exImg2{
     background-image: url("../../assets/exercises/exercise1Case2.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 #exImg3{
     background-image: url("../../assets/exercises/exercise1Case3.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 #exImg4{
     background-image: url("../../assets/exercises/exercise1Case4.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 #exImg5{
     background-image: url("../../assets/exercises/exercise1Case5.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 #exImg6{
     background-image: url("../../assets/exercises/exercise1Case6.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+}
+
+#exImg7{
+    background-image: url("../../assets/exercises/exercise2Case1.png");
+}
+#exImg8{
+    background-image: url("../../assets/exercises/exercise2Case2.png");
+}
+#exImg9{
+    background-image: url("../../assets/exercises/exercise2Case3.png");
+}
+#exImg10{
+    background-image: url("../../assets/exercises/exercise2Case4.png");
+}
+#exImg11{
+    background-image: url("../../assets/exercises/exercise2Case5.png");
+}
+#exImg12{
+    background-image: url("../../assets/exercises/exercise2Case6.png");
 }
 
 .caseNumber{
@@ -124,4 +144,12 @@
     font-weight: bold;
     text-align: center;
     padding-top: 7px;
+    scale: 90%;
+    transition-duration: 500ms;
+}
+
+.exerciseBtn:hover{
+    scale: 95%;
+    box-shadow: 0 0 7px 1px rgba(46, 28, 238);
+    background-color: blue;
 }

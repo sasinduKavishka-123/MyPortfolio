@@ -1,0 +1,78 @@
+
+
+body{
+    overflow: hidden;
+}
+
+#road{
+    background-image: url("../../assets/exercises/road.jpg");
+    width: 10000px;
+    height: 300px;
+
+    position: absolute;
+    bottom: 0;
+}
+
+#city{
+    background-image: url("../../assets/exercises/city.png");
+    width: 10000px;
+    height: 250px;
+
+    position: absolute;
+    bottom: 300px;
+}
+
+.passingObjs{
+    animation: roadCityAnim 15s infinite;
+}
+
+#car{
+    background-image: url("../../assets/exercises/car.png");
+    width: 500px;
+    height: 208px;
+    background-position: center;
+    background-size: cover;
+
+    position: absolute;
+    left: calc(50vw - 250px);
+    bottom: 180px;
+}
+
+.wheels{
+    background-image: url("../../assets/exercises/wheel.png");
+    width: 100px;
+    aspect-ratio: 1/1;
+    background-position: center;
+    background-size: cover;
+
+    position: absolute;
+    bottom: 185px;
+
+    animation: wheelAnim 15s infinite;
+}
+
+#wheel1{
+    left: calc(50vw - 210px);
+}
+
+#wheel2{
+    left: calc(50vw + 95px);
+}
+
+@keyframes roadCityAnim {
+    from{
+        left: 0;
+    }
+    to{
+        left: -8000px;
+    }
+}
+
+@keyframes wheelAnim {
+    from{
+        rotate: 0;
+    }
+    to{
+        rotate: 3600deg;
+    }
+}

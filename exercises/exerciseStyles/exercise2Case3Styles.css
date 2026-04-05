@@ -1,0 +1,61 @@
+
+body{
+    background-color: #00d3d3;
+}
+
+section{
+    height: 600px;
+    width: 1000px;
+    background-color: white;
+    border: #000000 solid 5px;
+    overflow: hidden;
+    position: relative;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+}
+
+div{
+    height: 100px;
+    aspect-ratio: 2/1;
+    border-radius: 20px;
+    background-color: yellow;
+    animation-name: move;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    transform: rotate(0deg);
+}
+
+@keyframes move {
+    0% {
+        margin-left: 0;
+        margin-top: 0;
+        background-color: blue;
+        transform: rotate(180deg);
+    }
+    25% {
+        margin-left: 800px;
+        margin-top: 0;
+        background-color: purple;
+        transform: rotate(360deg);
+    }
+    50%{
+        margin-left: 800px;
+        margin-top: 500px;
+        background-color: red;
+        transform: rotate(540deg);
+    }
+    75% {
+        margin-left: 0;
+        margin-top: 500px;
+        background-color: yellow;
+        transform: rotate(360deg);
+    }
+    100%{
+        margin-left: 0;
+        margin-top: 0;
+        background-color: blue;
+        transform: rotate(180deg);
+    }
+}
