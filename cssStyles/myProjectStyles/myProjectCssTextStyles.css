@@ -1,0 +1,57 @@
+
+#cssExerciseSection{
+    width: 80%;
+    margin: auto auto 200px;
+    text-align: center;
+}
+
+#myProjectCssText{
+    font-size: calc(100vw / 22);
+    color: #fff;
+    font-family: "Playball", cursive;
+}
+
+#myProjectCssText > span{
+    background: linear-gradient(-90deg, #0EA2E7 0% ,#0A71EF 12.5%, #433FE4 25% ,#7412DA 37.5%, #AF05ED 50% ,
+                                #7412DA 62.5%, #433FE4 75% ,#0A71EF 87.5% ,#0EA2E7 100%);
+    background-size: 30vw 30vw;
+    animation: spanTextAnim 10s linear infinite forwards;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-family: "Pacifico", cursive;
+}
+@keyframes spanTextAnim {
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: 30vw;
+    }
+}
+
+#cssExLinkBtn{
+    width: 200px;
+    height: 50px;
+    display: inline-block;
+    margin-top: 80px;
+    background-color: #05053AA3;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #fff;
+    font-family: "Grandstander", cursive;
+    font-weight: bold;
+    font-size: 22px;
+    padding-top: 13px;
+    border: #002ce0 solid 2px;
+    transition-duration: 300ms;
+    position: relative;
+    bottom: 0;
+}
+
+#cssExLinkBtn:hover{
+    bottom: 5px;
+    background-color: #0015ff;
+    box-shadow: 0 0 10px 2px #0015ff;
+    color: #060431;
+}
