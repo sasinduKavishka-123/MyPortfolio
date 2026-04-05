@@ -20,6 +20,10 @@
         padding: 5px;
     }
 
+    .myProjectPic::after{
+        opacity: 25%;
+    }
+
     .agowinLankaPics{
         top: 0;
     }
