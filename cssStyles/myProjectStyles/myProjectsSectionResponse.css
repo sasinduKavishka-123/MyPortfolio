@@ -1,0 +1,115 @@
+
+
+@media all and (max-width: 1300px) {
+
+    #myProjectSectionHolder{
+        width: 98%;
+    }
+
+    .myProject{
+        padding: 5px;
+    }
+}
+
+@media all and (max-width: 1050px){
+
+    .myProject{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+    }
+
+    .agowinLankaPics{
+        top: 0;
+    }
+
+    .myProjectPic{
+        width: 90%;
+        margin-bottom: 40px;
+    }
+
+    .myProjectDescHolder{
+        width: 80%;
+    }
+}
+
+@media all and (max-width: 600px){
+
+    #myProjectTopic{
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
+    .myProjectPic{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .myProjectDescHolder{
+        width: 100%;
+    }
+
+    .myProjectTools{
+        padding: 2px 5px;
+    }
+}
+
+
+@media all and (max-width: 400px){
+    .myProjectName{
+        font-size: 26px;
+    }
+
+    .myProject{
+        margin: 20px 0;
+    }
+
+    .myProjectDesc{
+        font-size: 14px;
+    }
+
+    .myProjectsPoints{
+        padding-left: 20px;
+    }
+
+    .myProjectsPoints > li{
+        font-size: 12px;
+    }
+
+    .myProjectsPoints > li::marker{
+        font-size: 1rem;
+    }
+
+    .myProjectsPoints > li > span{
+        font-size: 14px;
+    }
+
+    .myProjectToolsHolder{
+        gap: 4px 0;
+        margin: 0;
+        padding-left: 10px;
+    }
+
+    .myProjectTools{
+        margin: 0 2px;
+    }
+
+    .myProjectTools > span{
+        margin-left: 2px;
+        font-size: 11px;
+    }
+
+    .myProjectLink{
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .myProjectBtn{
+        font-size: 18px;
+        width: 100%;
+        height: 35px;
+        justify-content: center;
+    }
+
+}
