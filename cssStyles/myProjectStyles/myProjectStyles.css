@@ -257,11 +257,19 @@
     width: 100px;
     height: 30px;
     border-radius: 8px;
-    background: linear-gradient(90deg, rgba(14, 162, 231, 0.2), rgba(175, 5, 237, 0.2));
-    border: rgba(46, 28, 238, 0.7) solid 1px;
+    background-color: #010b29;
+    border: #0020ff solid 2px;
     outline: none;
     color: #fff;
     font-family: "Inter", sans-serif;
     font-size: 18px;
     font-weight: bold;
+    transition-duration: 400ms;
+}
+
+.myProjectBtn:hover{
+    color: #000000;
+    scale: 105%;
+    background-color: #0020ff;
+    box-shadow: 0 0 10px 2px #0020ff;
 }
