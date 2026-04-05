@@ -234,13 +234,13 @@
     font-family: "Inter", sans-serif;
     border-radius: 8px;
     background-color: #14021e;
-    border: 1px solid #3b03fa;
+    border: 1px solid #9600c5;
     transition-duration: 400ms;
 }
 
 .myProjectTools:hover{
     scale: 103%;
-    box-shadow: 0 0 5px 1px #3b03fa;
+    box-shadow: 0 0 5px 1px #BF00FFFF;
 }
 
 .myProjectTools > span{
@@ -263,8 +263,8 @@
     width: 100%;
     height: 35px;
     border-radius: 8px;
-    background-color: #010b29;
-    border: #3b03fa solid 2px;
+    background-color: #190129;
+    border: #BF00FFCD solid 2px;
     outline: none;
     color: #fff;
     font-family: "Inter", sans-serif;
@@ -276,6 +276,6 @@
 .myProjectBtn:hover{
     color: #000000;
     scale: 105%;
-    background-color: #3b03fa;
-    box-shadow: 0 0 10px 2px #3b03fa;
+    background-color: #BF00FFCD;
+    box-shadow: 0 0 10px 2px #BF00FFCD;
 }
