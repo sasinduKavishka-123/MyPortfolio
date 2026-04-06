@@ -120,6 +120,10 @@
     }
 }
 
+.projectCardContainer:active .projectCards{
+    animation-play-state: paused !important;
+}
+
 .projectImgs{
     width: 90%;
     height: 160px;
