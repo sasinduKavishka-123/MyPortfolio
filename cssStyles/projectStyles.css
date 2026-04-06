@@ -113,8 +113,11 @@
     }
 }
 
-.projectCardContainer:hover .projectCards{
-    animation-play-state: paused !important;
+
+@media (hover: hover) {
+    .projectCardContainer:hover .projectCards{
+        animation-play-state: paused !important;
+    }
 }
 
 .projectImgs{
