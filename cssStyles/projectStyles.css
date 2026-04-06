@@ -33,11 +33,17 @@
     }
 }
 
-#projectCardHolder{
+.projectCardContainer{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.projectCardHolder{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 80%;
+    width: 90%;
 }
 
 .projectCards{
