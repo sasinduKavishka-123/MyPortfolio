@@ -45,13 +45,12 @@
     top: 50%;
     transform: translate(0 , -50%);
 
-    background-color: #27182E;
-
     border-radius: 25px;
+    background: conic-gradient(from var(--angle), #0EA2E7, #AF05ED ,#0EA2E7, #AF05ED, #0EA2E7);
     z-index: -1;
     padding: 1px;
     transition-duration: 500ms;
-    animation: borderRotate 2500ms linear infinite;
+    animation: borderRotate 3500ms linear infinite;
 }
 
 .specialCards:hover::after{

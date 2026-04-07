@@ -118,7 +118,7 @@
             rgba(168, 19, 255, 0.5) 0%,
             rgba(65, 105, 225, 0) 70%
     );
-    filter: blur(135px);
+    filter: blur(140px);
     border-radius: 50%;
     z-index: 2;
 }

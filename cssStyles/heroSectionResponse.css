@@ -80,7 +80,7 @@
         width: 200px;
         top: 70px;
         aspect-ratio: 1/1;
-        filter: blur(90px);
+        filter: blur(100px);
     }
 
     #leftSpotLight{
