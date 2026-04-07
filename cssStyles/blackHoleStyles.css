@@ -7,7 +7,8 @@
     justify-content: center;
     align-items: center;
     padding: 10px 0;
-    mix-blend-mode: lighten;
+    mix-blend-mode:  lighten;
+    mask-image: linear-gradient(to top, transparent, #000 30% 70%, transparent);
 }
 
 #blackHoleVid{

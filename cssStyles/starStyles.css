@@ -1,0 +1,57 @@
+
+
+:root {
+    --bg: #0b0f14;
+    --panel: rgba(255, 255, 255, 0.06);
+    --text: #e8edf2;
+    --muted: #aab9c6;
+    --brand: #7c3aed;
+    --brand2: #06b6d4;
+    --radius: 18px;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    overflow-x: hidden;
+}
+
+
+/* STARS ANIMATION STYLES */
+#star-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    /* Behind content */
+    overflow: hidden;
+     /*mix-blend-mode: overlay; */
+}
+
+.star {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: twinkle 3s infinite ease-in-out;
+    will-change: transform, opacity;
+}
+
+@keyframes twinkle {
+
+    0%,
+    100% {
+        opacity: 0.3;
+        transform: scale(0.8);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+}

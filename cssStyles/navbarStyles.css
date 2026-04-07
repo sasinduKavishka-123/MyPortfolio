@@ -3,14 +3,6 @@
     box-sizing: border-box;
 }
 
-body{
-    background: #020202;
-}
-
-html{
-    scroll-behavior: smooth;
-}
-
 body::-webkit-scrollbar {
     width: 6px; /* Very narrow */
     height: 10px;
