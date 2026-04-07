@@ -24,10 +24,6 @@
         opacity: 25%;
     }
 
-    .agowinLankaPics{
-        top: 0;
-    }
-
     .myProjectPic{
         width: 90%;
         margin-bottom: 40px;
@@ -36,6 +32,7 @@
     .myProjectDescHolder{
         width: 80%;
     }
+
 }
 
 @media all and (max-width: 600px){
@@ -106,7 +103,8 @@
 
     .myProjectLink{
         width: 80%;
-        margin-left: 10%;
+        margin-left: 50%;
+        transform: translate(-50%, 0);
     }
 
     .myProjectBtn{

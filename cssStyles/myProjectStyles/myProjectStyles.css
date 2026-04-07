@@ -278,9 +278,11 @@ nav > section{
 }
 
 .myProjectLink{
-    display: inline-block;
+    display: flex;
+    justify-content: center;
     text-decoration: none;
     width: 40%;
+    max-width: 250px;
     margin-left: 30%;
     margin-top: 20px;
 }

@@ -114,11 +114,11 @@
 }
 
 
-@media (hover: hover) {
-    .projectCardContainer:hover .projectCards{
-        animation-play-state: paused !important;
-    }
-}
+/*@media (hover: hover) {*/
+/*    .projectCardContainer:hover .projectCards{*/
+/*        animation-play-state: paused !important;*/
+/*    }*/
+/*}*/
 
 .projectCardContainer:active .projectCards{
     animation-play-state: paused !important;
@@ -176,7 +176,9 @@
     border-radius: 10px;
     background: linear-gradient(90deg, rgba(14, 162, 231, 0.2), rgba(175, 5, 237, 0.2));
     border: rgba(46, 28, 238, 0.7) solid 1px;
-    outline: none;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 9px;
     color: #ffffff;
     font-family: "Inter", sans-serif;
     font-size: 18px;
@@ -184,10 +186,6 @@
     transition-duration: 500ms;
 }
 
-.projectIcons{
-    font-size: 20px;
-    color: #ffffff;
-}
 
 .projectBtns:hover{
     background: rgba(46, 28, 238, 0.8);
@@ -246,6 +244,7 @@
         font-size: 16px;
         position: relative;
         bottom: 10px;
+        padding-top: 8px;
     }
 
     .projectIcons{
