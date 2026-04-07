@@ -1,12 +1,13 @@
 
 #hero{
-    margin-top: 80px;
-    height: 900px;
+    padding-top: 80px;
+    height: 980px;
     color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow: hidden;
+    position: relative;
 }
 
 #heroTextHolder{

@@ -1,6 +1,7 @@
 
 
 #skill{
+    scroll-margin-top: 380px;
     width: 100vw;
     height: 700px;
     display: flex;
