@@ -72,7 +72,7 @@
     border-radius: 100%;
     position: absolute;
     top: 100px;
-    background: linear-gradient(#380568 1%, black 5%);
+    background: linear-gradient(#380568 1%, black 6%);
 }
 
 #orbit2{
@@ -82,6 +82,15 @@
     position: absolute;
     top: 100px;
     box-shadow: 0 -25px 40px rgb(176 43 221 / 90%);
+}
+
+#heroBlackGradient{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 350px;
+    z-index: 1;
+    background-image: linear-gradient(to bottom, transparent, #000 44% 65%, transparent);
 }
 
 #orbitSpotLight{
