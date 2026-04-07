@@ -24,10 +24,6 @@
         font-size: 24px;
     }
 
-    #orbitHolder{
-        box-shadow: inset 0 -60px 40px 50px #000;
-    }
-
     .heroSpotLights{
         width: 400px;
         background: radial-gradient(
@@ -40,16 +36,13 @@
 
 @media all and (max-width: 710px){
 
-    #orbitHolder{
-        box-shadow: inset 0 -40px -1px 1px #000;
-    }
-
     #introText{
         font-size: 26px;
     }
 
     .heroSpotLights{
         width: 300px;
+        height: 200px;
         background: radial-gradient(
                 circle at center,
                 rgb(169 32 249 / 90%) 0%,
@@ -57,26 +50,12 @@
         );
     }
 
-    @keyframes leftSpotLightAnim {
-        0%{
-            top: 120px;
-            left: -100px;
-        }
-        50%{
-            top: 60px;
-            left: -10px;
-        }
-        100%{
-            top: 120px;
-            left: -100px;
-        }
-    }
 }
 
 @media all and (max-width: 570px){
 
     #orbitHolder{
-        box-shadow: inset 0 -110px 50px #000;
+        mask-image: none;
     }
 
     #heroTextHolder{
@@ -95,5 +74,22 @@
     #writer{
         font-size: 20px;
         top: 210px;
+    }
+
+    .heroSpotLights{
+        width: 200px;
+        top: 70px;
+        aspect-ratio: 1/1;
+        filter: blur(90px);
+    }
+
+    #leftSpotLight{
+        animation: none;
+        left: 60%;
+    }
+
+    #rightSpotLight{
+        animation: none;
+        right: 60%;
     }
 }

@@ -15,7 +15,18 @@ body {
     margin: 0;
     padding: 0;
     background-color: #000;
-    overflow-x: hidden;
+    overflow: hidden;
+    overscroll-behavior-x: none;
+}
+
+body::-webkit-scrollbar {
+    width: 6px; /* Very narrow */
+    height: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(76, 8, 134, 0.5); /* Semi-transparent */
+    border-radius: 10px;
 }
 
 
