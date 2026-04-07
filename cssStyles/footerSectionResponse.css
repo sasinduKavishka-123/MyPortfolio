@@ -3,7 +3,7 @@
 @media all and (max-width: 900px) {
 
     #footer{
-        height: 840px;
+        /*height: 840px;*/
         margin-top: -150px;
     }
 
@@ -124,7 +124,6 @@
         font-size: 12px;
         margin: 0;
     }
-
 
     .footerSocialIcons{
         font-size: 18px;
