@@ -16,7 +16,9 @@
     <link rel="stylesheet" href="cssStyles/contactSectionResponse.css">
     <link rel="stylesheet" href="cssStyles/footerStyles.css">
     <link rel="stylesheet" href="cssStyles/footerSectionResponse.css">
+
     <link rel="stylesheet" href="cssStyles/starStyles.css">
+    <link rel="stylesheet" href="cssStyles/shootingStarStyles.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,7 +28,7 @@
 
 <body>
 
-    <div id="star-container"></div>
+    <div id="star-container1"></div>
 
     <!-- Navbar -->
     <nav>
@@ -42,8 +44,8 @@
         <a href="myProjects.html" class="navTabs">
             <div class="navLinks">Projects</div>
         </a>
-        <a href="myExercises.html" class="navTabs" style="background-color: #43026a">
-            <div class="navLinks">Exercises</div>
+        <a class="navTabs" style="background-color: #43026a">
+            <div class="navLinks myExercisesLinkScrollBtn">Exercises</div>
         </a>
         <a class="navTabs footerLinkScrollBtn">
             <div class="navLinks">Contact</div>
@@ -208,6 +210,15 @@
 
     <!-- Footer -->
     <footer id="footer">
+
+        <section class="shootingStarBox-Footer">
+            <div id="star-container2"></div>
+            <span class="shootingStar pinkStar" id="shootingStar5"></span>
+            <span class="shootingStar pinkStar" id="shootingStar6"></span>
+            <span class="shootingStar pinkStar" id="shootingStar7"></span>
+            <span class="shootingStar pinkStar" id="shootingStar8"></span>
+        </section>
+
     <div id="footerImgHolder">
         <img id="mountains" src="assets/mountains.png" alt="mountains">
     </div>
@@ -229,7 +240,7 @@
                     <li class="footerLinks"><a href="index.html">Home</a></li>
                     <li class="footerLinks"><a href="aboutMe.html">About</a></li>
                     <li class="footerLinks"><a href="myProjects.html">Projects</a></li>
-                    <li class="footerLinks"><a href="#footer">Contact</a></li>
+                    <li class="footerLinks footerLinkScrollBtn"><a href="#footer">Contact</a></li>
                 </ul>
             </section>
 
