@@ -16,11 +16,11 @@ requestAnimationFrame(raf);
 
 // 2. STARS ANIMATION LOGIC
 (function () {
-    let container = document.getElementById('star-container');
+    let container = document.getElementById('star-container1');
     // If valid but empty (or just created), we populate it
     container.innerHTML = '';
 
-    const count = 150;
+    const count = 130;
     const stars = [];
 
     for (let i = 0; i < count; i++) {
@@ -73,4 +73,41 @@ requestAnimationFrame(raf);
             star.el.style.transform = `scaleY(${stretch})`;
         });
     });
+})();
+
+
+(function () {
+    let container = document.getElementById('star-container2');
+    // If valid but empty (or just created), we populate it
+    container.innerHTML = '';
+
+    const count = 80;
+    const stars = [];
+
+    for (let i = 0; i < count; i++) {
+        const s = document.createElement('div');
+        s.className = 'star';
+
+        // Random Initial Positions
+        const x = Math.random() * 100;
+        const y = Math.random() * 100; // 0-100%
+
+        // 30% chance to be completely static (distant stars)
+        const isStatic = Math.random() < 0.3;
+        const z = isStatic ? 0 : 0.2 + Math.random() * 0.6; // Speed factor (depth)
+        const size = isStatic ? 1 + Math.random() : 1 + Math.random() * 2; // Static stars smaller
+
+        s.style.left = x + '%';
+        s.style.top = y + '%';
+        s.style.width = size + 'px';
+        s.style.height = size + 'px';
+
+        // Add twinkle variation
+        s.style.setProperty('--duration', (2 + Math.random() * 4) + 's');
+        s.style.animationDelay = (Math.random() * 5) + 's';
+
+        container.appendChild(s);
+        stars.push({ el: s, initialY: y, speed: z });
+    }
+
 })();

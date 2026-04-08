@@ -1,15 +1,5 @@
 
 
-:root{
-    --shootingStarDeg: -35deg;
-}
-
-/*@property --shootingStarDeg {*/
-/*    inherits: false;*/
-/*    syntax: "<angle>";*/
-/*    initial-value: -35deg;*/
-/*}*/
-
 #shootingStarBox-Header{
     width: 100%;
     height: 90%;
@@ -19,14 +9,13 @@
     overflow: hidden;
 }
 
-#shootingStarBox-Footer{
+.shootingStarBox-Footer{
     width: 100vw;
     height: 90%;
     position: absolute;
     top: 0;
     left: 0;
     overflow: hidden;
-    border: blue solid 2px;
 }
 
 .shootingStar {
@@ -39,7 +28,7 @@
     /*left:400px;*/
     position:relative;
     transform-origin:100% 0;
-    animation:star-ani 70s infinite ease-out;
+    animation:star-ani-1 12s infinite ease-out;
     animation-direction: normal;
     opacity:0;
 }
@@ -52,9 +41,9 @@
     border:2px solid #F00;
     border-width:4px 150px 4px 150px;
     border-color:transparent transparent transparent #FFF;
-    transform:rotate(var(--shootingStarDeg)) translate3d(1px, -1px, 0);
+    transform:rotate(-35deg) translate3d(1px, -1px, 0);
     transform-origin:0% 100%;
-    animation:shooting-ani 70s infinite  ease-out;
+    animation:shooting-ani-1 12s infinite  ease-out;
     animation-direction: normal;
 
     --shootingStarDeg: calc( -45deg );
@@ -99,21 +88,21 @@
     animation-delay: 5s;
 }
 
-@keyframes shooting-ani {
+@keyframes shooting-ani-1 {
     0% {
     }
     30%{
-        scale: 150%;
+        scale: 140%;
     }
     50% {
-        transform:scale(1) rotate(var(--shootingStarDeg)) translate(0px, 0px);
+        transform:scale(1) rotate(-35deg) translate(0px, 0px);
     }
     100% {
-        transform:scale(0.5) rotate(var(--shootingStarDeg)) translate(0px, -2px);
+        transform:scale(0.5) rotate(-35deg) translate(0px, -2px);
     }
 }
 
-@keyframes star-ani {
+@keyframes star-ani-1 {
     0% {
         opacity:0;
         transform:scale(0) rotate(0) translate3d(0, 0, 0);
@@ -121,8 +110,10 @@
     20% {
         opacity:1;
     }
-    60%{
+    30%{
         scale: 150%;
+    }
+    60%{
         opacity:0;
     }
     100% {
@@ -131,17 +122,81 @@
 }
 
 
+@keyframes shooting-ani-2 {
+    0% {
+    }
+    30%{
+        scale: 140%;
+    }
+    50% {
+        transform:scale(1) rotate(-45deg) translate(0px, 0px);
+    }
+    100% {
+        transform:scale(0.5) rotate(-45deg) translate(0px, -2px);
+    }
+}
+
+@keyframes star-ani-2 {
+    0% {
+        opacity:0;
+        transform:scale(0) rotate(0) translate3d(0, 0, 0);
+    }
+    20% {
+        opacity:1;
+    }
+    30%{
+        scale: 150%;
+    }
+    60%{
+        opacity:0;
+    }
+    100% {
+        transform:scale(1) rotate(0) translate3d(-500vw, 250vh, 0);
+    }
+}
+
+@keyframes star-ani-3 {
+    0% {
+        opacity:0;
+        transform:scale(0) rotate(0) translate3d(0, 0, 0);
+    }
+    20% {
+        opacity:1;
+    }
+    30%{
+        scale: 150%;
+    }
+    60%{
+        opacity:0;
+    }
+    100% {
+        transform:scale(1) rotate(0) translate3d(-500vw, 200vh, 0);
+    }
+}
+
+
 /*****************************************************************/
 
 @media all and (max-width: 800px) {
-    :root{
-        --shootingStarDeg: 100deg;
+    .shootingStar:after{
+        transform: rotate(-45deg);
+        animation-name: shooting-ani-2;
     }
 }
 
 @media all and (max-width: 550px){
     #shootingStarBox-Footer{
         top: 200px;
+    }
+
+    .shootingStar{
+        animation-name: star-ani-2;
+    }
+}
+
+@media all and (max-width: 400px){
+    .shootingStar{
+        animation-name: star-ani-3;
     }
 }
 
