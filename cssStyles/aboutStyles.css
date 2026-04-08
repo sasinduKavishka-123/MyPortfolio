@@ -267,16 +267,15 @@
 
 #gridSection4GlobeHolder{
     width: 500px;
-    height: 500px;
+    aspect-ratio: 1/1;
     position: absolute;
-    bottom: 0;
-    right: -70px;
+    bottom: -120px;
+    right: -110px;
 }
 
 #globeCanvas{
     width: 100%;
     height: 100%;
-    background-color: blue;
 }
 
 #gridSection4:hover > #gridSection4BigIconHolder1{

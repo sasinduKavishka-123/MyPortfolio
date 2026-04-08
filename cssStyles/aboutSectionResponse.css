@@ -148,12 +148,13 @@
         color: #0865FE;
     }
 
+
     #gridSection4GlobeHolder{
-        left: 50%;
-        transform: translate(-50%);
-        top: 60px;
+        left: 0;
+        transform: translate(-40%);
+        top: 25%;
         width: 80%;
-        height: auto;
+        min-width: 400px;
     }
 
     #gridSection5Img1, #gridSection5Img2, #gridSection5Img3{
