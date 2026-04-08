@@ -137,11 +137,10 @@
 }
 
 #contact3dContainer{
-    background-color: pink;     /* globe ***********************************/
-    width: 70%;
-    height: 60%;
+    width: 65% !important;
+    height: 55% !important;
     position: relative;
-    top: 50px;
+    top: 100px;
     margin-left: 50px;
     display: block;
 }

@@ -487,9 +487,22 @@
                     <br>
                     <span id="contactText6">That Actually Works.</span>
                 </div>
-                <div id="contact3dContainer">
+                <model-viewer id="contact3dContainer"
+                              alt="3d Planet browser - doesn't support 3d model"
+                              src="assets/models/purplePlanet/purple_planet_glb.glb"
+                              autoplay
+                              camera-controls
+                              touch-action="pan-y"
+                              min-camera-orbit="auto 0deg auto"
+                              max-camera-orbit="auto 60deg auto"
+                              disable-zoom
+                              disable-tap
+                              poster="assets/models/purplePlanet/poster.webp"
+                              tone-mapping="neutral"
+                >
 
-                </div>
+                </model-viewer>
+
             </div>
 
             <div id="contactFormContainer">
@@ -589,9 +602,10 @@
     </footer>
 
 
-    <script src="smoothScroll.js"></script>
+    <script src="JS/smoothScroll.js"></script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.2.0/model-viewer.min.js"></script>
     <script src="https://www.hxstrive.com/cdn/libs/font-awesome/7.0.1/js/all.min.js"></script>
     <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script>
-    <script src="stars.js"></script>
+    <script src="JS/stars.js"></script>
 </body>
 </html>
