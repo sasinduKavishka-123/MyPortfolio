@@ -88,6 +88,8 @@ nav > section{
     scale: 104%;
 }
 
+/************ css images ***************/
+
 #exImg1{
     background-image: url("../../assets/exercises/exercise1Case1.png");
 }
@@ -124,6 +126,20 @@ nav > section{
 }
 #exImg12{
     background-image: url("../../assets/exercises/exercise2Case6.png");
+}
+
+/************ js images ***************/
+
+#exImg13{
+    background-image: url("../../assets/exercises/exercise3Case1.png");
+}
+
+#exImg14{
+    background-image: url("../../assets/exercises/exercise3Case2.png");
+}
+
+#exImg15{
+    background-image: url("../../assets/exercises/exercise3Case3.png");
 }
 
 .caseNumber{

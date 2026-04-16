@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Case 01</title>
+    <link rel="icon" type="image/x-icon" href="../../assets/SKicon.ico">
+    <link rel="stylesheet" href="../../assets/lib/normalize.css">
+    <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.7.1/dist/dotlottie-wc.js" type="module"></script>
+
+    <style>
+
+        section{
+            width: 100vw;
+            height: calc(100vh - 100px);
+            display: flex;
+            justify-content: start;
+            align-items: end;
+            border-bottom: 400px;
+        }
+
+        section > div{
+            width: 30px;
+            height: 200px;
+            font-size: 28px;
+            font-weight: bold;
+            font-family: "Arial", "system-ui";
+        }
+
+        #topic{
+            color: #ff0000;
+            font-size: 100px;
+            font-weight: bold;
+            font-family: monospace, "system-ui";
+            position: fixed;
+            top: 10px;
+            left: 50%;
+            transform: translate(-50%);
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div id="topic">JS QUE 1</div>
+
+<section>
+
+    <dotlottie-wc src="https://lottie.host/87078e98-9ab6-4288-b15c-eca6cd652bda/Zl82Fp1qoe.lottie"
+                  speed="1" style="width: 200px; height: 200px" mode="forward" loop autoplay>
+    </dotlottie-wc>
+
+    <div class="numberHolder">A</div>
+
+    <dotlottie-wc src="https://lottie.host/83c33302-3f7a-4fdc-a37c-b6e05618b1d7/w3O6gXOUaY.lottie"
+                  speed="1" style="width: 200px; height: 200px" mode="forward" loop autoplay>
+    </dotlottie-wc>
+
+    <div class="numberHolder">B</div>
+
+    <dotlottie-wc src="https://lottie.host/87078e98-9ab6-4288-b15c-eca6cd652bda/Zl82Fp1qoe.lottie"
+                  speed="1" style="width: 200px; height: 200px" mode="forward" loop autoplay>
+    </dotlottie-wc>
+
+    <div class="numberHolder">C</div>
+
+    <dotlottie-wc src="https://lottie.host/83c33302-3f7a-4fdc-a37c-b6e05618b1d7/w3O6gXOUaY.lottie"
+                  speed="1" style="width: 200px; height: 200px" mode="forward" loop autoplay>
+    </dotlottie-wc>
+
+    <div class="numberHolder">D</div>
+
+    <dotlottie-wc src="https://lottie.host/87078e98-9ab6-4288-b15c-eca6cd652bda/Zl82Fp1qoe.lottie"
+                  speed="1" style="width: 200px; height: 200px" mode="forward" loop autoplay>
+    </dotlottie-wc>
+
+    <div class="numberHolder">E</div>
+
+    <dotlottie-wc src="https://lottie.host/f7d35d2f-1c74-4bf4-b080-03a991865ead/NRnrK5YKuZ.lottie"
+                  speed="1" style="width: 200px; height: 200px; margin-left: 150px" mode="forward" loop autoplay>
+    </dotlottie-wc>
+
+</section>
+
+
+<script>
+    let letterArray = ["A", "B", "C", "D", "E"];
+    let divArray = document.getElementsByClassName("numberHolder");
+
+    setInterval(() => {
+
+        letterArray.unshift(letterArray.pop());
+
+        for(let i=0; i<letterArray.length; i++){
+            divArray[i].innerText = letterArray[i];
+        }
+    }, 2000);
+</script>
+
+</body>
+</html>

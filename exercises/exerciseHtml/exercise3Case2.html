@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Case 02</title>
+    <link rel="icon" type="image/x-icon" href="../../assets/SKicon.ico">
+    <link rel="stylesheet" href="../../assets/lib/normalize.css">
+
+    <style>
+
+        body{
+            background-color: #36474F;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #topic{
+            color: #ffe600;
+            font-size: 70px;
+            font-weight: bold;
+            font-family: monospace, "system-ui";
+            position: fixed;
+            top: 10px;
+            left: 50%;
+            transform: translate(-50%);
+        }
+
+        #contentHolder{
+            width: 80vw;
+            height: 70vh;
+            margin: 200px auto auto auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #contentHolder > section{
+            height: 100%;
+            border-bottom: #000 solid 5px;
+            padding: 0 10px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        #contentHolder > section:last-child{
+            border-color: transparent;
+        }
+
+        #row2{
+            justify-content: center;
+        }
+
+        #row3{
+            justify-content: end;
+        }
+
+        .colorBlocks{
+            background-color: red;
+            border: #000 solid 2px;
+            width: 170px;
+            height: 60%;
+            border-radius: 20px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div id="topic">JS QUE 2</div>
+
+<section id="contentHolder">
+
+    <section id="row1">
+        <div class="colorBlocks"></div>
+    </section>
+
+    <section id="row2">
+        <div class="colorBlocks"></div>
+        <div class="colorBlocks"></div>
+        <div class="colorBlocks"></div>
+        <div class="colorBlocks"></div>
+    </section>
+
+    <section id="row3">
+        <div class="colorBlocks"></div>
+    </section>
+
+</section>
+
+<script>
+
+    let divs = document.getElementsByClassName("colorBlocks");
+
+    let arrayStyles = ["#ff0000", "#05ff00", "#0033fe" ,
+        "#f8ff00", "#fd00ff", "#8300ff"];
+
+    for(let i=0 ; i< divs.length; i++){
+        divs[i].style.backgroundColor = arrayStyles[i];
+    }
+
+    setInterval(() =>{
+
+        arrayStyles.unshift(arrayStyles.pop());
+
+        for(let i=0 ; i<divs.length; i++){
+            divs[i].style.backgroundColor = arrayStyles[i];
+        }
+    }, 2000);
+
+</script>
+
+</body>
+</html>
