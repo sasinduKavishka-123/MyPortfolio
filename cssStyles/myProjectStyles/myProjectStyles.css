@@ -189,6 +189,19 @@ nav > section{
     background: url("../../assets/myProject/agowinLanka/agowinLankaPic1.png");
 }
 
+#myProject4Pic4{
+    background: url("../../assets/myProject/spaceShooter/spaceShooterPic4.png");
+}
+#myProject4Pic3{
+    background: url("../../assets/myProject/spaceShooter/spaceShooterPic3.png");
+}
+#myProject4Pic2{
+    background: url("../../assets/myProject/spaceShooter/spaceShooterPic2.png");
+}
+#myProject4Pic1{
+    background: url("../../assets/myProject/spaceShooter/spaceShooterPic1.png");
+}
+
 .myProjectPicSection > .myProjectPics:nth-child(2){
     left: -25%;
     animation: picAnim3 30s infinite;
@@ -228,7 +241,7 @@ nav > section{
 }
 
 .myProjectsPoints > li{
-    font-size: 13px;
+    font-size: 15px;
     margin-bottom: 8px;
 }
 
@@ -239,7 +252,7 @@ nav > section{
 }
 
 .myProjectsPoints > li > span{
-    font-size: 15px;
+    font-size: 16px;
     font-weight: bold;
     color: #fff;
 }
@@ -304,6 +317,11 @@ nav > section{
     font-weight: bold;
     transition-duration: 400ms;
 }
+
+.myProjectBtn > .projectIcons{
+    margin-right: 5px;
+}
+
 
 .myProjectBtn:hover{
     color: #000000;
