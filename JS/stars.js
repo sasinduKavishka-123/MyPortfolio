@@ -34,7 +34,7 @@ requestAnimationFrame(raf);
         // 30% chance to be completely static (distant stars)
         const isStatic = Math.random() < 0.3;
         const z = isStatic ? 0 : 0.2 + Math.random() * 0.6; // Speed factor (depth)
-        const size = isStatic ? 1 + Math.random() : 1 + Math.random() * 2; // Static stars smaller
+        const size = isStatic ? 1.5 + Math.random() : 1.5 + Math.random() * 2; // Static stars smaller
 
         s.style.left = x + '%';
         s.style.top = y + '%';

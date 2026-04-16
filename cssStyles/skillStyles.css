@@ -1,4 +1,24 @@
+#blackHole{
+    position: relative;
+    width: 100vw;
+    aspect-ratio: 2/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    mask-image: linear-gradient(to top, transparent, #000 30% 70%, transparent);
+    mix-blend-mode: lighten;
+}
 
+#blackHoleVid{
+    width: 100%;
+    z-index: -10;
+}
+
+#blackHole > div{
+    position: absolute;
+    top: 25%;
+}
 
 #skill{
     scroll-margin-top: 380px;

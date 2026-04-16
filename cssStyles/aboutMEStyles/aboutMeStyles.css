@@ -61,8 +61,14 @@ nav > section{
 #aboutMEDesc{
     position: relative;
     top: 30px;
-    color: rgb(128 79 165);
+    color: #c8b7ce;
     font-family: "Grandstander", cursive;
+}
+
+#aboutMEDesc span{
+    color: #fff;
+    text-shadow: 0 0 5px #ccb9ff;
+    font-weight: bold;
 }
 
 #myPic{
