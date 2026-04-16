@@ -77,12 +77,22 @@ for(let i=0; i<myProjectsBtn.length; i++){
 
 const myExerciseBtn = document.querySelectorAll('.myExercisesLinkScrollBtn');
 const target7 = document.querySelector('.cssSections');
+const target8 = document.querySelector('#cssExerciseSection');
 
 for(let i=0; i<myExerciseBtn.length; i++){
     myExerciseBtn[i]?.addEventListener('click', () => {
-        target7.scrollIntoView({
+        target7?.scrollIntoView({
             behavior: 'smooth',
             block: 'start'
+        });
+    });
+}
+
+for(let i=0; i<myExerciseBtn.length; i++){
+    myExerciseBtn[i]?.addEventListener('click', () => {
+        target8?.scrollIntoView({
+            behavior: 'smooth',
+            block: "start"
         });
     });
 }

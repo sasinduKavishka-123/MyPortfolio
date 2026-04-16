@@ -74,3 +74,7 @@ nav > section{
     background-color: #671c9566;
 }
 
+.navLinks{
+    user-select: none;
+}
+
