@@ -68,6 +68,7 @@ nav > section{
     transition-duration: 400ms;
     padding: 5px 12px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .navTabs:hover{

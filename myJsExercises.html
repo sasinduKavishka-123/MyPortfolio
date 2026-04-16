@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Exercises | Sasindu Kavishka</title>
+    <link rel="icon" type="image/x-icon" href="assets/SKicon.ico">
+
+    <link rel="stylesheet" href="assets/lib/normalize.css">
+
+    <link rel="stylesheet" href="cssStyles/navbarStyles.css">
+    <link rel="stylesheet" href="cssStyles/myExerciseStyles/myExerciseStyles.css">
+    <link rel="stylesheet" href="cssStyles/myExerciseStyles/myExerciseResponse.css">
+    <link rel="stylesheet" href="cssStyles/aboutMEStyles/textStyles.css">
+    <link rel="stylesheet" href="cssStyles/contactSectionResponse.css">
+    <link rel="stylesheet" href="cssStyles/footerStyles.css">
+    <link rel="stylesheet" href="cssStyles/footerSectionResponse.css">
+
+    <link rel="stylesheet" href="cssStyles/starStyles.css">
+    <link rel="stylesheet" href="cssStyles/shootingStarStyles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ewert&family=Grandstander:ital,wght@0,100..900;1,100..900&family=Henny+Penny&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pacifico&family=Playball&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Russo+One&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div id="star-container1"></div>
+
+    <!-- Navbar -->
+    <nav>
+        <p id="logo">SK</p>
+
+        <section>
+            <a  href="index.html" class="navTabs">
+                <div class="navLinks">Home</div>
+            </a>
+            <a  href="aboutMe.html" class="navTabs">
+                <div class="navLinks">About</div>
+            </a>
+            <a href="myProjects.html" class="navTabs">
+                <div class="navLinks">Projects</div>
+            </a>
+            <a class="navTabs" style="background-color: #43026a">
+                <div class="navLinks myExercisesLinkScrollBtn">Exercises</div>
+            </a>
+            <a class="navTabs footerLinkScrollBtn">
+                <div class="navLinks">Contact</div>
+            </a>
+        </section>
+    </nav>
+
+    <!-- Text -->
+    <section id="contactDescription">
+        <div id="contactLogo">SK</div>
+        <div id="contactDiscText">
+            <div><span id="contactText1">From Concept To  </span><span id="contactText2">Code <i class="fa-solid fa-code contactCodeIcon"></i></span></div>
+            <div><span id="contactText3">Let’s Turn Ideas Into </span><span id="contactText4"> SOLUTIONS</span></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+
+        <section class="shootingStarBox-Footer">
+            <div id="star-container2"></div>
+            <span class="shootingStar pinkStar" id="shootingStar5"></span>
+            <span class="shootingStar pinkStar" id="shootingStar6"></span>
+            <span class="shootingStar pinkStar" id="shootingStar7"></span>
+            <span class="shootingStar pinkStar" id="shootingStar8"></span>
+        </section>
+
+        <div id="footerImgHolder">
+            <img id="mountains" src="assets/mountains.png" alt="mountains">
+        </div>
+        <div id="footerBlackGradient"></div>
+
+        <section id="infoContainer">
+            <section id="footerContactSection">
+                <div id="footerLogo">SK</div>
+                <div id="footerContactHolder">
+                    <div class="footerContacts"> <i class="fa-solid fa-location-dot footerContactIcons"></i> Colombo, Sri Lanka</div>
+                    <div class="footerContacts"> <i class="fa-solid fa-envelope footerContactIcons"></i> sasindu.chemistry@gmail.com</div>
+                    <div class="footerContacts"> <i class="fa-solid fa-phone footerContactIcons"></i> +94 71 3472 071</div>
+                </div>
+            </section>
+            <section id="footerGeneralSocialContainer">
+                <section id="footerGeneral">
+                    <div class="footerTopics">General</div>
+                    <ul class="footerLists">
+                        <li class="footerLinks"><a href="index.html">Home</a></li>
+                        <li class="footerLinks"><a href="aboutMe.html">About</a></li>
+                        <li class="footerLinks"><a href="myProjects.html">Projects</a></li>
+                        <li class="footerLinks footerLinkScrollBtn"><a href="#footer">Contact</a></li>
+                    </ul>
+                </section>
+
+                <section id="footerSocial">
+                    <div class="footerTopics">Connect On Social</div>
+                    <ul class="footerLists">
+                        <li id="footerSocialIconLN" >
+                            <a href=""><i class="fa-brands fa-square-linkedin  footerSocialIcons"></i> LinkedIn </a>
+                        </li>
+                        <li id="footerSocialIconGH" >
+                            <a href=""><i class="fa-brands fa-square-github    footerSocialIcons"></i> GitHub </a>
+                        </li>
+                        <li id="footerSocialIconFB">
+                            <a href=""><i class="fa-brands fa-square-facebook  footerSocialIcons"></i> Facebook </a>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+        </section>
+
+    </footer>
+
+    <script src="JS/smoothScroll.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script>
+    <script src="JS/stars.js"></script>
+    <script src="https://www.hxstrive.com/cdn/libs/font-awesome/7.0.1/js/all.min.js"></script>
+
+</body>
+</html>

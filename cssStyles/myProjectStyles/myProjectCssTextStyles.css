@@ -1,17 +1,22 @@
 
 #cssExerciseSection{
     width: 80%;
-    margin: auto auto 200px auto;
+    margin: 100px auto 250px auto;
     text-align: center;
 }
 
-#myProjectCssText{
-    font-size: calc(100vw / 22);
+#cssSmoothScrollPoint{
+    position: relative;
+    bottom: 150px;
+}
+
+.myProjectCssText{
+    font-size: calc(100vw / 24);
     color: #fff;
     font-family: "Playball", cursive;
 }
 
-#myProjectCssText > span{
+.myProjectCssText > span{
     background: linear-gradient(-90deg, #0EA2E7 0% ,#0A71EF 12.5%, #433FE4 25% ,#7412DA 37.5%, #AF05ED 50% ,
                                 #7412DA 62.5%, #433FE4 75% ,#0A71EF 87.5% ,#0EA2E7 100%);
     background-size: 30vw 30vw;
@@ -30,11 +35,11 @@
     }
 }
 
-#cssExLinkBtn{
+.exLinkBtn{
     width: 250px;
     height: 50px;
     display: inline-block;
-    margin-top: 80px;
+    margin: 20px 0 120px 0;
     background-color: #05053AA3;
     border-radius: 12px;
     text-decoration: none;
@@ -49,14 +54,12 @@
     bottom: 0;
 }
 
-#cssExLinkBtn:hover{
+.exLinkBtn:hover{
     bottom: 5px;
     background-color: #0015ff;
     box-shadow: 0 0 10px 2px #0015ff;
     color: #060431;
 }
-
-
 
 /*****************************************************/
 
@@ -67,7 +70,7 @@
         width: 90%;
     }
 
-    #myProjectCssText{
+    .myProjectCssText{
         font-size: calc(100vw / 20);
     }
 }
@@ -78,12 +81,11 @@
         width: 97%;
     }
 
-    #myProjectCssText{
+    .myProjectCssText{
         font-size: calc(100vw / 16);
     }
 
-    #cssExLinkBtn{
-        margin-top: 50px;
+    .exLinkBtn{
         border-radius: 10px;
     }
 }
@@ -95,16 +97,15 @@
         margin: -50px auto 250px auto;
     }
 
-    #myProjectCssText{
+    .myProjectCssText{
         font-size: 26px;
     }
 
-    #cssExLinkBtn{
-        margin-top: 40px;
-        width: 70%;
-        height: 40px;
+    .exLinkBtn{
+        width: 50%;
+        height: 35px;
         border-radius: 8px;
         padding-top: 8px;
-        font-size: 18px;
+        font-size: 16px;
     }
 }

@@ -77,7 +77,7 @@ for(let i=0; i<myProjectsBtn.length; i++){
 
 const myExerciseBtn = document.querySelectorAll('.myExercisesLinkScrollBtn');
 const target7 = document.querySelector('.cssSections');
-const target8 = document.querySelector('#cssExerciseSection');
+const target8 = document.querySelector('#cssSmoothScrollPoint');
 
 for(let i=0; i<myExerciseBtn.length; i++){
     myExerciseBtn[i]?.addEventListener('click', () => {
