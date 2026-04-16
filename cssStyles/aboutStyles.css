@@ -182,7 +182,7 @@
     color: #0865FE;
 }
 
-#aboutMeSocialIconContainer > div {
+#aboutMeSocialIconContainer > a {
     width: 50px;
     aspect-ratio: 1/1;
     margin: 0 5px;
