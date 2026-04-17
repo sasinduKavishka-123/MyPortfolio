@@ -133,13 +133,14 @@ nav > section{
 #exImg13{
     background-image: url("../../assets/exercises/exercise3Case1.png");
 }
-
 #exImg14{
     background-image: url("../../assets/exercises/exercise3Case2.png");
 }
-
 #exImg15{
     background-image: url("../../assets/exercises/exercise3Case3.png");
+}
+#exImg16{
+    background-image: url("../../assets/exercises/exercise3Case4.png");
 }
 
 .caseNumber{

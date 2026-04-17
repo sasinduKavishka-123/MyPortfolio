@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tic Tac Toe</title>
+    <link rel="icon" type="image/x-icon" href="../../assets/SKicon.ico">
+    <link rel="stylesheet" href="../../assets/lib/normalize.css">
+    <link rel="stylesheet" href="../exerciseStyles/exercise3Case4Styles.css">
+
+</head>
+<body>
+
+<section id="contentHolder">
+
+    <section id="buttonHolder">
+        <div class="newButton">New Game</div>
+        <div class="newButton notePanel">AI is Thinking ...</div>
+        <div id="loadingBar"></div>
+    </section>
+
+    <section id="boardHolder">
+        <section id="board">
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+        </section>
+    </section>
+</section>
+<div id="winPanel"></div>
+
+
+<script>
+    // elements
+    let newBtn = document.querySelector('.newButton');
+    let notePanel = document.querySelector('.notePanel');
+    let loadingBar = document.querySelector('#loadingBar');
+    let winPanel = document.querySelector('#winPanel');
+
+    // arrays
+    let boxes = document.querySelectorAll('.boxes');
+    let tempArray = [0];
+
+    // variables
+    let timeCount = 0;
+    let loadingBarWidth = 0;
+    let isGameEnd = false;
+    let winStatus = 0       // 1 -> win ,  0 -> draw , -1 -> lost
+    let intervalObject = null;
+
+
+    // hide the win panel and note panel at start
+    winPanel.style.visibility = 'hidden';
+    notePanel.style.visibility = 'hidden';
+
+    // set all boxes clickable and mark 'X'
+    for(let i=0; i<boxes.length; i++){
+        boxes[i].addEventListener('click', ()=>{
+            let tempText = boxes[i].innerText;
+            if(tempText === ""){
+                boxes[i].style.cssText = 'background-color: #003699; color: #ffff00;';
+                boxes[i].innerText = 'X';
+                checkWinner('X');
+
+                if(isGameEnd === false){
+                    animLoadingBar();
+                }
+            }
+        });
+    }
+
+    function animLoadingBar() {
+
+        notePanel.style.visibility = 'visible';
+        loadingBar.style.visibility = 'visible';
+        disableBoxes();
+
+        // loading bar animation
+        intervalObject = setInterval(()=>{
+            timeCount += 0.05;
+            loadingBarWidth += 7;
+            loadingBar.style.width = loadingBarWidth + 'px';
+            if(timeCount >= 2){
+                playAI();
+                resetLoadingBar();
+                if(isGameEnd === false){ anabelBoxes(); }
+                clearInterval(intervalObject);
+            }
+        }, 50);
+    }
+
+    function resetLoadingBar(){
+        notePanel.style.visibility = 'hidden';
+        loadingBarWidth = 0;
+        loadingBar.style.width = '0';
+        loadingBar.style.visibility = 'hidden';
+        timeCount = 0;
+    }
+
+    function disableBoxes(){
+        for(let i=0; i<boxes.length; i++){
+            boxes[i].style.pointerEvents = 'none';
+        }
+    }
+
+    function anabelBoxes(){
+        for(let i=0; i<boxes.length; i++){
+            boxes[i].style.pointerEvents = 'auto';
+        }
+    }
+
+    function playAI(){
+
+        let num = 0;
+
+        // chose only none selected boxes and put the box number in a tempArray
+        for(let i=0; i<boxes.length; i++){
+            if(boxes[i].innerText === ''){
+                tempArray[num] = i;
+                num++;
+            }
+        }
+
+        if(num > 0){
+            let a = Math.floor(Math.random() * num);    // return a random number between 0 and num
+            let boxNum = tempArray[a];          // choose the element number according to that random number
+            boxes[boxNum].style.cssText = 'background-color: #003699; color: #ff0000;';
+            boxes[boxNum].innerText = 'O';      // mark '0' in the chosen element
+            checkWinner('O');
+        }
+    }
+
+    function checkWinner(mark){
+
+        let isFinish = false;
+
+        // check vertical lines
+        if(!isFinish){ checkRow(0,3,6, mark) }
+        if(!isFinish){ checkRow(1,4,7, mark) }
+        if(!isFinish){ checkRow(2,5,8, mark) }
+
+        // check horizontal lines
+        if(!isFinish){ checkRow(0,1,2, mark) }
+        if(!isFinish){ checkRow(3,4,5, mark) }
+        if(!isFinish){ checkRow(6,7,8, mark) }
+
+        // check angle lines
+        if(!isFinish){ checkRow(0,4,8, mark) }
+        if(!isFinish){ checkRow(2,4,6, mark) }
+
+        // check if game is draw
+        isGameEnd = checkIsGameDraw();
+
+        if(isGameEnd){
+            disableBoxes();
+            displayWin();
+        }
+
+    }
+
+    function  checkRow(b1, b2, b3, mark){
+
+        if( (boxes[b1].innerText === mark) &&
+            (boxes[b2].innerText === mark) &&
+            (boxes[b3].innerText === mark))
+        {
+            isGameEnd = true;
+
+            if(mark === 'X'){
+                winStatus = 1;
+            }
+            else if(mark === 'O'){
+                winStatus = -1;
+            }
+            return true;
+        }
+        return false;
+    }
+
+    function checkIsGameDraw(){
+
+        if(isGameEnd){
+            return true;
+        }
+
+        for(let i=0; i<boxes.length; i++){
+            if(boxes[i].innerText === ''){
+                return false;
+            }
+        }
+        winStatus = 0;
+        return true;
+    }
+
+    function displayWin(mark){
+        if(winStatus === 1){
+            winPanel.innerText = "You Won!";
+            winPanel.style.color = '#ffff00';
+        }
+        else if(winStatus === (-1))
+        {
+            winPanel.innerText = "You Lost!";
+            winPanel.style.color = '#ff0000';
+        }
+        else{
+            winPanel.innerText = "Draw!";
+            winPanel.style.color = '#ff7300';
+        }
+        winPanel.style.visibility = 'visible';
+    }
+
+    // new game reset all
+    newBtn.addEventListener('click', ()=>{
+        winStatus = 0;
+        isGameEnd = false;
+        resetLoadingBar();
+        anabelBoxes();
+        winPanel.style.visibility = 'hidden';
+        clearInterval(intervalObject);
+
+        for(let i=0; i<boxes.length; i++){
+            boxes[i].style.backgroundColor = '#0052eb';
+            boxes[i].innerText = '';
+        }
+    });
+</script>
+
+</body>
+</html>

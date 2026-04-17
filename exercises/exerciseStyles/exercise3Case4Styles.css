@@ -1,0 +1,113 @@
+
+*{
+    user-select: none;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+
+#contentHolder{
+    width: 800px;
+    height: 600px;
+    background-color: #747474;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+#buttonHolder{
+    display: flex;
+    width: 120%;
+    flex-direction: column;
+    padding-top: 65%;
+    padding-left: 30px;
+}
+
+.newButton{
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    border: #000 solid 3px;
+    font-weight: bold;
+    font-size: 32px;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    align-content: center;
+    background-color: #0052eb;
+    color: #ffff00;
+    text-shadow: 0 0 7px #000;
+    position: relative;
+    left: 45px;
+}
+
+.notePanel{
+    font-size: 26px;
+    margin-top: 60px;
+    background: none;
+    border: none;
+    text-align: start;
+    width: 80%;
+    left: 0;
+}
+
+#loadingBar{
+    height: 15px;
+    background-color: #000344;
+    position: absolute;
+    bottom: 310px;
+}
+
+#winPanel{
+    width: 400px;
+    height: 120px;
+    background-color: #0052eb;
+    color: #ffff00;
+    font-family: "Grandstander", cursive;
+    font-size: 82px;
+    text-align: center;
+    align-content: center;
+    text-shadow: 0 0 7px #000;
+    border-radius: 10px;
+    border: #000344 solid 5px;
+    position: absolute;
+    bottom: 90px;
+}
+
+#boardHolder{
+    grid-column: 2/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+#board{
+    width: 60%;
+    aspect-ratio: 1/1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+    background-color: #000344;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.boxes{
+    background-color: #0052eb;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 82px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+;
+}
