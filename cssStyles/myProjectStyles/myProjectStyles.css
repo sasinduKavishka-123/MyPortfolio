@@ -202,6 +202,19 @@ nav > section{
     background: url("../../assets/myProject/spaceShooter/spaceShooterPic1.png");
 }
 
+#myProject5Pic4{
+    background: url("../../assets/myProject/ticTacToe/ticTacToePic4.png");
+}
+#myProject5Pic3{
+    background: url("../../assets/myProject/ticTacToe/ticTacToePic3.png");
+}
+#myProject5Pic2{
+    background: url("../../assets/myProject/ticTacToe/ticTacToePic2.png");
+}
+#myProject5Pic1{
+    background: url("../../assets/myProject/ticTacToe/ticTacToePic1.png");
+}
+
 .myProjectPicSection > .myProjectPics:nth-child(2){
     left: -25%;
     animation: picAnim3 30s infinite;
