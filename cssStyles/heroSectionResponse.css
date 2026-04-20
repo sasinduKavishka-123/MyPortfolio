@@ -12,6 +12,10 @@
 
 @media all and (max-width: 900px) {
 
+    #heroTextHolder{
+        top: 35%;
+    }
+
     #introText{
         font-size: 32px;
     }
@@ -92,5 +96,10 @@
     #rightSpotLight{
         animation: none;
         right: 60%;
+    }
+
+    #orbitSpotLight{
+        animation: none;
+        bottom: 140px;
     }
 }

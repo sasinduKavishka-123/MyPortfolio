@@ -37,10 +37,9 @@ nav > section{
 }
 
 #aboutMETextHolderPos{
-    font-size: 52px;
+    font-size: 50px;
     font-family: "Playball", cursive;
     font-weight: bold;
-
     background: linear-gradient(-90deg, #0EA2E7 0% ,#0A71EF 12.5%, #433FE4 25% , #af05ed 37.5%, #AF05ED 50% ,
                                 #7412DA 62.5%, #433FE4 75% ,#0A71EF 87.5% ,#0EA2E7 100%);
     background-size: 80vw 80vw;
