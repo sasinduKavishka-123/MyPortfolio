@@ -1,33 +1,46 @@
 
-let cards = document.querySelectorAll('.projectCards');
+let cards = document.getElementsByClassName('projectCards');
 let nextBtn = document.querySelector('#projectNextBtn');
 let prevBtn = document.querySelector('#projectPrevBtn');
 
-let activeNum = 1;
+let activeNum = cards.length / 2;
 
 function loadCards(){
     let stt = 0;
 
     cards[activeNum].style.transform = 'none';
-    cards[activeNum].style.zIndex = '20';           // given in projectStylesCss
+    cards[activeNum].style.zIndex = '20';               // given in projectStylesCss
     cards[activeNum].style.filter = 'none';
     cards[activeNum].style.opacity = '1';
+    cards[activeNum].style.pointerEvents = 'auto';
+    cards[activeNum].addEventListener('mouseenter', ()=>{
+        cards[activeNum].style.top= '45px';
+        cards[activeNum].style.background = 'linear-gradient(#220633, #220633) padding-box,\n' +
+            '            linear-gradient(to bottom, #0EA2E7, #AF05ED) border-box';
+    });
+    cards[activeNum].addEventListener('mouseleave', ()=>{
+        cards[activeNum].style.top= '55px';
+        cards[activeNum].style.background = 'linear-gradient(#11021b, #11021b) padding-box,\n' +
+            '            linear-gradient(to bottom, #0EA2E7, #AF05ED) border-box';
+    });
 
     for(let i=(activeNum+1); i < cards.length; i++){
         stt++;
-        cards[i].style.transform = `translateX(${120*stt}px) scale(${1 - 0.2*stt}) perspective(16px) rotateY(-1deg)`;
+        cards[i].style.transform = `translateX(${180*stt}px) scale(${1 - 0.2*stt}) perspective(16px) rotateY(-1deg)`;
         cards[i].style.zIndex = 20-stt + "";
         cards[i].style.filter = 'blur(2px)';
         cards[i].style.opacity = stt>2 ? 0: 0.5;
+        cards[i].style.pointerEvents = 'none';
     }
 
     stt = 0;
     for(let i=(activeNum-1); i >= 0; i--){
         stt++;
-        cards[i].style.transform = `translateX(${-120*stt}px) scale(${1 - 0.2*stt}) perspective(16px) rotateY(1deg)`;
+        cards[i].style.transform = `translateX(${-180*stt}px) scale(${1 - 0.2*stt}) perspective(16px) rotateY(1deg)`;
         cards[i].style.zIndex = 20-stt + "";
         cards[i].style.filter = 'blur(2px)';
         cards[i].style.opacity = stt>2 ? 0: 0.5;
+        cards[i].style.pointerEvents = 'none';
     }
 }
 

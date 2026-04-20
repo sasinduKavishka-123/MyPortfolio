@@ -10,6 +10,10 @@
     margin-top: 100px;
 }
 
+#project *{
+    user-select: none;
+}
+
 #projectTopic{
     font-size: 64px;
     font-family: "Russo One", sans-serif;
@@ -21,7 +25,7 @@
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
     text-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
 }
 @keyframes ProjectTopicAnim {
@@ -42,11 +46,12 @@
 
 #projectPrevBtn, #projectNextBtn{
     position: absolute;
+    width: 40px;
     top: 45%;
     left: 20px;
     font-size: 34px;
     font-weight: bold;
-    color: #7e7e7e;
+    color: rgba(166, 21, 191, 0.6);
     border-radius: 30%;
     display: flex;
     align-items: center;
@@ -63,7 +68,7 @@
 
 #projectPrevBtn:hover, #projectNextBtn:hover{
     color: #fff;
-    background-color: #ac02fd6b;
+    background-color: rgba(166, 21, 191, 0.6);
 }
 
 #projectPrevBtn:active, #projectNextBtn:active{
@@ -78,7 +83,7 @@
     align-items: center;
     border-radius: 20px;
     position: absolute;
-    top: 25px;
+    top: 55px;
     left: calc(50% - 145px);
     background:
             linear-gradient(#11021b, #11021b) padding-box,
@@ -89,29 +94,12 @@
     z-index: 20;
 }
 
-.projectCards::before{
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    border-radius: 20px;
-    transition-duration: 500ms;
-}
-
-.projectCards:hover::before{
-    filter: blur(15px);
-    opacity: 90%;
-    padding: 2px;
-    background: conic-gradient(#0EA2E7, #AF05ED ,#0EA2E7, #AF05ED ,#0EA2E7);
-}
-
-.projectCards:hover{
-    top: 20px;
-    background:
-            linear-gradient(#220633, #220633) padding-box,
-            linear-gradient(to bottom, #0EA2E7, #AF05ED) border-box;
-}
+/*.projectCards:hover{*/
+/*    top: 30px;*/
+/*    background:*/
+/*            linear-gradient(#220633, #220633) padding-box,*/
+/*            linear-gradient(to bottom, #0EA2E7, #AF05ED) border-box;*/
+/*}*/
 
 .projectImgs{
     width: 90%;
@@ -135,6 +123,14 @@
 }
 #projectImg4{
     background: url("../assets/orderManagement.png") no-repeat center;
+    background-size: cover;
+}
+#projectImg5{
+    background: url("../assets/spaceShooter.png") no-repeat center;
+    background-size: cover;
+}
+#projectImg6{
+    background: url("../assets/ticTacToePic.png") no-repeat center;
     background-size: cover;
 }
 
@@ -190,21 +186,33 @@
 }
 
 @media all and (max-width: 600px) {
+    .projectCardContainer{
+        width: 100%;
+    }
+
     #projectTopic{
         font-size: 44px;
         margin-bottom: 50px;
     }
-    .projectCardContainer{
-        mask-image: none;
+
+    #projectPrevBtn{
+        left: 5px;
+        font-size: 24px;
+        width: 25px;
     }
 
+    #projectNextBtn{
+        right: 5px;
+        font-size: 24px;
+        width: 25px;
+    }
 }
 
-@media all and (max-width: 400px){
+@media all and (max-width: 500px){
     .projectCards{
-        width: 270px;
-        height: 400px;
-        left: calc(50% - 135px);
+        width: 240px;
+        height: 350px;
+        left: calc(50% - 120px);
     }
 
     .projectTopics{
@@ -212,7 +220,7 @@
     }
 
     .projectDescriptions{
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .projectBtns{
@@ -222,7 +230,7 @@
         font-size: 16px;
         position: relative;
         bottom: 10px;
-        padding-top: 8px;
+        padding-top: 7px;
     }
 
     .projectIcons{
