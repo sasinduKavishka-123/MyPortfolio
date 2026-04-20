@@ -47,44 +47,43 @@
 
 .eduLeftCards, .eduRightCards{
     position: relative;
+    top: 0;
     width: 35%;
     height: 150px;
     border-radius: 20px;
     margin-bottom: 50px;
     padding: 1px;
-    border: 1px solid transparent;
     display: flex;
     align-items: center;
     color: #fff;
     justify-content: space-between;
+    transition-duration: 500ms;
+    border: #2a252d solid 2px;
+    box-sizing: border-box;
 }
 
 .eduLeftCards{
-    background:
-            linear-gradient(220deg, #31064e, #000000FF) padding-box,
-            linear-gradient(220deg, #0EA2E7, #AF05ED) border-box;
-
+    background: linear-gradient(220deg, rgba(46, 5, 73, 0.6), rgba(16, 5, 24, 0.6));
     right: 25%;
 }
 
 .eduLeftCards:hover{
-    background:
-            linear-gradient(220deg, #3f0765, #260638) padding-box,
-            linear-gradient(220deg, #0EA2E7, #AF05ED) border-box;
+    box-shadow: 0 0 17px 2px rgb(158, 14, 204);
+    background: linear-gradient(220deg, rgba(46, 5, 73, 0.7), rgba(16, 5, 24, 0.7));
+    border: #2E0549B2 solid 2px;
+    scale: 102%;
 }
 
 .eduRightCards{
-    background:
-            linear-gradient(60deg, #31064e, #000000FF) padding-box,
-            linear-gradient(60deg, #0EA2E7, #AF05ED) border-box;
-
+    background: linear-gradient(60deg, rgba(46, 5, 73, 0.6), rgba(16, 5, 24, 0.6));
     left: 25%;
 }
 
 .eduRightCards:hover{
-    background:
-            linear-gradient(60deg, #3f0765, #260638) padding-box,
-            linear-gradient(60deg, #0EA2E7, #AF05ED) border-box;
+    box-shadow: 0 0 17px 2px rgb(158, 14, 204);
+    background: linear-gradient(60deg, rgba(46, 5, 73, 0.7), rgba(16, 5, 24, 0.7));
+    border: #2E0549B2 solid 2px;
+    scale: 102%;
 }
 
 .eduCardIcon{
