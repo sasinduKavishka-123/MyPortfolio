@@ -13,31 +13,8 @@ nav > section{
     justify-content: center;
     align-items: center;
     margin-bottom: 200px;
+    user-select: none;
 }
-
-/*#myProjectTopic{*/
-/*    font-size: 64px;*/
-/*    font-family: "Russo One", sans-serif;*/
-/*    font-weight: bold;*/
-/*    background: linear-gradient(-90deg, #0EA2E7 0% ,#0A71EF 12.5%, #433FE4 25% ,#7412DA 37.5%, #AF05ED 50% ,*/
-/*    #7412DA 62.5%, #433FE4 75% ,#0A71EF 87.5% ,#0EA2E7 100%);*/
-/*    background-size: 70vw 70vw;*/
-/*    animation: ProjectTopicAnim 10s linear infinite forwards;*/
-/*    -webkit-background-clip: text;*/
-/*    background-clip: text;*/
-/*    color: transparent;*/
-/*    margin: 25px 0 100px 0;*/
-/*    text-shadow: 0 0 30px rgba(255, 255, 255, 0.2);*/
-/*}*/
-
-/*@keyframes ProjectTopicAnim {*/
-/*    0%{*/
-/*        background-position-x: 0;*/
-/*    }*/
-/*    100%{*/
-/*        background-position-x: 70vw;*/
-/*    }*/
-/*}*/
 
 #myProjectSectionHolder{
     width: 90%;
