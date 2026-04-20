@@ -3,7 +3,7 @@
 @media all and (max-width: 1200px) {
 
     #introText{
-        left: 10vw;
+        left: 2vw;
     }
     #name{
         font-size: calc(100vw / 6 );
@@ -17,7 +17,6 @@
     }
 
     #name{
-        font-size: calc(100vw / 7 );
     }
 
     #writer{
@@ -66,6 +65,7 @@
     #introText{
         font-size: 20px;
         top: 33%;
+        left: 8vw;
     }
 
     #name{
