@@ -15,7 +15,7 @@ function loadCards(){
     cards[activeNum].style.pointerEvents = 'auto';
     cards[activeNum].addEventListener('mouseenter', ()=>{
         cards[activeNum].style.top= '45px';
-        cards[activeNum].style.background = 'linear-gradient(#220633, #220633) padding-box,\n' +
+        cards[activeNum].style.background = 'linear-gradient(rgb(31 3 49), rgb(31 3 49)) padding-box,\n' +
             '            linear-gradient(to bottom, #0EA2E7, #AF05ED) border-box';
     });
     cards[activeNum].addEventListener('mouseleave', ()=>{

@@ -30,12 +30,15 @@
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    user-select: none;
 }
 
 #contactDiscText{
     text-align: center;
     color: white;
     margin-top: 50px;
+    user-select: none;
+    pointer-events: none;
 }
 
 #contactDiscText > div {
@@ -97,13 +100,12 @@
 #contactTextContainer{
     padding-left: 30px;
     transition-duration: 500ms;
-    /*background-color: blue;*/
+    user-select: none;
 }
 
 #contactFormContainer{
     padding: 10px 40px;
     transition-duration: 500ms;
-    /*background-color: red;*/
 }
 
 #contactText5{
@@ -183,6 +185,7 @@
     font-size: 36px;
     font-weight: bold;
     margin: 20px 0 ;
+    user-select: none;
 }
 
 .contactFormInfo > div{

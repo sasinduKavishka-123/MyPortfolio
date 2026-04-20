@@ -9,6 +9,7 @@
     padding-top: 150px;
     margin-top: 50px;
     margin-bottom: 100px;
+    user-select: none;
 }
 
 #educationTopic{
@@ -66,12 +67,24 @@
     right: 25%;
 }
 
+.eduLeftCards:hover{
+    background:
+            linear-gradient(220deg, #3f0765, #260638) padding-box,
+            linear-gradient(220deg, #0EA2E7, #AF05ED) border-box;
+}
+
 .eduRightCards{
     background:
             linear-gradient(60deg, #31064e, #000000FF) padding-box,
             linear-gradient(60deg, #0EA2E7, #AF05ED) border-box;
 
     left: 25%;
+}
+
+.eduRightCards:hover{
+    background:
+            linear-gradient(60deg, #3f0765, #260638) padding-box,
+            linear-gradient(60deg, #0EA2E7, #AF05ED) border-box;
 }
 
 .eduCardIcon{

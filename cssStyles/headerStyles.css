@@ -8,6 +8,8 @@
     align-items: center;
     overflow: hidden;
     position: relative;
+    user-select: none;
+    pointer-events: none;
 }
 
 #heroTextHolder{

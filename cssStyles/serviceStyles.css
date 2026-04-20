@@ -9,6 +9,7 @@
     align-items: center;
     margin-bottom: 250px;
     margin-top: 100px;
+    user-select: none;
 }
 
 #serviceTopic{
@@ -67,6 +68,7 @@
 
 .serviceIcons{
     margin-bottom: 10px;
+    pointer-events: none;
 }
 
 .serviceTopic{

@@ -8,16 +8,12 @@
     padding: 10px 0;
     mask-image: linear-gradient(to top, transparent, #000 30% 70%, transparent);
     mix-blend-mode: lighten;
+    user-select: none;
 }
 
 #blackHoleVid{
     width: 100%;
     z-index: -10;
-}
-
-#blackHole > div{
-    position: absolute;
-    top: 25%;
 }
 
 #skill{
@@ -28,6 +24,7 @@
     flex-direction: column;
     align-items: center;
     margin-top: -190px;
+    user-select: none;
 }
 
 #skillTopic{
@@ -80,17 +77,26 @@
     aspect-ratio: 1/1;
     box-sizing: border-box;
     border-radius: 15px;
-    margin: 5px 10px;
+    margin: 8px 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    position: relative;
+    top: 0;
     padding: 1px;
     border: 1px solid transparent;
     background:
+            linear-gradient(#140d1c, #140d1c) padding-box,
+            linear-gradient(to bottom, #0EA2E7, #AF05ED) border-box;
+    transition-duration: 300ms;
+}
+
+.skillCards:hover{
+    box-shadow: 0 0 8px 2px #4f1460;
+    top: -5px;
+    background:
             linear-gradient(#1d1426, #1d1426) padding-box,
             linear-gradient(to bottom, #0EA2E7, #AF05ED) border-box;
-
 }
 
 .skillIconHolder{

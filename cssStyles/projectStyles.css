@@ -68,7 +68,7 @@
 
 #projectPrevBtn:hover, #projectNextBtn:hover{
     color: #fff;
-    background-color: rgba(166, 21, 191, 0.6);
+    background-color: rgba(149, 25, 166, 0.6);
 }
 
 #projectPrevBtn:active, #projectNextBtn:active{
