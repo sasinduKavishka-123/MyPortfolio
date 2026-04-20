@@ -19,7 +19,6 @@
 }
 
 .gridSections{
-    /*margin: 0 10px;*/
     border-radius: 20px;
     background: linear-gradient(225deg, rgba(46, 5, 73, 0.6), rgba(16, 5, 24, 0.6));
     box-sizing: border-box;

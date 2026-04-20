@@ -6,7 +6,7 @@
         left: 10vw;
     }
     #name{
-        font-size: calc(100vw / 8 );
+        font-size: calc(100vw / 6 );
     }
 }
 
@@ -59,12 +59,13 @@
     }
 
     #heroTextHolder{
+        top: 30%;
         width: 100%;
     }
 
     #introText{
         font-size: 20px;
-        top: 220px;
+        top: 33%;
     }
 
     #name{

@@ -1,7 +1,7 @@
 
 #hero{
     padding-top: 80px;
-    height: 980px;
+    height: 130vh;
     color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -17,39 +17,43 @@
     height: 500px;
     text-align: center;
     padding: 40px;
+    position: relative;
+    top: 35%;
+    transform: translate(0, -50%);
 }
 
 #introText{
     font-size: 40px;
     font-weight: bold;
     position: absolute;
-    top: 180px;
-    left: 20vw;
+    top: 25%;
+    transform: translate(0, -50%);
+    left: 15vw;
     font-family: Inter, serif;
     letter-spacing: 3px;
 }
 
 #name{
-    font-size: calc(100vw / 9 );
+    font-size: calc(100vw / 7.5 );
     position: relative;
-    top: 110px;
+    top: 100px;
     font-family: Russo One , serif;
     text-shadow: 0 0 50px rgba(255, 255, 255, 0.4);
 }
 
-#writer{
-    font-size: 30px;
-    position: relative;
-    top: 140px;
-    font-family: serif;
-    font-style: italic;
-}
+/*#writer{*/
+/*    font-size: 30px;*/
+/*    position: relative;*/
+/*    top: 140px;*/
+/*    font-family: serif;*/
+/*    font-style: italic;*/
+/*}*/
 
 #orbitBox{
     width: 100vw;
     height: 300px;
-    position: relative;
-    bottom: 90px;
+    position: absolute;
+    bottom: 30vh;
 }
 
 #orbitHolder{
