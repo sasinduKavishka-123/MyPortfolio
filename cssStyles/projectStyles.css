@@ -36,15 +36,37 @@
 .projectCardContainer{
     width: 90%;
     height: 500px;
+    position: relative;
     overflow: hidden;
-    mask-image: linear-gradient(to right, transparent, #000000 10% 90%, transparent);
 }
 
-#projectCardList{
+#projectPrevBtn, #projectNextBtn{
+    position: absolute;
+    top: 45%;
+    left: 20px;
+    font-size: 34px;
+    font-weight: bold;
+    color: #7e7e7e;
+    border-radius: 30%;
     display: flex;
-    position: relative;
-    width: 100%;
-    min-width: calc(290px * 4);
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    transition-duration: 300ms;
+}
+
+#projectNextBtn{
+    left: unset;
+    right: 20px;
+}
+
+#projectPrevBtn:hover, #projectNextBtn:hover{
+    color: #fff;
+    background-color: #ac02fd6b;
+}
+
+#projectPrevBtn:active, #projectNextBtn:active{
+    scale: 80%;
 }
 
 .projectCards{
@@ -56,13 +78,12 @@
     border-radius: 20px;
     position: absolute;
     top: 25px;
-    left: 100%;
+    left: calc(50% - 145px);
     background:
             linear-gradient(#11021b, #11021b) padding-box,
             linear-gradient(to bottom, #0EA2E7, #AF05ED) border-box;
     padding: 1px;
     border: 2px solid transparent;
-    animation: projectCardSlider 10s linear infinite;
     transition-duration: 500ms;
 }
 
@@ -88,39 +109,6 @@
     background:
             linear-gradient(#220633, #220633) padding-box,
             linear-gradient(to bottom, #0EA2E7, #AF05ED) border-box;
-}
-
-.projectCardContainer .projectCards:nth-child(1){
-    animation-delay: calc( 10s / 4 * (1 - 1) );
-}
-.projectCardContainer .projectCards:nth-child(2){
-    animation-delay: calc( 10s / 4 * (2 - 1) );
-}
-.projectCardContainer .projectCards:nth-child(3){
-    animation-delay: calc( 10s / 4 * (3 - 1) );
-}
-.projectCardContainer .projectCards:nth-child(4){
-    animation-delay: calc( 10s / 4 * (4 - 1) );
-}
-
-@keyframes projectCardSlider {
-    0%{
-        left: 100%;
-    }
-    100%{
-        left: -25%;
-    }
-}
-
-
-/*@media (hover: hover) {*/
-/*    .projectCardContainer:hover .projectCards{*/
-/*        animation-play-state: paused !important;*/
-/*    }*/
-/*}*/
-
-.projectCardContainer:active .projectCards{
-    animation-play-state: paused !important;
 }
 
 .projectImgs{
@@ -208,24 +196,13 @@
         mask-image: none;
     }
 
-    .projectCards{
-        animation: projectCardSlider2 10s linear infinite;
-    }
-
-    @keyframes projectCardSlider2 {
-        0%{
-            left: 60%;
-        }
-        100%{
-            left: -60%;
-        }
-    }
 }
 
 @media all and (max-width: 400px){
     .projectCards{
         width: 270px;
         height: 400px;
+        left: calc(50% - 135px);
     }
 
     .projectTopics{
