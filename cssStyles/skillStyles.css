@@ -88,12 +88,11 @@
     background:
             linear-gradient(#140d1c, #140d1c) padding-box,
             linear-gradient(to bottom, #0EA2E7, #AF05ED) border-box;
-    transition-duration: 300ms;
+    transition-duration: 700ms;
 }
 
 .skillCards:hover{
     box-shadow: 0 0 12px 2px #661380;
-    top: -5px;
     background:
             linear-gradient(#1d1426, #1d1426) padding-box,
             linear-gradient(to bottom, #0EA2E7, #AF05ED) border-box;

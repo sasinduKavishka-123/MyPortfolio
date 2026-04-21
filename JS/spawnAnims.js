@@ -13,7 +13,7 @@ const subTopicObserver = new IntersectionObserver((entries)=>{
     })
 },{
     // threshold: 0,
-    rootMargin: "-120px 0px -70px 0px"
+    rootMargin: "0px 0px -100px 0px"
 });
 
 subTopics.forEach((subTopic)=>{
@@ -62,4 +62,25 @@ const specialCardsObserver = new IntersectionObserver((entries)=>{
 
 specialCards.forEach((card)=>{
     specialCardsObserver.observe(card);
+});
+
+
+//******    skill card spawn    **************
+
+const skillCards = document.querySelectorAll('.skCard');
+const skillCardsObserver = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add('skCardShow');
+        }
+        else{
+            entry.target.classList.remove('skCardShow');
+        }
+    })
+},{
+    rootMargin: "10px 0px -110px 0px"
+});
+
+skillCards.forEach((card)=>{
+    skillCardsObserver.observe(card);
 });

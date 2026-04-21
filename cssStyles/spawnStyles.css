@@ -24,13 +24,27 @@
 
 .spCards{
     scale: 70%;
-    width: 100%;
     opacity: 0;
     transition: 1000ms ease-out;
     justify-items: center;
+    width: 100%;
 }
 
 .spCards.spCardShow{
     opacity: 100%;
     scale: 100%;
+}
+
+.skCard{
+    top: 90px;
+    opacity: 0;
+}
+
+.skCard.skCardShow{
+    top: 0;
+    opacity: 100%;
+}
+
+.skCard.skCardShow:hover{
+    top: -8px;
 }
