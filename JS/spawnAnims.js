@@ -43,23 +43,23 @@ contactTopics.forEach((conTopic)=>{
 });
 
 
-//******    contact topics spawn    **************
+//******    special card spawn    **************
 
-// const contactTopics = document.querySelectorAll('.contactTopics');
-// const contactTopicsObserver = new IntersectionObserver((entries)=>{
-//     entries.forEach(entry=>{
-//         if(entry.isIntersecting){
-//             entry.target.classList.add('contactTopicShow');
-//         }
-//         else{
-//             entry.target.classList.remove('contactTopicShow');
-//         }
-//     })
-// },{
-//     // threshold: 0,
-//     rootMargin: "-80px 0px -70px 0px"
-// });
-//
-// contactTopics.forEach((conTopic)=>{
-//     contactTopicsObserver.observe(conTopic);
-// });
+const specialCards = document.querySelectorAll('.spCards');
+const specialCardsObserver = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add('spCardShow');
+        }
+        else{
+            entry.target.classList.remove('spCardShow');
+        }
+    })
+},{
+    // threshold: 1,
+    rootMargin: "-100px 0px -200px 0px"
+});
+
+specialCards.forEach((card)=>{
+    specialCardsObserver.observe(card);
+});

@@ -3,7 +3,7 @@
 .subTopics{
     opacity: 0;
     translate: 0 80px;
-    transition: 1500ms ease;
+    transition: 1300ms ease;
 }
 
 .subTopics.subtopicShow{
@@ -20,4 +20,17 @@
 .contactTopics.contactTopicShow{
     opacity: 100%;
     translate: 0 0;
+}
+
+.spCards{
+    scale: 70%;
+    width: 100%;
+    opacity: 0;
+    transition: 1000ms ease-out;
+    justify-items: center;
+}
+
+.spCards.spCardShow{
+    opacity: 100%;
+    scale: 100%;
 }

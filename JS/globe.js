@@ -33,6 +33,6 @@ animate();
 
 let blackHoleVid = document.querySelector('#blackHoleVid');
 
-if(window.innerWidth < 800){
+if((window.innerWidth < 800) && (window.innerHeight < 900)){
     blackHoleVid.pause();
 }
