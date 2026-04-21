@@ -1,0 +1,23 @@
+
+
+.subTopics{
+    opacity: 0;
+    translate: 0 80px;
+    transition: 1500ms ease;
+}
+
+.subTopics.subtopicShow{
+    opacity: 100%;
+    translate: 0 0;
+}
+
+.contactTopics{
+    opacity: 0;
+    translate: 0 50px;
+    transition: 1500ms ease;
+}
+
+.contactTopics.contactTopicShow{
+    opacity: 100%;
+    translate: 0 0;
+}

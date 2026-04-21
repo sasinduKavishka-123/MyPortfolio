@@ -1,6 +1,6 @@
 
 const container = document.querySelector('.projectCardContainer');
-const observer = new IntersectionObserver((entries)=>{
+const projectContainer0bserver = new IntersectionObserver((entries)=>{
     if(entries[0].isIntersecting){
         entries[0].target.style.cssText = 'translate: 0 0; opacity: 100%;';
         setTimeout(()=>{
@@ -14,7 +14,7 @@ const observer = new IntersectionObserver((entries)=>{
     threshold: 0.6
 });
 
-observer.observe(container);
+projectContainer0bserver.observe(container);
 
 
 let cards = document.getElementsByClassName('projectCards');

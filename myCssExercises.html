@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="cssStyles/footerStyles.css">
     <link rel="stylesheet" href="cssStyles/footerSectionResponse.css">
 
+    <link rel="stylesheet" href="cssStyles/spawnStyles.css">
     <link rel="stylesheet" href="cssStyles/starStyles.css">
     <link rel="stylesheet" href="cssStyles/shootingStarStyles.css">
 
@@ -56,13 +57,13 @@
 
     <!-- Intro Text-->
     <div id="introContainer">
-        <div id="topic">EXERCISE</div>
-        <div id="smallText">How I developed my CSS skills</div>
+        <div id="topic" class="subTopics">EXERCISE</div>
+        <div id="smallText" class="subTopics">How I developed my CSS skills</div>
     </div>
 
     <!-- Case 1 -->
     <section class="cssSections">
-        <div class="exerciseTopic">Exercise 01</div>
+        <div class="exerciseTopic subTopics">Exercise 01</div>
         <section class="exerciseSection">
             <div class="exerciseCaseCard">
                 <a href="exercises/exerciseHtml/exercise1Case1.html" target="_blank" rel="noopener noreferrer" class="exerciseImgLink">
@@ -135,7 +136,7 @@
 
     <!-- Case 2 -->
     <section class="cssSections">
-        <div class="exerciseTopic">Exercise 02</div>
+        <div class="exerciseTopic subTopics">Exercise 02</div>
         <section class="exerciseSection">
             <div class="exerciseCaseCard">
                 <a href="exercises/exerciseHtml/exercise2Case1.html" target="_blank" rel="noopener noreferrer" class="exerciseImgLink">
@@ -208,10 +209,10 @@
 
     <!-- Text -->
     <section id="contactDescription">
-    <div id="contactLogo">SK</div>
+    <div id="contactLogo" class="contactTopics">SK</div>
     <div id="contactDiscText">
-        <div><span id="contactText1">From Concept To  </span><span id="contactText2">Code <i class="fa-solid fa-code contactCodeIcon"></i></span></div>
-        <div><span id="contactText3">Let’s Turn Ideas Into </span><span id="contactText4"> SOLUTIONS</span></div>
+        <div class="contactTopics"><span id="contactText1">From Concept To  </span><span id="contactText2">Code <i class="fa-solid fa-code contactCodeIcon"></i></span></div>
+        <div class="contactTopics"><span id="contactText3">Let’s Turn Ideas Into </span><span id="contactText4"> SOLUTIONS</span></div>
     </div>
 </section>
 
@@ -280,5 +281,7 @@
     <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script>
     <script src="JS/stars.js"></script>
     <script src="https://www.hxstrive.com/cdn/libs/font-awesome/7.0.1/js/all.min.js"></script>
+    <!-- spawn elements -->
+    <script src="JS/spawnAnims.js"></script>
 </body>
 </html>

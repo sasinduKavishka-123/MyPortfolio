@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="cssStyles/serviceStyleResponse.css">
     <link rel="stylesheet" href="cssStyles/myProjectStyles/myProjectCssTextStyles.css">
 
+    <link rel="stylesheet" href="cssStyles/spawnStyles.css">
     <link rel="stylesheet" href="cssStyles/starStyles.css">
     <link rel="stylesheet" href="cssStyles/shootingStarStyles.css">
 
@@ -58,13 +59,12 @@
 
     <!-- Intro Text-->
     <div id="introContainer">
-        <div id="topic">MY WORKS</div>
-        <div id="smallText">Explore my recent projects</div>
+        <div id="topic" class="subTopics">MY WORKS</div>
+        <div id="smallText" class="subTopics">Explore my recent projects</div>
     </div>
 
     <!-- myProjects -->
     <section id="myProjects">
-        <div id="myProjectTopic">My Projects</div>
         <section id="myProjectSectionHolder">
             <div class="myProject">
                 <div class="myProjectPic">
@@ -336,20 +336,20 @@
     <section id="cssExerciseSection">
         <div id="cssSmoothScrollPoint"></div>
 
-        <div class="myProjectCssText">
+        <div class="myProjectCssText subTopics" >
             Master <span>CSS</span> by building projects and solving hands-on layout challenges.
         </div>
         <a href="myCssExercises.html">
-            <div class="exLinkBtn">
+            <div class="exLinkBtn subTopics">
                 Explore <i class="fa-solid fa-paper-plane"></i>
             </div>
         </a>
 
-        <div class="myProjectCssText">
+        <div class="myProjectCssText subTopics">
             Advancing <span>JS</span> proficiency through application building and complex algorithmic problem-solving
         </div>
         <a href="myJsExercises.html">
-            <div class="exLinkBtn">
+            <div class="exLinkBtn subTopics">
                 Explore <i class="fa-solid fa-paper-plane"></i>
             </div>
         </a>
@@ -357,7 +357,7 @@
 
     <!-- Service -->
     <section id="Service">
-        <div id="serviceTopic">My Services</div>
+        <div id="serviceTopic" class="subTopics">My Services</div>
         <section id="serviceGrid">
             <div class="serviceCards" id="serviceCard1">
                 <img src="assets/servicesImgs/responsivUi.png" alt="responsive Ui png" class="serviceIcons"/>
@@ -392,10 +392,10 @@
 
     <!-- Text -->
     <section id="contactDescription">
-        <div id="contactLogo">SK</div>
+        <div id="contactLogo" class="contactTopics">SK</div>
         <div id="contactDiscText">
-            <div><span id="contactText1">From Concept To  </span><span id="contactText2">Code <i class="fa-solid fa-code contactCodeIcon"></i></span></div>
-            <div><span id="contactText3">Let’s Turn Ideas Into </span><span id="contactText4"> SOLUTIONS</span></div>
+            <div class="contactTopics"><span id="contactText1">From Concept To  </span><span id="contactText2">Code <i class="fa-solid fa-code contactCodeIcon"></i></span></div>
+            <div class="contactTopics"><span id="contactText3">Let’s Turn Ideas Into </span><span id="contactText4"> SOLUTIONS</span></div>
         </div>
     </section>
 
@@ -465,5 +465,7 @@
     <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script>
     <script src="JS/stars.js"></script>
     <script src="https://www.hxstrive.com/cdn/libs/font-awesome/7.0.1/js/all.min.js"></script>
+    <!-- spawn elements -->
+    <script src="JS/spawnAnims.js"></script>
 </body>
 </html>
