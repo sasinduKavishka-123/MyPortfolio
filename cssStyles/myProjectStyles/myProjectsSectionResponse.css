@@ -25,7 +25,7 @@
     }
 
     .myProjectPic{
-        width: 90%;
+        width: 90% !important;
         margin-bottom: 40px;
     }
 
@@ -47,7 +47,7 @@
     }
 
     .myProjectPic{
-        width: 100%;
+        width: 100% !important;
         margin-bottom: 20px;
     }
 

@@ -99,7 +99,7 @@ const rightSpawnCardsObserver = new IntersectionObserver((entries)=>{
         }
     })
 },{
-    rootMargin: "-150px 0px -200px 0px"
+    rootMargin: "-100px 0px -200px 0px"
 });
 
 rightSpawnCards.forEach((card)=>{
@@ -119,7 +119,7 @@ const leftSpawnCardsObserver = new IntersectionObserver((entries)=>{
         }
     })
 },{
-    rootMargin: "-150px 0px -200px 0px"
+    rootMargin: "-100px 0px -200px 0px"
 });
 
 leftSpawnCards.forEach((card)=>{
@@ -140,7 +140,7 @@ const leftEduCardsObserver = new IntersectionObserver((entries)=>{
         }
     })
 },{
-    rootMargin: "100px 0px -200px 0px"
+    rootMargin: "50px 0px -200px 0px"
 });
 
 leftEduCards.forEach((card)=>{
@@ -161,9 +161,29 @@ const rightEduCardsObserver = new IntersectionObserver((entries)=>{
         }
     })
 },{
-    rootMargin: "100px 0px -200px 0px"
+    rootMargin: "50px 0px -200px 0px"
 });
 
 rightEduCards.forEach((card)=>{
     rightEduCardsObserver.observe(card);
+});
+
+//******    project button spawn    **************
+
+const projectButtons = document.querySelectorAll('.pBtn');
+const projectButtonsObserver = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add('pBtnShow');
+        }
+        else{
+            entry.target.classList.remove('pBtnShow');
+        }
+    })
+},{
+    rootMargin: "50px 0px -150px 0px"
+});
+
+projectButtons.forEach((card)=>{
+    projectButtonsObserver.observe(card);
 });

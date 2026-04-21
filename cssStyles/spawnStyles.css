@@ -22,7 +22,7 @@
     translate: 0 0;
 }
 
-.spCards{
+.spCards, .pBtn{
     scale: 70%;
     opacity: 0;
     transition: 1000ms ease-out;
@@ -30,7 +30,7 @@
     width: 100%;
 }
 
-.spCards.spCardShow{
+.spCards.spCardShow , .pBtn.pBtnShow{
     opacity: 100%;
     scale: 100%;
 }
