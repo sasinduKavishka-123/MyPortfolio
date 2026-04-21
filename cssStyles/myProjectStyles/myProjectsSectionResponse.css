@@ -38,7 +38,7 @@
 @media all and (max-width: 600px){
 
     #myProjects{
-        padding-top: 0;
+        padding-top: 50px;
     }
 
     #myProjectTopic{

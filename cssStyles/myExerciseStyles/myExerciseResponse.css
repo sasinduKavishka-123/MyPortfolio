@@ -4,6 +4,9 @@
     .exerciseSection{
         grid-template-columns: 1fr 1fr;
     }
+    .exImages{
+        filter: grayscale(0);
+    }
 }
 
 @media all and (max-width: 830px) {
@@ -13,11 +16,7 @@
     }
 
     .exerciseCaseCard{
-        width: 45vw;
-    }
-
-    .exImages{
-        filter: grayscale(0);
+        width: 45vw !important;
     }
 }
 
@@ -59,7 +58,7 @@
     }
 
     .exerciseCaseCard{
-        width: 48vw;
+        width: 48vw !important;
         position: relative;
         border-radius: 8px;
     }
