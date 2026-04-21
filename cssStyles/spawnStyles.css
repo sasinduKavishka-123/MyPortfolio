@@ -82,7 +82,7 @@
 .eLeftCard{
     right: 40%;
     opacity: 0;
-    transition: 1000ms ease-out;
+    transition: 700ms ease-out;
 }
 
 .eLeftCard.eLeftCardShow{
@@ -93,7 +93,7 @@
 .eRightCard{
     left: 40%;
     opacity: 0;
-    transition: 1000ms ease-out;
+    transition: 700ms ease-out;
 }
 
 .eRightCard.eRightCardShow{
