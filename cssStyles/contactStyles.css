@@ -5,6 +5,7 @@
     margin-top: 100px;
     width: 100vw;
     height: 1250px;
+    overflow-x: hidden;
 }
 
 #contactDescription{
@@ -113,7 +114,6 @@
     font-weight: bold;
     color: white;
     font-family: "Source Serif 4", serif;
-    transition: 800ms ease-out;
     text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
 }
 
@@ -128,7 +128,6 @@
     background-clip: text;
     color: transparent;
     text-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
-    transition: 800ms ease-out;
 }
 @keyframes contactText2Anim {
     0%{
@@ -162,7 +161,6 @@
     border: #2B2B2B solid 1px;
     border-radius: 30px;
     background: linear-gradient(230deg, rgba(60, 0, 100, 0.7) 20%, rgba(21, 2, 33, 0.7) 80%);
-    transition: 800ms ease-out;
 }
 
 .contactFormInfo{

@@ -8,6 +8,7 @@
     justify-content: center;
     margin-bottom: 200px;
     user-select: none;
+    overflow-x: hidden;
 }
 
 #gridContainer{

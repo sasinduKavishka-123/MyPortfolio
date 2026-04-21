@@ -12,6 +12,7 @@ nav > section{
     align-items: center;
     justify-content: center;
     user-select: none;
+    overflow-x: hidden;
 }
 
 #aboutMeContentHolder{

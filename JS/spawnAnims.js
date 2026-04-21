@@ -126,3 +126,44 @@ leftSpawnCards.forEach((card)=>{
     leftSpawnCardsObserver.observe(card);
 });
 
+
+//******    left edu card spawn    **************
+
+const leftEduCards = document.querySelectorAll('.eLeftCard');
+const leftEduCardsObserver = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add('eLeftCardShow');
+        }
+        else{
+            entry.target.classList.remove('eLeftCardShow');
+        }
+    })
+},{
+    rootMargin: "100px 0px -200px 0px"
+});
+
+leftEduCards.forEach((card)=>{
+    leftEduCardsObserver.observe(card);
+});
+
+
+//******    right edu card spawn    **************
+
+const rightEduCards = document.querySelectorAll('.eRightCard');
+const rightEduCardsObserver = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add('eRightCardShow');
+        }
+        else{
+            entry.target.classList.remove('eRightCardShow');
+        }
+    })
+},{
+    rootMargin: "100px 0px -200px 0px"
+});
+
+rightEduCards.forEach((card)=>{
+    rightEduCardsObserver.observe(card);
+});

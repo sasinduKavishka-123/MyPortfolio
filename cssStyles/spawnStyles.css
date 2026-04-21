@@ -35,6 +35,8 @@
     scale: 100%;
 }
 
+/*********** skill cards *************/
+
 .skCard{
     top: 90px;
     opacity: 0;
@@ -49,10 +51,13 @@
     top: -8px;
 }
 
+/*********************************************/
+
 .rightSpawnCards{
     position: relative;
     right: -100px;
     opacity: 0;
+    transition: 800ms ease-out;
 }
 
 .rightSpawnCards.rightSpawnCardsShow{
@@ -64,9 +69,44 @@
     position: relative;
     left: -100px;
     opacity: 0;
+    transition: 800ms ease-out;
 }
 
 .leftSpawnCards.leftSpawnCardsShow{
     left: 0;
     opacity: 100%;
 }
+
+/************ edu cards **************/
+
+.eLeftCard{
+    right: 40%;
+    opacity: 0;
+    transition: 1000ms ease-out;
+}
+
+.eLeftCard.eLeftCardShow{
+    right: 25%;
+    opacity: 100%;
+}
+
+.eRightCard{
+    left: 40%;
+    opacity: 0;
+    transition: 1000ms ease-out;
+}
+
+.eRightCard.eRightCardShow{
+    left: 25%;
+    opacity: 100%;
+}
+
+@media all and (max-width: 700px){
+    .eRightCard.eRightCardShow{
+        left: 0;
+    }
+    .eLeftCard.eLeftCardShow{
+        right: 0;
+    }
+}
+/*********************************************/
