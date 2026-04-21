@@ -46,6 +46,7 @@
 .serviceCards{
     border-radius: 15px;
     height: 380px;
+    width: 95% !important;
     display: flex;
     flex-direction: column;
     align-items: center;

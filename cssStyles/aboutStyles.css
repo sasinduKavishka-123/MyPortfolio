@@ -25,7 +25,7 @@
     border: #2a252d solid 1px;
     position: relative;
     bottom: 0;
-    transition-duration: 600ms;
+    transition: 800ms ease-out;
 }
 
 .gridSections:hover{
@@ -82,6 +82,7 @@
     margin-top: -20px;
     color: #ffffff;
     overflow: hidden;
+    cursor: pointer;
 }
 #gridSection5{
     grid-column: 1/3;
@@ -227,6 +228,7 @@
     position: absolute;
     bottom: 30px;
     transition-duration: 500ms;
+    cursor: pointer;
 }
 
 #gridSection3ContactButton:hover{

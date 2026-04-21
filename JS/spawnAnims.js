@@ -84,3 +84,45 @@ const skillCardsObserver = new IntersectionObserver((entries)=>{
 skillCards.forEach((card)=>{
     skillCardsObserver.observe(card);
 });
+
+
+//******    right card spawn    **************
+
+const rightSpawnCards = document.querySelectorAll('.rightSpawnCards');
+const rightSpawnCardsObserver = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add('rightSpawnCardsShow');
+        }
+        else{
+            entry.target.classList.remove('rightSpawnCardsShow');
+        }
+    })
+},{
+    rootMargin: "-150px 0px -200px 0px"
+});
+
+rightSpawnCards.forEach((card)=>{
+    rightSpawnCardsObserver.observe(card);
+});
+
+//******    left card spawn    **************
+
+const leftSpawnCards = document.querySelectorAll('.leftSpawnCards');
+const leftSpawnCardsObserver = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add('leftSpawnCardsShow');
+        }
+        else{
+            entry.target.classList.remove('leftSpawnCardsShow');
+        }
+    })
+},{
+    rootMargin: "-150px 0px -200px 0px"
+});
+
+leftSpawnCards.forEach((card)=>{
+    leftSpawnCardsObserver.observe(card);
+});
+

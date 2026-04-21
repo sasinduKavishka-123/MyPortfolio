@@ -48,3 +48,25 @@
 .skCard.skCardShow:hover{
     top: -8px;
 }
+
+.rightSpawnCards{
+    position: relative;
+    right: -100px;
+    opacity: 0;
+}
+
+.rightSpawnCards.rightSpawnCardsShow{
+    right: 0;
+    opacity: 100%;
+}
+
+.leftSpawnCards{
+    position: relative;
+    left: -100px;
+    opacity: 0;
+}
+
+.leftSpawnCards.leftSpawnCardsShow{
+    left: 0;
+    opacity: 100%;
+}
