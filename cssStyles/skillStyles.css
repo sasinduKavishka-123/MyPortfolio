@@ -92,7 +92,7 @@
 }
 
 .skillCards:hover{
-    box-shadow: 0 0 8px 2px #4f1460;
+    box-shadow: 0 0 12px 2px #661380;
     top: -5px;
     background:
             linear-gradient(#1d1426, #1d1426) padding-box,
@@ -106,6 +106,15 @@
     padding: 5px;
     border-radius: 15px;
     margin: 5px 0;
+}
+
+.skillIconHolder img{
+    scale: 85%;
+    transition-duration: 500ms;
+}
+
+.skillCards:hover img{
+    scale: 95%;
 }
 
 .skillName{

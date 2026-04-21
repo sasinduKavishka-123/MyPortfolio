@@ -61,8 +61,8 @@
 
 .serviceCards:hover{
     bottom: 20px;
-    border-color: rgba(255, 255, 255, 0);
-    box-shadow: 0 0 10px 2px rgb(191, 0, 255);
+    border-color: #BF00FFFF;
+    box-shadow: 0 0 10px 2px #BF00FFFF;
     background: linear-gradient(220deg, rgba(85, 9, 135, 0.7), rgba(0, 0, 0, 0.7));
 }
 

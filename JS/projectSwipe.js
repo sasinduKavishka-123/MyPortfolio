@@ -1,4 +1,22 @@
 
+const container = document.querySelector('.projectCardContainer');
+const observer = new IntersectionObserver((entries)=>{
+    if(entries[0].isIntersecting){
+        entries[0].target.style.cssText = 'translate: 0 0; opacity: 100%;';
+        setTimeout(()=>{
+            loadCards();
+        }, 250);
+    }
+    else{
+        entries[0].target.style.cssText = 'translate: 0 50px; opacity: 0;';
+    }
+}, {
+    threshold: 0.6
+});
+
+observer.observe(container);
+
+
 let cards = document.getElementsByClassName('projectCards');
 let nextBtn = document.querySelector('#projectNextBtn');
 let prevBtn = document.querySelector('#projectPrevBtn');
@@ -43,8 +61,6 @@ function loadCards(){
         cards[i].style.pointerEvents = 'none';
     }
 }
-
-loadCards();
 
 nextBtn.onclick = function (){
     activeNum = ((activeNum+1) < cards.length)? activeNum+1 : activeNum;

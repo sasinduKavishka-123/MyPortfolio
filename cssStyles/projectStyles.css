@@ -42,6 +42,9 @@
     height: 500px;
     position: relative;
     overflow: hidden;
+    transition-duration: 800ms;
+/*    translate: 0 100px;*/
+/*    opacity: 0;*/
 }
 
 #projectPrevBtn, #projectNextBtn{
