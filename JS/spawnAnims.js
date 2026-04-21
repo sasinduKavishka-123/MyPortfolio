@@ -1,4 +1,6 @@
 
+//******    sub topics spawn    **************
+
 const subTopics = document.querySelectorAll('.subTopics');
 const subTopicObserver = new IntersectionObserver((entries)=>{
     entries.forEach(entry=>{
@@ -11,7 +13,7 @@ const subTopicObserver = new IntersectionObserver((entries)=>{
     })
 },{
     // threshold: 0,
-    rootMargin: "-150px 0px -70px 0px"
+    rootMargin: "-120px 0px -70px 0px"
 });
 
 subTopics.forEach((subTopic)=>{
@@ -19,7 +21,7 @@ subTopics.forEach((subTopic)=>{
 });
 
 
-/////////////////////////////////////////////////////////////////////////
+//******    contact topics spawn    **************
 
 const contactTopics = document.querySelectorAll('.contactTopics');
 const contactTopicsObserver = new IntersectionObserver((entries)=>{
@@ -33,9 +35,31 @@ const contactTopicsObserver = new IntersectionObserver((entries)=>{
     })
 },{
     // threshold: 0,
-    rootMargin: "-30px 0px -70px 0px"
+    rootMargin: "-80px 0px -70px 0px"
 });
 
 contactTopics.forEach((conTopic)=>{
     contactTopicsObserver.observe(conTopic);
 });
+
+
+//******    contact topics spawn    **************
+
+// const contactTopics = document.querySelectorAll('.contactTopics');
+// const contactTopicsObserver = new IntersectionObserver((entries)=>{
+//     entries.forEach(entry=>{
+//         if(entry.isIntersecting){
+//             entry.target.classList.add('contactTopicShow');
+//         }
+//         else{
+//             entry.target.classList.remove('contactTopicShow');
+//         }
+//     })
+// },{
+//     // threshold: 0,
+//     rootMargin: "-80px 0px -70px 0px"
+// });
+//
+// contactTopics.forEach((conTopic)=>{
+//     contactTopicsObserver.observe(conTopic);
+// });

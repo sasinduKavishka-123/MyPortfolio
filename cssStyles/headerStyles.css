@@ -18,7 +18,7 @@
     text-align: center;
     padding: 40px;
     position: relative;
-    top: 25%;
+    top: 30%;
     transform: translate(0, -50%);
 }
 
@@ -27,10 +27,22 @@
     font-weight: bold;
     position: absolute;
     top: 25%;
-    transform: translate(0, -50%);
+    transform: translate(0 ,-50%);
     left: 12vw;
     font-family: Inter, serif;
     letter-spacing: 3px;
+    animation: loadHeroIntroText 0.8s ease-out;
+}
+
+@keyframes loadHeroIntroText {
+    0%{
+        transform: translate(0 ,50%);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0 ,-50%);
+        opacity: 100%;
+    }
 }
 
 #name{
@@ -39,21 +51,25 @@
     top: 100px;
     font-family: Russo One , serif;
     text-shadow: 0 0 50px rgba(255, 255, 255, 0.4);
+    animation: loadHeroNameText 0.8s ease-out;
 }
 
-/*#writer{*/
-/*    font-size: 30px;*/
-/*    position: relative;*/
-/*    top: 140px;*/
-/*    font-family: serif;*/
-/*    font-style: italic;*/
-/*}*/
+@keyframes loadHeroNameText {
+    0%{
+        transform: translate(0 ,30%);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0 ,0);
+        opacity: 100%;
+    }
+}
 
 #orbitBox{
     width: 100vw;
     height: 300px;
     position: absolute;
-    bottom: 30vh;
+    bottom: 28vh;
 }
 
 #orbitHolder{

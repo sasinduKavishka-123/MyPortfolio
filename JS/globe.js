@@ -27,3 +27,12 @@ function animate() {
     requestAnimationFrame(animate)
 }
 animate();
+
+
+///////////////////////// black hole /////////////////////////////////
+
+let blackHoleVid = document.querySelector('#blackHoleVid');
+
+if(window.innerWidth < 800){
+    blackHoleVid.pause();
+}
