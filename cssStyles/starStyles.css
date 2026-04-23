@@ -41,7 +41,7 @@ body::-webkit-scrollbar-thumb {
      /*mix-blend-mode: overlay; */
 }
 
-#star-container2 {
+#star-container2, #star-container3 {
     position: absolute;
     top: 0;
     left: 0;
@@ -52,6 +52,11 @@ body::-webkit-scrollbar-thumb {
     background-color: #000000;
     overflow: hidden;
     mask-image: linear-gradient(to bottom, transparent, #000000);
+}
+
+#star-container3{
+    height: 100%;
+    mask-image: linear-gradient(to top, transparent, #000000 30%);
 }
 
 .star {
@@ -88,7 +93,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media all and (min-width: 500px){
-    #star-container2{
+    #star-container2, #star-container3{
         display: none;
     }
 }

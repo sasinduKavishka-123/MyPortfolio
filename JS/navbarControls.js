@@ -8,7 +8,7 @@ closeIcon.addEventListener('click', ()=>{
     sidebar.style.animation = 'slidOutRight 0.7s ease-out';
     setTimeout(()=>{
         sidebar.style.display = 'none';
-    },1000);
+    },700);
 });
 
 barIcon.addEventListener('click', ()=>{
