@@ -88,7 +88,7 @@ nav{
     flex-direction: column;
     gap: 10px;
     z-index: 999;
-    animation: slidInRight 1s ease-out ;
+    animation: slidInRight 0.7s ease-out ;
 }
 
 @keyframes slidInRight {
@@ -148,6 +148,12 @@ nav{
 }
 
 @media all and (max-width: 800px) {
+
+    nav{
+        background: rgb(78 22 78 / 20%);
+        backdrop-filter: blur(10px);
+    }
+
     #navBarIcon{
         display: block;
     }

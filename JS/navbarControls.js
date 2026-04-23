@@ -5,7 +5,7 @@ let barIcon = document.getElementById('navBarIcon');
 let closeIcon = document.getElementById('sidebarCloseIcon');
 
 closeIcon.addEventListener('click', ()=>{
-    sidebar.style.animation = 'slidOutRight 1s ease-out';
+    sidebar.style.animation = 'slidOutRight 0.7s ease-out';
     setTimeout(()=>{
         sidebar.style.display = 'none';
     },1000);
@@ -13,5 +13,5 @@ closeIcon.addEventListener('click', ()=>{
 
 barIcon.addEventListener('click', ()=>{
     sidebar.style.display = 'flex';
-    sidebar.style.animation = 'slidInRight 1s ease-out';
+    sidebar.style.animation = 'slidInRight 0.7s ease-out';
 });
