@@ -36,7 +36,7 @@
     <nav>
     <p id="logo">SK</p>
 
-    <section>
+    <section id="navbar">
         <a  href="index.html" class="navTabs">
             <div class="navLinks">Home</div>
         </a>
@@ -53,6 +53,32 @@
             <div class="navLinks">Contact</div>
         </a>
     </section>
+
+    <section id="sideBar">
+        <a href="index.html" class="navTabs">
+            <div class="navLinks">Home</div>
+        </a>
+        <a  href="aboutMe.html" class="navTabs">
+            <div class="navLinks">About</div>
+        </a>
+        <a href="myProjects.html" class="navTabs">
+            <div class="navLinks">Projects</div>
+        </a>
+        <a class="navTabs" style="background-color: #75128a">
+            <div class="navLinks myExercisesLinkScrollBtn">Exercises</div>
+        </a>
+        <a class="navTabs footerLinkScrollBtn">
+            <div class="navLinks">Contact</div>
+        </a>
+
+        <div id="sidebarCloseIcon">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+    </section>
+
+    <div id="navBarIcon">
+        <i class="fa-solid fa-bars"></i>
+    </div>
 </nav>
 
     <!-- Intro Text-->
@@ -277,11 +303,17 @@
 
 </footer>
 
-    <script src="JS/smoothScroll.js"></script>
+
+    <!-- font awesome -->
+    <script src="https://www.hxstrive.com/cdn/libs/font-awesome/7.0.1/js/all.min.js"></script>
+    <!-- background stars -->
     <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script>
     <script src="JS/stars.js"></script>
-    <script src="https://www.hxstrive.com/cdn/libs/font-awesome/7.0.1/js/all.min.js"></script>
     <!-- spawn elements -->
     <script src="JS/spawnAnims.js"></script>
+    <!-- navbar controls -->
+    <script src="JS/navbarControls.js"></script>
+    <!-- spawn elements -->
+    <script src="JS/smoothScroll.js"></script>
 </body>
 </html>

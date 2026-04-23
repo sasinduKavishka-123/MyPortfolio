@@ -31,11 +31,16 @@
 
 @media all and (max-width: 800px) {
     #introContainer{
-        height: fit-content;
+        height: 75vh;
     }
 }
 
 @media all and (max-width: 450px) {
+
+    #introContainer{
+        height: 65vh;
+    }
+
     #smallText{
         margin-top: 5px;
         font-size: calc(100vw / 23);

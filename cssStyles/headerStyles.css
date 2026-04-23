@@ -31,19 +31,19 @@
     left: 12vw;
     font-family: Inter, serif;
     letter-spacing: 3px;
-    animation: loadHeroIntroText 0.8s ease-out;
+    /*animation: loadHeroIntroText 0.8s ease-out;*/
 }
 
-@keyframes loadHeroIntroText {
-    0%{
-        transform: translate(0 ,50%);
-        opacity: 0;
-    }
-    100%{
-        transform: translate(0 ,-50%);
-        opacity: 100%;
-    }
-}
+/*@keyframes loadHeroIntroText {*/
+/*    0%{*/
+/*        transform: translate(0 ,50%);*/
+/*        opacity: 0;*/
+/*    }*/
+/*    100%{*/
+/*        transform: translate(0 ,-50%);*/
+/*        opacity: 100%;*/
+/*    }*/
+/*}*/
 
 #name{
     font-size: calc(100vw / 7.5 );
@@ -51,19 +51,19 @@
     top: 100px;
     font-family: Russo One , serif;
     text-shadow: 0 0 50px rgba(255, 255, 255, 0.4);
-    animation: loadHeroNameText 0.8s ease-out;
+    /*animation: loadHeroNameText 0.8s ease-out;*/
 }
 
-@keyframes loadHeroNameText {
-    0%{
-        transform: translate(0 ,30%);
-        opacity: 0;
-    }
-    100%{
-        transform: translate(0 ,0);
-        opacity: 100%;
-    }
-}
+/*@keyframes loadHeroNameText {*/
+/*    0%{*/
+/*        transform: translate(0 ,30%);*/
+/*        opacity: 0;*/
+/*    }*/
+/*    100%{*/
+/*        transform: translate(0 ,0);*/
+/*        opacity: 100%;*/
+/*    }*/
+/*}*/
 
 #orbitBox{
     width: 100vw;
