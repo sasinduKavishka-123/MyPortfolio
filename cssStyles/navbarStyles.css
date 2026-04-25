@@ -81,8 +81,9 @@ nav{
     right: 0;
     width: 300px;
     height: 100vh;
-    background: rgb(57 23 57 / 30%);
-    backdrop-filter: blur(10px);
+    background: rgb(57 23 57 / 50%);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
     padding: 70px 0 0 20px;
     display: none;
     flex-direction: column;
@@ -144,7 +145,28 @@ nav{
     right: 20px;
     font-size: 22px;
     display: none;
-    transition-duration: 700ms;
+}
+
+@keyframes slidInRightNavIcon {
+    0%{
+        right: -100px;
+        opacity: 10%;
+    }
+    100%{
+        right: 20px;
+        opacity: 100%;
+    }
+}
+
+@keyframes slidOutRightNavIcon {
+    0%{
+        right: 20px;
+        opacity: 100%;
+    }
+    100%{
+        right: -100px;
+        opacity: 0;
+    }
 }
 
 @media all and (max-width: 800px) {
