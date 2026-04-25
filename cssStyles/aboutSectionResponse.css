@@ -187,15 +187,19 @@
     }
 
     #gridSection5Text{
-        bottom: 35px;
-        background-color: rgba(0, 0, 0, 0.8);
-        border-radius: 10px;
+        top: 20px;
+        right: 42px;
+        bottom: unset;
+        /*background-color: rgb(66 1 107 / 90%);*/
+        border-radius: 5px;
     }
 
     #gridSection5HiddenText{
-        bottom: 10px;
-        background-color: rgba(0, 0, 0, 0.8);
-        border-radius: 10px;
+        top: 40px;
+        right: 10px;
+        bottom: unset;
+        /*background-color: rgb(66 1 107 / 90%);*/
+        border-radius: 5px;
     }
 
     #gridSection5ImgHolder{

@@ -158,4 +158,8 @@ body{
         height: 90px;
         font-size: 52px;
     }
+
+    .boxes{
+        font-size: 60px;
+    }
 }
