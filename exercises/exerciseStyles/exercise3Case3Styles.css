@@ -10,8 +10,8 @@ body{
 
 #calBody{
     background-color: #242424;
-    width: 30%;
-    height: 80%;
+    width: 460px;
+    height: 595px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -89,4 +89,18 @@ body{
 #btnHolder > .button:nth-child(17){
     font-size: 44px;
     align-content: flex-start;
+}
+
+@media all and (max-width: 500px) {
+
+    #calBody{
+        width: 95vw;
+        height: 520px;
+    }
+
+    .button{
+        font-size: 28px;
+        height: 60px;
+    }
+
 }
