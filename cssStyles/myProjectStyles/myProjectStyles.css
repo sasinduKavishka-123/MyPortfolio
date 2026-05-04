@@ -193,6 +193,19 @@
     background: url("../../assets/myProject/ticTacToe/ticTacToePic1.png");
 }
 
+#myProject6Pic4{
+    background: url("../../assets/myProject/greenCafe/greenCafePic4.png");
+}
+#myProject6Pic3{
+    background: url("../../assets/myProject/greenCafe/greenCafePic3.png");
+}
+#myProject6Pic2{
+    background: url("../../assets/myProject/greenCafe/greenCafePic2.png");
+}
+#myProject6Pic1{
+    background: url("../../assets/myProject/greenCafe/greenCafePic1.png");
+}
+
 .myProjectPicSection > .myProjectPics:nth-child(2){
     left: -25%;
     animation: picAnim3 30s infinite;
