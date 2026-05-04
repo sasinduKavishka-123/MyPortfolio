@@ -47,9 +47,15 @@ function loadCards(){
             '            linear-gradient(to bottom, #0EA2E7, #AF05ED) border-box';
     });
 
+    let distance = 310;
+    if(window.innerWidth < 950){
+        distance = 180;
+    }
+
+
     for(let i=(activeNum+1); i < cards.length; i++){
         stt++;
-        cards[i].style.transform = `translateX(${220*stt}px) scale(${1 - 0.2*stt}) perspective(16px) rotateY(-1deg)`;
+        cards[i].style.transform = `translateX(${distance*stt}px) scale(${1 - 0.2*stt}) perspective(16px) rotateY(-1deg)`;
         cards[i].style.zIndex = 20-stt + "";
         cards[i].style.filter = 'blur(2px)';
         cards[i].style.opacity = stt>1 ? 0: 0.5;
@@ -59,7 +65,11 @@ function loadCards(){
     stt = 0;
     for(let i=(activeNum-1); i >= 0; i--){
         stt++;
-        cards[i].style.transform = `translateX(${-220*stt}px) scale(${1 - 0.2*stt}) perspective(16px) rotateY(1deg)`;
+
+        if(window.innerWidth < 1000){
+            console.log("sssssssss");
+        }
+        cards[i].style.transform = `translateX(${-distance*stt}px) scale(${1 - 0.2*stt}) perspective(16px) rotateY(1deg)`;
         cards[i].style.zIndex = 20-stt + "";
         cards[i].style.filter = 'blur(2px)';
         cards[i].style.opacity = stt>1 ? 0: 0.5;
