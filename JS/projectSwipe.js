@@ -16,8 +16,13 @@ const projectContainer0bserver = new IntersectionObserver((entries)=>{
 
 projectContainer0bserver.observe(container);
 
+let cardArr = document.getElementsByClassName('projectCards');
+let cards = [];
 
-let cards = document.getElementsByClassName('projectCards');
+for(let i=0; i<cardArr.length; i++){
+    cards.push(cardArr[i]);
+}
+
 let nextBtn = document.querySelector('#projectNextBtn');
 let prevBtn = document.querySelector('#projectPrevBtn');
 
@@ -44,30 +49,32 @@ function loadCards(){
 
     for(let i=(activeNum+1); i < cards.length; i++){
         stt++;
-        cards[i].style.transform = `translateX(${180*stt}px) scale(${1 - 0.2*stt}) perspective(16px) rotateY(-1deg)`;
+        cards[i].style.transform = `translateX(${220*stt}px) scale(${1 - 0.2*stt}) perspective(16px) rotateY(-1deg)`;
         cards[i].style.zIndex = 20-stt + "";
         cards[i].style.filter = 'blur(2px)';
-        cards[i].style.opacity = stt>2 ? 0: 0.5;
+        cards[i].style.opacity = stt>1 ? 0: 0.5;
         cards[i].style.pointerEvents = 'none';
     }
 
     stt = 0;
     for(let i=(activeNum-1); i >= 0; i--){
         stt++;
-        cards[i].style.transform = `translateX(${-180*stt}px) scale(${1 - 0.2*stt}) perspective(16px) rotateY(1deg)`;
+        cards[i].style.transform = `translateX(${-220*stt}px) scale(${1 - 0.2*stt}) perspective(16px) rotateY(1deg)`;
         cards[i].style.zIndex = 20-stt + "";
         cards[i].style.filter = 'blur(2px)';
-        cards[i].style.opacity = stt>2 ? 0: 0.5;
+        cards[i].style.opacity = stt>1 ? 0: 0.5;
         cards[i].style.pointerEvents = 'none';
     }
 }
 
 nextBtn.onclick = function (){
-    activeNum = ((activeNum+1) < cards.length)? activeNum+1 : activeNum;
+
+    cards.push(cards.shift());
+
     loadCards();
 }
 
 prevBtn.onclick = function (){
-    activeNum = ((activeNum-1) >= 0)? activeNum-1 : activeNum;
+    cards.unshift(cards.pop());
     loadCards();
 }
