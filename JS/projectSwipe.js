@@ -65,10 +65,6 @@ function loadCards(){
     stt = 0;
     for(let i=(activeNum-1); i >= 0; i--){
         stt++;
-
-        if(window.innerWidth < 1000){
-            console.log("sssssssss");
-        }
         cards[i].style.transform = `translateX(${-distance*stt}px) scale(${1 - 0.2*stt}) perspective(16px) rotateY(1deg)`;
         cards[i].style.zIndex = 20-stt + "";
         cards[i].style.filter = 'blur(2px)';
