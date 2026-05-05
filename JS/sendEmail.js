@@ -14,11 +14,21 @@ window.onload = function() {
     form.addEventListener('submit', function(event) {
         event.preventDefault(); // preven reload page
 
+        const nameInput  = document.getElementById("contactName").value;
+        const emailInput = document.getElementById("contactEmail").value;
+        const titleInput = document.getElementById("contactSubject").value;
+        const textInput  = document.getElementById("contactMessage").value;
+
+        if((nameInput === "") || (emailInput === "") || (titleInput === "") || (textInput === "")){
+            alert("Error: Invalid Inputs");
+            return;
+        }
+
         const params = {
-            name    : document.getElementById("contactName").value,
-            email   : document.getElementById("contactEmail").value,
-            title   : document.getElementById("contactSubject").value,
-            message : document.getElementById("contactMessage").value
+            name    : nameInput,
+            email   : emailInput,
+            title   : titleInput,
+            message : textInput
         };
 
         // these IDs from the previous steps
