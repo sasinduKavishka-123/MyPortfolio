@@ -106,14 +106,14 @@
 #aboutSlider1{
     height: 70px;
     position: absolute;
-    top: 20%;
+    top: 17%;
     display: flex;
 }
 
 #aboutSlider2{
     height: 70px;
     position: absolute;
-    top: 33%;
+    top: 29%;
     display: flex;
 }
 
@@ -139,6 +139,7 @@
     text-align: center;
 }
 
+
 @keyframes slideAbout1 {
     from{translate: 0;}
     to{translate: -100%;}
@@ -157,7 +158,27 @@
     align-items: center;
 }
 
+#imageGradient{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent 50% , #000);
+    z-index: 11;
+}
 
+#gridSection1ImageHolder > img{
+    height: 92%;
+    z-index: 10;
+    position: relative;
+    top: 8%;
+    filter: grayscale(90%);
+    transition-duration: 1000ms;
+}
+
+#gridSection1:hover #gridSection1ImageHolder > img{
+    filter: grayscale(0);
+}
 
 /********** grid section 2 implementation ************/
 

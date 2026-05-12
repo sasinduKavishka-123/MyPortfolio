@@ -75,7 +75,9 @@
     width: 330px;
     height: 400px;
     border-radius: 20px;
-    background-color: blue;
+    /*background-color: blue;*/
     margin: auto;
     pointer-events: none;
+    background: url("../../assets/about/portfolioPic.png");
+    background-size: cover;
 }
